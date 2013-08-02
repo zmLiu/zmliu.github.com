@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hello World
+title: ZmLiu's Blog
 ---
 {% assign first_post = site.posts.first %}
 <div id="post">
@@ -14,6 +14,7 @@ title: Hello World
 {{ first_post.content }}
 </div>
 
+<br>
 <h1> Newest 10 Posts </h1>
 <ul class="posts">
   {% for post in site.posts limit:10 %}

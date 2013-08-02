@@ -10,10 +10,10 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : zmliu'Blog
+title : ZmLiu's Blog
 tagline: Site Tagline
 author :
-  name : zmliu
+  name : zm Liu
   email : 470301594@qq.com
 
 # The production_url is only used when full-domain names are needed
