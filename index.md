@@ -9,7 +9,7 @@ title: ZmLiu's Blog
 </a></h1>
 
 <div class="authoring">
-  {{ first_post.date | date: "%B %e, %Y" }}
+  {{ first_post.date | date: "%m / %e, %Y" }}
 </div>
 {{ first_post.content }}
 </div>
@@ -18,6 +18,6 @@ title: ZmLiu's Blog
 <h1> Newest 10 Posts </h1>
 <ul class="posts">
   {% for post in site.posts limit:10 %}
-  <li><span class="post_date">{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  <li><span class="post_date">{{ post.date | date: "%m /%e, %Y" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
