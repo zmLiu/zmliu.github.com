@@ -8,4 +8,5 @@ http://username.github.io/rss.xml
 http://username.github.io/sitemap.txt
 http://username.github.io/tags.html
 
-http://username.github.io/2013/08/02/hello-world
+http://username.github.io/test/2013/08/02/hello-world2
+http://username.github.io/test/2013/08/02/hello-world

@@ -2,20 +2,29 @@
 <rss version="2.0">
 <channel>
         <title>ZmLiu's Blog</title>
-        <description>ZmLiu's Blog - zm Liu</description>
+        <description>ZmLiu's Blog - ZmLiu</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2013-08-02T17:25:01+08:00</lastBuildDate>
-        <pubDate>2013-08-02T17:25:01+08:00</pubDate>
+        <lastBuildDate>2013-08-02T17:48:18+08:00</lastBuildDate>
+        <pubDate>2013-08-02T17:48:18+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Hello World2</title>
+                <description>&lt;code class=&quot;java&quot;&gt;再次测试&lt;/code&gt;
+</description>
+                <link>http://username.github.io/test/2013/08/02/hello-world2</link>
+                <guid>http://username.github.io/test/2013/08/02/hello-world2</guid>
+                <pubDate>2013-08-02T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>Hello Blog</title>
                 <description>测试一下
 </description>
-                <link>http://username.github.io/2013/08/02/hello-world</link>
-                <guid>http://username.github.io/2013/08/02/hello-world</guid>
+                <link>http://username.github.io/test/2013/08/02/hello-world</link>
+                <guid>http://username.github.io/test/2013/08/02/hello-world</guid>
                 <pubDate>2013-08-02T00:00:00+08:00</pubDate>
         </item>
 
