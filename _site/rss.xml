@@ -5,14 +5,16 @@
         <description>Zm Liu's Blog - ZmLiu</description>
         <link>http://username.github.io</link>
         <link>http://username.github.io</link>
-        <lastBuildDate>2013-08-12T16:08:23+08:00</lastBuildDate>
-        <pubDate>2013-08-12T16:08:23+08:00</pubDate>
+        <lastBuildDate>2013-08-12T16:18:46+08:00</lastBuildDate>
+        <pubDate>2013-08-12T16:18:46+08:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>MySQL配置文件my.cnf详解</title>
-                <description></description>
+                <description>&lt;h2 id='mysql4g'&gt;此mysql配置文件例子针对4G内存&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;port&lt;/code&gt; mysql使用的端口 &lt;code&gt;port=3306&lt;/code&gt;&lt;/p&gt;</description>
                 <link>http://username.github.io/mysql/2013/08/09/mysql-my_cnf</link>
                 <guid>http://username.github.io/mysql/2013/08/09/mysql-my_cnf</guid>
                 <pubDate>2013-08-09T00:00:00+08:00</pubDate>
