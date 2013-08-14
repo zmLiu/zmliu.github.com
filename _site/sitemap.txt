@@ -1,13 +1,14 @@
 
-http://username.github.io/archive.html
-http://username.github.io/atom.xml
-http://username.github.io/categories.html
-http://username.github.io/index.html
-http://username.github.io/pages.html
-http://username.github.io/rss.xml
-http://username.github.io/sitemap.txt
-http://username.github.io/tags.html
+http://zmliu.github.io/archive.html
+http://zmliu.github.io/atom.xml
+http://zmliu.github.io/categories.html
+http://zmliu.github.io/index.html
+http://zmliu.github.io/pages.html
+http://zmliu.github.io/rss.xml
+http://zmliu.github.io/sitemap.txt
+http://zmliu.github.io/tags.html
 
-http://username.github.io/2013/08/09/mysql-my_cnf
-http://username.github.io/test/2013/08/02/hello-world2
-http://username.github.io/test/2013/08/02/hello-world
+http://zmliu.github.io/2013/08/14/wdlinux-lanmp
+http://zmliu.github.io/2013/08/09/mysql-my_cnf
+http://zmliu.github.io/test/2013/08/02/hello-world2
+http://zmliu.github.io/test/2013/08/02/hello-world
