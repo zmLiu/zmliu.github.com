@@ -35,7 +35,11 @@ tags : [linux]
 #####关于一键安装包，目录，启动，lnamp,wdcp所用端口的说明
 #####[http://www.wdlinux.cn/bbs/thread-192-1-1.html](http://www.wdlinux.cn/bbs/thread-192-1-1.html)
 
+#####mysql数据迁移
+#####[http://www.wdlinux.cn/bbs/thread-1521-1-1.html](http://www.wdlinux.cn/bbs/thread-1521-1-1.html)
 	
 #####常见问题
 #####[http://www.wdlinux.cn/bbs/thread-1450-1-1.html](http://www.wdlinux.cn/bbs/thread-1450-1-1.html)
+
+
 

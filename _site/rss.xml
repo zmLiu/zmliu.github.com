@@ -5,8 +5,8 @@
         <description>Zm Liu's Blog - ZmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-08-14T14:09:38+08:00</lastBuildDate>
-        <pubDate>2013-08-14T14:09:38+08:00</pubDate>
+        <lastBuildDate>2013-08-14T15:01:54+08:00</lastBuildDate>
+        <pubDate>2013-08-14T15:01:54+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -27,7 +27,7 @@ sh in.sh&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id='php'&gt;PHP扩展&lt;/h3&gt;
 
-&lt;pre&gt;&lt;code&gt;php.ini 修改 extension_dir = &amp;quot;./&amp;quot;为#extension_dir = &amp;quot;./&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;php.ini extension_dir = &amp;quot;./&amp;quot;为#extension_dir = &amp;quot;./&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id='wdcp_mysql___innodb'&gt;wdcp mysql 优化方案 - innodb&lt;/h3&gt;
 
@@ -48,6 +48,10 @@ service mysqld start|stop|restart       mysql服务&lt;/code&gt;&lt;/pre&gt;
 &lt;h5 id='lnampwdcp'&gt;关于一键安装包，目录，启动，lnamp,wdcp所用端口的说明&lt;/h5&gt;
 
 &lt;h5 id='httpwwwwdlinuxcnbbsthread19211html'&gt;&lt;a href='http://www.wdlinux.cn/bbs/thread-192-1-1.html'&gt;http://www.wdlinux.cn/bbs/thread-192-1-1.html&lt;/a&gt;&lt;/h5&gt;
+
+&lt;h5 id='mysql'&gt;mysql数据迁移&lt;/h5&gt;
+
+&lt;h5 id='httpwwwwdlinuxcnbbsthread152111html'&gt;&lt;a href='http://www.wdlinux.cn/bbs/thread-1521-1-1.html'&gt;http://www.wdlinux.cn/bbs/thread-1521-1-1.html&lt;/a&gt;&lt;/h5&gt;
 
 &lt;h5 id='id38'&gt;常见问题&lt;/h5&gt;
 
