@@ -31,6 +31,13 @@ tags : [linux]
 	service httpd start|stop|restart         httpd服务
 	service pureftpd start|stop|restart    ftp服务
 	service mysqld start|stop|restart       mysql服务
+###ftp
+	如果ftp要访问/www/web以外的其他目录
+	需要使用
+	chown -R www 目录名
+	给予wwww用户xxx目录的操作权限
+	但是千万不要使用chown -R www / 会把服务器环境搞崩溃
+	例如需要/home的操作权限 执行命令 chown -R www /home
 
 #####关于一键安装包，目录，启动，lnamp,wdcp所用端口的说明
 #####[http://www.wdlinux.cn/bbs/thread-192-1-1.html](http://www.wdlinux.cn/bbs/thread-192-1-1.html)

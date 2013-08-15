@@ -5,8 +5,8 @@
         <description>Zm Liu's Blog - ZmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-08-14T15:01:54+08:00</lastBuildDate>
-        <pubDate>2013-08-14T15:01:54+08:00</pubDate>
+        <lastBuildDate>2013-08-15T16:55:58+08:00</lastBuildDate>
+        <pubDate>2013-08-15T16:55:58+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -44,6 +44,15 @@ service nginxd start|stop|restart       nginx服务
 service httpd start|stop|restart         httpd服务
 service pureftpd start|stop|restart    ftp服务
 service mysqld start|stop|restart       mysql服务&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id='ftp'&gt;ftp&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;如果ftp要访问/www/web以外的其他目录
+需要使用
+chown -R www 目录名
+给予wwww用户xxx目录的操作权限
+但是千万不要使用chown -R www / 会把服务器环境搞崩溃
+例如需要/home的操作权限 执行命令 chown -R www /home&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h5 id='lnampwdcp'&gt;关于一键安装包，目录，启动，lnamp,wdcp所用端口的说明&lt;/h5&gt;
 
