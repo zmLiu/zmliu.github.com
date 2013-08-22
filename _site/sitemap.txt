@@ -8,6 +8,7 @@ http://zmliu.github.io/rss.xml
 http://zmliu.github.io/sitemap.txt
 http://zmliu.github.io/tags.html
 
+http://zmliu.github.io/2013/08/22/actionscript3
 http://zmliu.github.io/2013/08/14/wdlinux-lanmp
 http://zmliu.github.io/2013/08/09/mysql-my_cnf
 http://zmliu.github.io/test/2013/08/02/hello-world2

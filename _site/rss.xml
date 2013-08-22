@@ -5,10 +5,22 @@
         <description>Zm Liu's Blog - ZmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-08-15T16:55:58+08:00</lastBuildDate>
-        <pubDate>2013-08-15T16:55:58+08:00</pubDate>
+        <lastBuildDate>2013-08-22T14:43:27+08:00</lastBuildDate>
+        <pubDate>2013-08-22T14:43:27+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>iphone5 Stage 尺寸问题</title>
+                <description>&lt;h4 id='adobeair_'&gt;今天用AdobeAir 实现的程序上&lt;code&gt;iTouch5&lt;/code&gt;测试发现尺寸怎么获取出来都是&lt;code&gt;960*640&lt;/code&gt;&lt;/h4&gt;
+
+&lt;h4 id='_'&gt;然后细细回味了一下之前的程序 貌似没有遇到这个问题。&lt;/h4&gt;
+
+&lt;h4 id='_ok'&gt;仔细对比了一下工程和之前工程的差别。发现唯一就是没有&lt;code&gt;icon图&lt;/code&gt;和&lt;code&gt;启动图像&lt;/code&gt;。果断添加了&lt;code&gt;Default-568h@2x.png启动图像&lt;/code&gt; 再次测试OK了&lt;/h4&gt;</description>
+                <link>http://zmliu.github.io/2013/08/22/actionscript3</link>
+                <guid>http://zmliu.github.io/2013/08/22/actionscript3</guid>
+                <pubDate>2013-08-22T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>wdlinux lanmp一键包安装使用心得</title>
