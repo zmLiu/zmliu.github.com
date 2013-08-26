@@ -48,5 +48,9 @@ tags : [linux]
 #####常见问题
 #####[http://www.wdlinux.cn/bbs/thread-1450-1-1.html](http://www.wdlinux.cn/bbs/thread-1450-1-1.html)
 
+#####PHP升级脚本
+#####5.3[http://www.wdlinux.cn/bbs/thread-3737-1-1.html](http://www.wdlinux.cn/bbs/thread-3737-1-1.html)
+#####5.4[http://www.wdlinux.cn/bbs/thread-4771-1-2.html](http://www.wdlinux.cn/bbs/thread-4771-1-2.html)
+
 
 
