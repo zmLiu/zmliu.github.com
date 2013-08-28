@@ -30,6 +30,22 @@
     <!-- atom & rss feed -->
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+	
+	<link href="/assets/themes/twitter/google-code-prettify/prettify.css" rel="stylesheet" type="text/css" media="all">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/themes/twitter/google-code-prettify/prettify.js"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+		    $("code").addClass("prettyprint");
+		    prettyPrint();
+		    $('.entry a').each(function(){
+		      if($(this).attr("href").indexOf("heiniuhaha") == -1){
+		        $(this).attr("target", "_blank");
+		      }
+		    })
+	  	});
+	</script>
 
   </head>
 
@@ -118,8 +134,7 @@ stagewebview.stage = stage;</code></pre>
 
 <h4 id='xml'>xml配置</h4>
 
-<pre><code>&lt;renderMode&gt;cpu&lt;/renderMode&gt;
-其他渲染模式不会显示</code></pre>
+<pre><code>&lt;renderMode&gt;cpu&lt;/renderMode&gt;</code></pre>
 
 <h4 id='id40'>参考连接</h4>
 

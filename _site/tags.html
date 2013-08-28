@@ -30,6 +30,22 @@
     <!-- atom & rss feed -->
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
     <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+	
+	<link href="/assets/themes/twitter/google-code-prettify/prettify.css" rel="stylesheet" type="text/css" media="all">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/themes/twitter/google-code-prettify/prettify.js"></script>
+	
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+		    $("code").addClass("prettyprint");
+		    prettyPrint();
+		    $('.entry a').each(function(){
+		      if($(this).attr("href").indexOf("heiniuhaha") == -1){
+		        $(this).attr("target", "_blank");
+		      }
+		    })
+	  	});
+	</script>
 
   </head>
 
@@ -114,11 +130,11 @@
      
     	<li><a href="/tags.html#mysql-ref">mysql <span>1</span></a></li>
      
-    	<li><a href="/tags.html#linux-ref">linux <span>1</span></a></li>
+    	<li><a href="/tags.html#ActionScript-ref">ActionScript <span>2</span></a></li>
      
     	<li><a href="/tags.html#test-ref">test <span>2</span></a></li>
      
-    	<li><a href="/tags.html#ActionScript-ref">ActionScript <span>2</span></a></li>
+    	<li><a href="/tags.html#linux-ref">linux <span>1</span></a></li>
     
   
 
@@ -148,7 +164,7 @@
 
   </ul>
  
-  <h2 id="linux-ref">linux</h2>
+  <h2 id="ActionScript-ref">ActionScript</h2>
   <ul>
       
     
@@ -158,7 +174,15 @@
     
       
       	
-      	<li><a href="/2013/08/14/wdlinux-lanmp">wdlinux lanmp一键包安装使用心得</a></li>
+      	<li><a href="/2013/08/28/actionscript3">StageWebView 用法</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/2013/08/22/actionscript3">iphone5 Stage 尺寸问题</a></li>
       	
       
     
@@ -196,7 +220,7 @@
 
   </ul>
  
-  <h2 id="ActionScript-ref">ActionScript</h2>
+  <h2 id="linux-ref">linux</h2>
   <ul>
       
     
@@ -206,15 +230,7 @@
     
       
       	
-      	<li><a href="/2013/08/28/actionscript3">StageWebView 用法</a></li>
-      	
-      
-    
-  
-    
-      
-      	
-      	<li><a href="/2013/08/22/actionscript3">iphone5 Stage 尺寸问题</a></li>
+      	<li><a href="/2013/08/14/wdlinux-lanmp">wdlinux lanmp一键包安装使用心得</a></li>
       	
       
     

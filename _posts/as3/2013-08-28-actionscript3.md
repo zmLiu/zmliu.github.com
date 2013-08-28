@@ -13,7 +13,6 @@ tags : [ActionScript]
 	stagewebview.stage = stage;
 ####xml配置
 	<renderMode>cpu</renderMode>
-	其他渲染模式不会显示
 
 ####参考连接
 ####[http://help.adobe.com/zh_CN/as3/dev/WS901d38e593cd1bac3ef1d28412ac57b094b-8000.html](http://help.adobe.com/zh_CN/as3/dev/WS901d38e593cd1bac3ef1d28412ac57b094b-8000.html)

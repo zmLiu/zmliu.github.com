@@ -5,8 +5,8 @@
         <description>Zm Liu's Blog - ZmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-08-28T13:00:54+08:00</lastBuildDate>
-        <pubDate>2013-08-28T13:00:54+08:00</pubDate>
+        <lastBuildDate>2013-08-28T14:35:44+08:00</lastBuildDate>
+        <pubDate>2013-08-28T14:35:44+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -23,8 +23,7 @@ stagewebview.stage = stage;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id='xml'&gt;xml配置&lt;/h4&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;renderMode&amp;gt;cpu&amp;lt;/renderMode&amp;gt;
-其他渲染模式不会显示&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;renderMode&amp;gt;cpu&amp;lt;/renderMode&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id='id40'&gt;参考连接&lt;/h4&gt;
 
