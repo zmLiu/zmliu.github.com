@@ -4,13 +4,37 @@
  <title>Zm Liu's Blog</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-08-26T16:11:08+08:00</updated>
+ <updated>2013-08-28T11:09:07+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>ZmLiu</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>StageWebView 用法</title>
+   <link href="http://zmliu.github.io/2013/08/28/actionscript3"/>
+   <updated>2013-08-28T00:00:00+08:00</updated>
+   <id>http://zmliu.github.io/2013/08/28/actionscript3</id>
+   <content type="html">&lt;h4 id='_airplayer'&gt;&lt;code&gt;StageWebView&lt;/code&gt; 只能再Air中使用。Player中不能使用&lt;/h4&gt;
+
+&lt;h4 id='id39'&gt;代码&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;var stagewebview:StageWebView = new StageWebView();
+stagewebview.loadURL(&amp;quot;http://www.baidu.com&amp;quot;);
+stagewebview.viewPort = new Rectangle(0,0,stage.fullScreenWidth,stage.fullScreenHeight);
+stagewebview.stage = stage;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='xml'&gt;xml配置&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;renderMode&amp;gt;cpu&amp;lt;/renderMode&amp;gt;
+其他渲染模式不会显示&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id40'&gt;参考连接&lt;/h4&gt;
+
+&lt;h4 id='httphelpadobecomzh_cnas3devws901d38e593cd1bac3ef1d28412ac57b094b8000html'&gt;&lt;a href='http://help.adobe.com/zh_CN/as3/dev/WS901d38e593cd1bac3ef1d28412ac57b094b-8000.html'&gt;http://help.adobe.com/zh_CN/as3/dev/WS901d38e593cd1bac3ef1d28412ac57b094b-8000.html&lt;/a&gt;&lt;/h4&gt;</content>
+ </entry>
  
  <entry>
    <title>iphone5 Stage 尺寸问题</title>

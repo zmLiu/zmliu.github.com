@@ -98,21 +98,35 @@
       <div class="content">
         <div id='post'>
 <h1> 
-<a href='/2013/08/22/actionscript3'>
-iphone5 Stage 尺寸问题
+<a href='/2013/08/28/actionscript3'>
+StageWebView 用法
 </a>
 </h1>
 
 <div class='authoring'>
-08 / 22, 2013
+08 / 28, 2013
 </div>
 <br />
-<h4 id='adobeair_'>今天用AdobeAir 实现的程序上<code>iTouch5</code>测试发现尺寸怎么获取出来都是<code>960*640</code></h4>
+<h4 id='_airplayer'><code>StageWebView</code> 只能再Air中使用。Player中不能使用</h4>
 
-<h4 id='_'>然后细细回味了一下之前的程序 貌似没有遇到这个问题。</h4>
+<h4 id='id39'>代码</h4>
 
-<h4 id='_ok'>仔细对比了一下工程和之前工程的差别。发现唯一就是没有<code>icon图</code>和<code>启动图像</code>。果断添加了<code>Default-568h@2x.png启动图像</code> 再次测试OK了</h4>
+<pre><code>var stagewebview:StageWebView = new StageWebView();
+stagewebview.loadURL(&quot;http://www.baidu.com&quot;);
+stagewebview.viewPort = new Rectangle(0,0,stage.fullScreenWidth,stage.fullScreenHeight);
+stagewebview.stage = stage;</code></pre>
+
+<h4 id='xml'>xml配置</h4>
+
+<pre><code>&lt;renderMode&gt;cpu&lt;/renderMode&gt;
+其他渲染模式不会显示</code></pre>
+
+<h4 id='id40'>参考连接</h4>
+
+<h4 id='httphelpadobecomzh_cnas3devws901d38e593cd1bac3ef1d28412ac57b094b8000html'><a href='http://help.adobe.com/zh_CN/as3/dev/WS901d38e593cd1bac3ef1d28412ac57b094b-8000.html'>http://help.adobe.com/zh_CN/as3/dev/WS901d38e593cd1bac3ef1d28412ac57b094b-8000.html</a></h4>
 </div><br /><h1> Newest 10 Posts </h1><ul class='posts'>
+  
+  <li><span class='post_date'>08 /28, 2013</span> &raquo; <a href='/2013/08/28/actionscript3'>StageWebView 用法</a></li>
   
   <li><span class='post_date'>08 /22, 2013</span> &raquo; <a href='/2013/08/22/actionscript3'>iphone5 Stage 尺寸问题</a></li>
   
