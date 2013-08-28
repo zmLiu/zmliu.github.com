@@ -114,8 +114,8 @@
       <div class="content">
         <div id='post'>
 <h1> 
-<a href='/2013/08/28/actionscript3'>
-StageWebView 用法
+<a href='/2013/08/28/%E6%9C%80%E5%B0%8F%E5%8C%96%E6%97%B6%E5%85%B3%E9%97%AD%E7%A8%8B%E5%BA%8F'>
+最小化时关闭程序
 </a>
 </h1>
 
@@ -123,23 +123,11 @@ StageWebView 用法
 08 / 28, 2013
 </div>
 <br />
-<h4 id='_airplayer'><code>StageWebView</code> 只能再Air中使用。Player中不能使用</h4>
-
-<h4 id='id39'>代码</h4>
-
-<pre><code>var stagewebview:StageWebView = new StageWebView();
-stagewebview.loadURL(&quot;http://www.baidu.com&quot;);
-stagewebview.viewPort = new Rectangle(0,0,stage.fullScreenWidth,stage.fullScreenHeight);
-stagewebview.stage = stage;</code></pre>
-
-<h4 id='xml'>xml配置</h4>
-
-<pre><code>&lt;renderMode&gt;cpu&lt;/renderMode&gt;</code></pre>
-
-<h4 id='id40'>参考连接</h4>
-
-<h4 id='httphelpadobecomzh_cnas3devws901d38e593cd1bac3ef1d28412ac57b094b8000html'><a href='http://help.adobe.com/zh_CN/as3/dev/WS901d38e593cd1bac3ef1d28412ac57b094b-8000.html'>http://help.adobe.com/zh_CN/as3/dev/WS901d38e593cd1bac3ef1d28412ac57b094b-8000.html</a></h4>
+<pre><code>如果想在最小化的时候关闭，安卓里可以用NativeApplication.application.exit()
+这个方法在iOS里不起作用，iOS里需要在XML里写&lt;key&gt;UIApplicationExitsOnSuspend&lt;/key&gt;&lt;true/&gt;</code></pre>
 </div><br /><h1> Newest 10 Posts </h1><ul class='posts'>
+  
+  <li><span class='post_date'>08 / 28, 2013</span> &raquo; <a href='/2013/08/28/%E6%9C%80%E5%B0%8F%E5%8C%96%E6%97%B6%E5%85%B3%E9%97%AD%E7%A8%8B%E5%BA%8F'>最小化时关闭程序</a></li>
   
   <li><span class='post_date'>08 / 28, 2013</span> &raquo; <a href='/2013/08/28/actionscript3'>StageWebView 用法</a></li>
   
