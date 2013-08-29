@@ -8,6 +8,7 @@ http://zmliu.github.io/rss.xml
 http://zmliu.github.io/sitemap.txt
 http://zmliu.github.io/tags.html
 
+http://zmliu.github.io/2013/08/29/sfs2x%E7%A0%B4%E8%A7%A3
 http://zmliu.github.io/2013/08/28/%E6%9C%80%E5%B0%8F%E5%8C%96%E6%97%B6%E5%85%B3%E9%97%AD%E7%A8%8B%E5%BA%8F
 http://zmliu.github.io/2013/08/28/actionscript3
 http://zmliu.github.io/2013/08/22/actionscript3

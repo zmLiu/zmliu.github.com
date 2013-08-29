@@ -4,13 +4,51 @@
  <title>Zm Liu's Blog</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-08-28T18:11:28+08:00</updated>
+ <updated>2013-08-29T09:05:18+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>ZmLiu</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>SFS2X 破解</title>
+   <link href="http://zmliu.github.io/2013/08/29/sfs2x%E7%A0%B4%E8%A7%A3"/>
+   <updated>2013-08-29T00:00:00+08:00</updated>
+   <id>http://zmliu.github.io/2013/08/29/sfs2x破解</id>
+   <content type="html">&lt;h4 id='id43'&gt;把&lt;code&gt;sfs2x/lib&lt;/code&gt;下的所有&lt;code&gt;jar&lt;/code&gt;库放在构建路径中&lt;/h4&gt;
+
+&lt;h4 id='id44'&gt;代码如下&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;import java.io.FileOutputStream;
+
+import com.smartfoxserver.v2.entities.data.SFSObject;
+import com.smartfoxserver.v2.protocol.binary.DefaultPacketCompressor;
+
+public class main {
+
+        public static void main(String[] args) throws Exception {
+                SFSObject license = new SFSObject();
+                license.putUtfString(&amp;quot;customer&amp;quot;, &amp;quot;&amp;quot;);// 授权人，为空则为共享版，否则个人版
+                license.putUtfString(&amp;quot;bind&amp;quot;, &amp;quot;127.0.0.1&amp;quot;);// 限制IP
+                license.putInt(&amp;quot;users&amp;quot;, -1);// 连接数上限，-1为无限数量
+                license.putLong(&amp;quot;expire&amp;quot;, 0);// 版权到期时间，0为无限制
+                license.putBool(&amp;quot;private&amp;quot;, false);// 私有？
+
+                byte[] objectBytes = license.toBinary();
+                objectBytes = new DefaultPacketCompressor().compress(objectBytes);
+                byte[] licenseData = new byte[objectBytes.length + 4];
+                for (int i = 0; i &amp;lt; objectBytes.length; i++) {
+                        licenseData[i + 4] = (byte) (objectBytes[i] ^ licenseData[2]);
+                }
+
+                new FileOutputStream(&amp;quot;license.2x&amp;quot;).write((byte[]) licenseData);
+        }
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='license2x'&gt;最后替换生成的license.2x文件即可&lt;/h4&gt;</content>
+ </entry>
  
  <entry>
    <title>最小化时关闭程序</title>

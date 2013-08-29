@@ -114,18 +114,49 @@
       <div class="content">
         <div id='post'>
 <h1> 
-<a href='/2013/08/28/%E6%9C%80%E5%B0%8F%E5%8C%96%E6%97%B6%E5%85%B3%E9%97%AD%E7%A8%8B%E5%BA%8F'>
-最小化时关闭程序
+<a href='/2013/08/29/sfs2x%E7%A0%B4%E8%A7%A3'>
+SFS2X 破解
 </a>
 </h1>
 
 <div class='authoring'>
-08 / 28, 2013
+08 / 29, 2013
 </div>
 <br />
-<pre><code>如果想在最小化的时候关闭，安卓里可以用NativeApplication.application.exit()
-这个方法在iOS里不起作用，iOS里需要在XML里写&lt;key&gt;UIApplicationExitsOnSuspend&lt;/key&gt;&lt;true/&gt;</code></pre>
+<h4 id='id43'>把<code>sfs2x/lib</code>下的所有<code>jar</code>库放在构建路径中</h4>
+
+<h4 id='id44'>代码如下</h4>
+
+<pre><code>import java.io.FileOutputStream;
+
+import com.smartfoxserver.v2.entities.data.SFSObject;
+import com.smartfoxserver.v2.protocol.binary.DefaultPacketCompressor;
+
+public class main {
+
+        public static void main(String[] args) throws Exception {
+                SFSObject license = new SFSObject();
+                license.putUtfString(&quot;customer&quot;, &quot;&quot;);// 授权人，为空则为共享版，否则个人版
+                license.putUtfString(&quot;bind&quot;, &quot;127.0.0.1&quot;);// 限制IP
+                license.putInt(&quot;users&quot;, -1);// 连接数上限，-1为无限数量
+                license.putLong(&quot;expire&quot;, 0);// 版权到期时间，0为无限制
+                license.putBool(&quot;private&quot;, false);// 私有？
+
+                byte[] objectBytes = license.toBinary();
+                objectBytes = new DefaultPacketCompressor().compress(objectBytes);
+                byte[] licenseData = new byte[objectBytes.length + 4];
+                for (int i = 0; i &lt; objectBytes.length; i++) {
+                        licenseData[i + 4] = (byte) (objectBytes[i] ^ licenseData[2]);
+                }
+
+                new FileOutputStream(&quot;license.2x&quot;).write((byte[]) licenseData);
+        }
+}</code></pre>
+
+<h4 id='license2x'>最后替换生成的license.2x文件即可</h4>
 </div><br /><h1> Newest 10 Posts </h1><ul class='posts'>
+  
+  <li><span class='post_date'>08 / 29, 2013</span> &raquo; <a href='/2013/08/29/sfs2x%E7%A0%B4%E8%A7%A3'>SFS2X 破解</a></li>
   
   <li><span class='post_date'>08 / 28, 2013</span> &raquo; <a href='/2013/08/28/%E6%9C%80%E5%B0%8F%E5%8C%96%E6%97%B6%E5%85%B3%E9%97%AD%E7%A8%8B%E5%BA%8F'>最小化时关闭程序</a></li>
   
