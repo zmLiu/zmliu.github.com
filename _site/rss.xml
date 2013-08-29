@@ -5,8 +5,8 @@
         <description>Zm Liu's Blog - ZmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-08-29T09:10:21+08:00</lastBuildDate>
-        <pubDate>2013-08-29T09:10:21+08:00</pubDate>
+        <lastBuildDate>2013-08-29T09:55:23+08:00</lastBuildDate>
+        <pubDate>2013-08-29T09:55:23+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -51,7 +51,11 @@ public class main {
         <item>
                 <title>最小化时关闭程序</title>
                 <description>&lt;pre&gt;&lt;code&gt;如果想在最小化的时候关闭，安卓里可以用NativeApplication.application.exit()
-这个方法在iOS里不起作用，iOS里需要在XML里写&amp;lt;key&amp;gt;UIApplicationExitsOnSuspend&amp;lt;/key&amp;gt;&amp;lt;true/&amp;gt;&lt;/code&gt;&lt;/pre&gt;</description>
+这个方法在iOS里不起作用，iOS里需要在XML里写
+&amp;lt;key&amp;gt;
+	UIApplicationExitsOnSuspend
+&amp;lt;/key&amp;gt;
+&amp;lt;true/&amp;gt;&lt;/code&gt;&lt;/pre&gt;</description>
                 <link>http://zmliu.github.io/2013/08/28/%E6%9C%80%E5%B0%8F%E5%8C%96%E6%97%B6%E5%85%B3%E9%97%AD%E7%A8%8B%E5%BA%8F</link>
                 <guid>http://zmliu.github.io/2013/08/28/最小化时关闭程序</guid>
                 <pubDate>2013-08-28T00:00:00+08:00</pubDate>

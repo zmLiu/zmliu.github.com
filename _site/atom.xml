@@ -4,7 +4,7 @@
  <title>Zm Liu's Blog</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-08-29T09:10:21+08:00</updated>
+ <updated>2013-08-29T09:55:23+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>ZmLiu</name>
@@ -56,7 +56,11 @@ public class main {
    <updated>2013-08-28T00:00:00+08:00</updated>
    <id>http://zmliu.github.io/2013/08/28/最小化时关闭程序</id>
    <content type="html">&lt;pre&gt;&lt;code&gt;如果想在最小化的时候关闭，安卓里可以用NativeApplication.application.exit()
-这个方法在iOS里不起作用，iOS里需要在XML里写&amp;lt;key&amp;gt;UIApplicationExitsOnSuspend&amp;lt;/key&amp;gt;&amp;lt;true/&amp;gt;&lt;/code&gt;&lt;/pre&gt;</content>
+这个方法在iOS里不起作用，iOS里需要在XML里写
+&amp;lt;key&amp;gt;
+	UIApplicationExitsOnSuspend
+&amp;lt;/key&amp;gt;
+&amp;lt;true/&amp;gt;&lt;/code&gt;&lt;/pre&gt;</content>
  </entry>
  
  <entry>

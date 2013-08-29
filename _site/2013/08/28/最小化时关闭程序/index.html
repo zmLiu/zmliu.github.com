@@ -37,13 +37,8 @@
 	
 	<script type="text/javascript" charset="utf-8">
 		$(function(){
-		    $("code").addClass("prettyprint");
+		    $("pre").addClass("prettyprint");
 		    prettyPrint();
-		    $('.entry a').each(function(){
-		      if($(this).attr("href").indexOf("heiniuhaha") == -1){
-		        $(this).attr("target", "_blank");
-		      }
-		    })
 	  	});
 	</script>
 
@@ -124,7 +119,11 @@
     </div>
     <div class="content">
       <pre><code>如果想在最小化的时候关闭，安卓里可以用NativeApplication.application.exit()
-这个方法在iOS里不起作用，iOS里需要在XML里写&lt;key&gt;UIApplicationExitsOnSuspend&lt;/key&gt;&lt;true/&gt;</code></pre>
+这个方法在iOS里不起作用，iOS里需要在XML里写
+&lt;key&gt;
+	UIApplicationExitsOnSuspend
+&lt;/key&gt;
+&lt;true/&gt;</code></pre>
     </div>
 
     
