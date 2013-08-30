@@ -4,13 +4,116 @@
  <title>Zm Liu's Blog</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-08-29T14:08:02+08:00</updated>
+ <updated>2013-08-30T10:44:29+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>ZmLiu</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>ATF (Adobe Texture Format)</title>
+   <link href="http://zmliu.github.io/2013/08/30/ATF"/>
+   <updated>2013-08-30T00:00:00+08:00</updated>
+   <id>http://zmliu.github.io/2013/08/30/ATF</id>
+   <content type="html">&lt;h2 id='id47'&gt;如何使用工具&lt;/h2&gt;
+
+&lt;p&gt;把工具和原格式图片文件放置在同一文件夹下，例子中使用C盘根目录，DOS使用工具指令如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//package leaf.png with all 3 formats (DXT5, PVRTC and ETC1x2)
+C:\png2atf.exe -c -i leaf.png -o leaf.atf
+[In 213KB][Out 213KB][Ratio 99.9703%][LZMA:0KB JPEG-XR:213KB]
+
+//package specific range of mipmaps
+C:\png2atf.exe -c -n 0,5 -i leaf.png -o leaf0,5.atf
+[In 213KB][Out 213KB][Ratio 99.8825%][LZMA:0KB JPEG-XR:213KB]
+
+//package only DXT format
+C:\png2atf.exe -c d -i leaf.png -o leaf_dxt5.atf
+[In 85KB][Out 85KB][Ratio 100.045%][LZMA:0KB JPEG-XR:85KB]
+
+//package only ETC1 format
+C:\png2atf.exe -c e -i leaf.png -o leaf_etc1.atf
+[In 85KB][Out 85KB][Ratio 100.045%][LZMA:0KB JPEG-XR:85KB]
+
+//package only PVRTC format
+C:\png2atf.exe -c p -i leaf.png -o leaf_pvrtc.atf
+[In 42KB][Out 42KB][Ratio 100.089%][LZMA:0KB JPEG-XR:42KB]&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;如果你想在你的ATF存储未压缩的纹理，只要不使用-c参数&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//package as uncompressed (RGBA) format
+C:\png2atf.exe  -i  leaf.png  -o  leaf_rgba.atf
+[In 341KB][Out 43KB][Ratio 12.8596%][LZMA:0KB JPEG-XR:43KB]&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;还有一个很酷的功能是，流式纹理的ATF也可以使用，你可以这样做以生成3个文件：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;png2atf -m -n 0,0 -c -i cubecat0.png -o cubecat_c_high.atf
+png2atf -m -n 1,2 -c -i cubecat0.png -o cubecat_c_med.atf
+png2atf -m -n 3,20 -c -i cubecat0.png -o cubecat_c_low.atf&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='id48'&gt;在&lt;code&gt;Stage3D&lt;/code&gt;中使用压缩纹理&lt;/h2&gt;
+
+&lt;p&gt;你需要使用Texture.uploadCompressedTextureFromByteArray 这个方法来上传压缩纹理，这个API可以设定该压缩纹理是否使用透明通：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Example 
+{
+ [Embed( source = &amp;quot;mytexture.atf&amp;quot;, mimeType=&amp;quot;application/octet-stream&amp;quot;)]
+ public static const TextureAsset:Class;
+ public var context3D:Context3D;
+ public function init():void
+ {
+  var texture:Texture = context3D.createTexture(256, 256, 
+     Context3DTextureFormat.COMPRESSED_ALPHA, false);
+  var textureAsset:ByteArray = new TextureAsset() as ByteArray;
+  texture.uploadCompressedTextureFromByteArray(textureAsset, 0);
+ }
+};&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;立方体纹理你可以这样写：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var texCubemap:CubeTexture = context3D.createCubeTexture(256, Context3DTextureFormat.COMPRESSED_ALPHA, false);
+var textureAsset:ByteArray = new TextureAsset() as ByteArray;
+texCubemap.uploadCompressedTextureFromByteArray(textureAsset, 0);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;另外，根据是否使用透明通道，必须在的片段着色器里使用下面的设置：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1、普通的纹理 Context3DTextureFormat.BGRA
+2、“DXT1”（没有透明通道的压缩纹理）Context3DTextureFormat.COMPRESSED
+3、“DXT5”（拥有透明通道的压缩纹理）Context3DTextureFormat.COMPRESSED_ALPHA&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='id49'&gt;在&lt;code&gt;Starling&lt;/code&gt;中的用法&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;[Embed(source=&amp;quot;starling.atf&amp;quot;, mimeType=&amp;quot;application/octet-stream&amp;quot;)]
+public static const CompressedData:Class;
+
+var data:ByteArray = new CompressedData();
+var texture:Texture = Texture.fromAtfData(data);
+var image:Image = new Image(texture);
+addChild(image);&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='id50'&gt;使用要求&lt;/h2&gt;
+
+&lt;p&gt;如果你使用ATF纹理，那么你需要注意下面几点：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1、如果您使用是`starling`，你至少需要`1.2`版本。在`[Github](https://github.com/PrimaryFeather/Starling-Framework)`上获取，或者官方下载最新版本。
+2、如果你是自己封装`Stage3D`，那么你需要使用最新的`AGALMiniAssembler`
+3、你至少需要`AIR SDK 3.4` ，或者下载`Flash Builder 4.7AIR 3.4 SDK`。
+4、需要Flash播放器`11.4/AIR 3.4`
+5、您需要添加编译器参数`“-swf-version=17”`&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id='id51'&gt;命令说明:&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;-i	指定需要转换的文件名
+-o	指定输出的文件名
+-c	是否压缩。如果不压缩不要填写该参数即可
+-q &amp;lt;0-180&amp;gt;	压缩质量越低质量越高
+-r	是否使用JPEG-XR+LZMA压缩以减少文件大小 
+-n &amp;lt;start,end&amp;gt;	生成mip的等级
+
+例子 png2atf -c -r -q 0 -n 0,1 -i ui.png -o ui.atf&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
  
  <entry>
    <title>SFS2X 破解</title>
