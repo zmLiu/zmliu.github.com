@@ -118,7 +118,38 @@
       <span>08 / 30, 2013</span>
     </div>
     <div class="content">
-      <h2 id='id47'>如何使用工具</h2>
+      <h2 id='gpu'>各个平台的GPU处理格式</h2>
+<table class='table table-hover table-bordered'>
+	<thead>
+		<tr>
+			<th>平台</th><th>格式</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>ImgTech (IOS)</td><td>PVRTC</td>
+		</tr>
+		<tr>
+			<td>Qualcom (Android)</td><td>ETC1</td>
+		</tr>
+		<tr>
+			<td>Mali (Android)</td><td>ETC1</td>
+		</tr>
+		<tr>
+			<td>NVidia (Android)</td><td>ETC1/DXT1/DXT5</td>
+		</tr>
+		<tr>
+			<td>Android (PowerVR)</td><td>PVRT/ETC1</td>
+		</tr>
+		<tr>
+			<td>Windows</td><td>DXT1/DXT5</td>
+		</tr>
+		<tr>
+			<td>MacOS</td><td>DXT1/DXT5</td>
+		</tr>
+	</tbody>
+</table>
+<h2 id='id46'>如何使用工具</h2>
 
 <p>把工具和原格式图片文件放置在同一文件夹下，例子中使用C盘根目录，DOS使用工具指令如下：</p>
 
@@ -154,7 +185,7 @@ C:\png2atf.exe  -i  leaf.png  -o  leaf_rgba.atf
 png2atf -m -n 1,2 -c -i cubecat0.png -o cubecat_c_med.atf
 png2atf -m -n 3,20 -c -i cubecat0.png -o cubecat_c_low.atf</code></pre>
 
-<h2 id='id48'>在<code>Stage3D</code>中使用压缩纹理</h2>
+<h2 id='id47'>在<code>Stage3D</code>中使用压缩纹理</h2>
 
 <p>你需要使用Texture.uploadCompressedTextureFromByteArray 这个方法来上传压缩纹理，这个API可以设定该压缩纹理是否使用透明通：</p>
 
@@ -184,7 +215,7 @@ texCubemap.uploadCompressedTextureFromByteArray(textureAsset, 0);</code></pre>
 2、“DXT1”（没有透明通道的压缩纹理）Context3DTextureFormat.COMPRESSED
 3、“DXT5”（拥有透明通道的压缩纹理）Context3DTextureFormat.COMPRESSED_ALPHA</code></pre>
 
-<h2 id='id49'>在<code>Starling</code>中的用法</h2>
+<h2 id='id48'>在<code>Starling</code>中的用法</h2>
 
 <pre><code>[Embed(source=&quot;starling.atf&quot;, mimeType=&quot;application/octet-stream&quot;)]
 public static const CompressedData:Class;
@@ -194,7 +225,7 @@ var texture:Texture = Texture.fromAtfData(data);
 var image:Image = new Image(texture);
 addChild(image);</code></pre>
 
-<h2 id='id50'>使用要求</h2>
+<h2 id='id49'>使用要求</h2>
 
 <p>如果你使用ATF纹理，那么你需要注意下面几点：</p>
 
@@ -204,7 +235,7 @@ addChild(image);</code></pre>
 4、需要Flash播放器`11.4/AIR 3.4`
 5、您需要添加编译器参数`“-swf-version=17”`</code></pre>
 
-<h2 id='id51'>命令说明:</h2>
+<h2 id='id50'>命令说明:</h2>
 
 <pre><code>-i	指定需要转换的文件名
 -o	指定输出的文件名
