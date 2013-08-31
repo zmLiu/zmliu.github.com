@@ -5,8 +5,8 @@
         <description>Zm Liu's Blog - ZmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-08-31T15:33:22+08:00</lastBuildDate>
-        <pubDate>2013-08-31T15:33:22+08:00</pubDate>
+        <lastBuildDate>2013-08-31T17:10:18+08:00</lastBuildDate>
+        <pubDate>2013-08-31T17:10:18+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -81,7 +81,7 @@ function onError(e:ProgressEvent):void{
 解决方法是把纹理改成正方形&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id='id51'&gt;来张截图&lt;/h4&gt;
-&lt;img src='/assets/images/atftool_view.jpg' alt='截图' class='img-rounded' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/atftool_view.jpg' /&gt;
 &lt;h4 id='id52'&gt;功能说明&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;输出平台选择
@@ -97,7 +97,7 @@ mipmap设置
 
 &lt;h4 id='macos'&gt;&lt;a href='http://url.cn/USIf6A'&gt;MacOS程序下载&lt;/a&gt;&lt;/h4&gt;
 
-&lt;h4 id='id53'&gt;&lt;a href='http://url.cn/Isxrjo'&gt;源码&lt;/a&gt;&lt;/h4&gt;</description>
+&lt;h4 id='id53'&gt;&lt;a href='https://github.com/zmLiu/ATFTool'&gt;源码&lt;/a&gt;&lt;/h4&gt;</description>
                 <link>http://zmliu.github.io/2013/08/31/ATFTool</link>
                 <guid>http://zmliu.github.io/2013/08/31/ATFTool</guid>
                 <pubDate>2013-08-31T00:00:00+08:00</pubDate>
