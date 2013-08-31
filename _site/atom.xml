@@ -4,13 +4,100 @@
  <title>Zm Liu's Blog</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-08-30T11:22:45+08:00</updated>
+ <updated>2013-08-31T14:10:15+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>ZmLiu</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>NativeProcess</title>
+   <link href="http://zmliu.github.io/2013/08/31/NativeProcess"/>
+   <updated>2013-08-31T00:00:00+08:00</updated>
+   <id>http://zmliu.github.io/2013/08/31/NativeProcess</id>
+   <content type="html">&lt;p&gt;NativeProcess 类提供命令行集成和常规启动功能。NativeProcess 类允许 AIR 应用程序在主机操作系统上执行本机进程。AIR 应用程序可以监视进程的标准输入 (stdin) 和标准输出 (stdout) 流以及进程的标准错误 (stderr) 流。&lt;/p&gt;
+
+&lt;h4 id='adobeatf'&gt;直接上代码(这里用adobe的ATF导出工具作为例子)&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;var workingDirectory:File = File.applicationDirectory;//根据需求自己改
+var executable:File = File.applicationDirectory.resolvePath(&amp;quot;png2atf&amp;quot;);//根据需求自己改
+var params:Vector.&amp;lt;String&amp;gt; = new Vector.&amp;lt;String&amp;gt;();
+params.push(&amp;quot;-c&amp;quot;);
+params.push(&amp;quot;-i&amp;quot;);
+params.push(&amp;quot;test.png&amp;quot;);
+params.push(&amp;quot;-o&amp;quot;);
+params.push(&amp;quot;test.atf&amp;quot;);
+
+var info:NativeProcessStartupInfo = new NativeProcessStartupInfo();
+info.workingDirectory = workingDirectory;
+info.arguments = params;
+info.executable = executable;
+
+var nativeProcess:NativeProcess = new NativeProcess();
+nativeProcess.addEventListener(NativeProcessExitEvent.EXIT,onExit);
+nativeProcess.addEventListener(ProgressEvent.STANDARD_OUTPUT_DATA,onData);
+nativeProcess.addEventListener(ProgressEvent.STANDARD_ERROR_DATA,onError);
+nativeProcess.start(info);
+
+function onExit(e:NativeProcessExitEvent):void{
+	trace(&amp;quot;exit&amp;quot;);
+}
+
+function onData(e:ProgressEvent):void{
+	trace(nativeProcess.standardOutput.readUTFBytes(nativeProcess.standardOutput.bytesAvailable));
+}
+
+function onError(e:ProgressEvent):void{
+	trace(nativeProcess.standardError.readUTFBytes(nativeProcess.standardError.bytesAvailable));
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id54'&gt;注意事项&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;该类只能在AIR中使用 player中无法使用
+应用程序配置文件需要配置
+&amp;lt;application xmlns=&amp;quot;http://ns.adobe.com/air/application/3.8&amp;quot;&amp;gt;
+    ...其他配置...
+    &amp;lt;supportedProfiles&amp;gt;extendedDesktop&amp;lt;/supportedProfiles&amp;gt;
+&amp;lt;/application&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id55'&gt;导出注意事项&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;只能导出为
+本机安装程序
+或
+具有运行时绑定的应用程序
+否则NativeProcess将会报错
+错误信息为	Error: Error #3219: The NativeProcess could not be started. &amp;#39;Not supported in current profile.&amp;#39;&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>ATF批量导出工具</title>
+   <link href="http://zmliu.github.io/2013/08/31/ATFTool"/>
+   <updated>2013-08-31T00:00:00+08:00</updated>
+   <id>http://zmliu.github.io/2013/08/31/ATFTool</id>
+   <content type="html">&lt;p&gt;批量导出Atf的工具，使用是adobe atf 编码核心&lt;/p&gt;
+
+&lt;h4 id='id51'&gt;来张截图&lt;/h4&gt;
+&lt;img src='/assets/images/atftool_view.jpg' alt='截图' class='img-rounded' /&gt;
+&lt;h4 id='id52'&gt;功能说明&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;输出平台选择
+压缩体积，减小文件大小
+mipmap设置
+支持jpg png 转换
+图像尺寸自动纠正为2幂
+图像自动转换为方形（解决atf上传时 为长方形会报错的bug）
+目录转换（包含子目录）
+输出质量设置&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='windows'&gt;&lt;a href='http://url.cn/M9zBDF'&gt;Windows程序下载&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id='macos'&gt;&lt;a href='http://url.cn/Wo0a4T'&gt;MacOS程序下载&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id='id53'&gt;&lt;a href='http://url.cn/IzJqGZ'&gt;源码&lt;/a&gt;&lt;/h4&gt;</content>
+ </entry>
  
  <entry>
    <title>ATF (Adobe Texture Format)</title>
