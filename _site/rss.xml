@@ -5,8 +5,8 @@
         <description>Zm Liu's Blog - ZmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-08-31T14:10:15+08:00</lastBuildDate>
-        <pubDate>2013-08-31T14:10:15+08:00</pubDate>
+        <lastBuildDate>2013-08-31T15:16:06+08:00</lastBuildDate>
+        <pubDate>2013-08-31T15:16:06+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -74,8 +74,14 @@ function onError(e:ProgressEvent):void{
                 <title>ATF批量导出工具</title>
                 <description>&lt;p&gt;批量导出Atf的工具，使用是adobe atf 编码核心&lt;/p&gt;
 
+&lt;h4 id='atfbug'&gt;先说一下关于atf的bug&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;当atf导出时候 启用了mips选项 会导致：
+如果纹理问长方形时 上传会报错的bug
+解决方法是把纹理改成正方形&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h4 id='id51'&gt;来张截图&lt;/h4&gt;
-&lt;img src='/assets/images/atftool_view.jpg' alt='截图' class='img-rounded' /&gt;
+&lt;img alt='截图' src='/assets/images/atftool_view.jpg' class='img-rounded' /&gt;
 &lt;h4 id='id52'&gt;功能说明&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;输出平台选择
@@ -83,7 +89,7 @@ function onError(e:ProgressEvent):void{
 mipmap设置
 支持jpg png 转换
 图像尺寸自动纠正为2幂
-图像自动转换为方形（解决atf上传时 为长方形会报错的bug）
+图像自动转换为方形,解决atf上传时 为长方形会报错的bug 仅在使用mips会触发 所以需要启用mips可以考虑勾选这个选项
 目录转换（包含子目录）
 输出质量设置&lt;/code&gt;&lt;/pre&gt;
 
