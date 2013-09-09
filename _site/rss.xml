@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-        <title>Zm Liu's Blog</title>
-        <description>Zm Liu's Blog - ZmLiu</description>
+        <title>zmLiu</title>
+        <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-09-06T11:43:49+08:00</lastBuildDate>
-        <pubDate>2013-09-06T11:43:49+08:00</pubDate>
+        <lastBuildDate>2013-09-09T14:46:23+08:00</lastBuildDate>
+        <pubDate>2013-09-09T14:46:23+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -81,7 +81,7 @@ function onError(e:ProgressEvent):void{
 解决方法是把纹理改成正方形&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id='id51'&gt;来张截图&lt;/h4&gt;
-&lt;img src='/assets/images/atftool_view.jpg' class='img-rounded' alt='截图' /&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/atftool_view.jpg' /&gt;
 &lt;h4 id='id52'&gt;功能说明&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;输出平台选择
