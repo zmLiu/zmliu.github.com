@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>ZmLiu's Blog</title>
+    <title>nginx 413 Request Entity Too Large</title>
     
     <meta name="author" content="zmLiu">
 
@@ -107,43 +107,74 @@
     <div class="container-narrow">
 
       <div class="content">
-        <div id='post'>
-<h1> 
-<a href='/2013/09/20/nginx413'>
-nginx 413 Request Entity Too Large
-</a>
-</h1>
-
-<div class='authoring'>
-09 / 20, 2013
+        
+<div class="page-header">
+  <h1>nginx 413 Request Entity Too Large </h1>
 </div>
-<br />
-<pre><code>该错误是由于 nginx.conf 中 client_max_body_size 的相关设置值太小的原因导致，调整到相应的值即可.
+
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>09 / 20, 2013</span>
+    </div>
+    <div class="content">
+      <pre><code>该错误是由于 nginx.conf 中 client_max_body_size 的相关设置值太小的原因导致，调整到相应的值即可.
 如果运行的是php需要需要注意php.ini的中post_max_size和upload_max_filesize的值.
 client_max_body_size需要比post_max_size和upload_max_filesize中的最大值 一致或者稍大</code></pre>
-</div><br /><h1> Newest 10 Posts </h1><ul class='posts'>
+    </div>
+
+    
+
   
-  <li><span class='post_date'>09 / 20, 2013</span> &raquo; <a href='/2013/09/20/nginx413'>nginx 413 Request Entity Too Large</a></li>
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      
+      
+
+
   
-  <li><span class='post_date'>08 / 31, 2013</span> &raquo; <a href='/2013/08/31/NativeProcess'>NativeProcess</a></li>
+     
+    	<li><a href="/tags.html#nginx-ref">nginx <span>1</span></a></li>
+    
   
-  <li><span class='post_date'>08 / 31, 2013</span> &raquo; <a href='/2013/08/31/ATFTool'>ATF批量导出工具</a></li>
-  
-  <li><span class='post_date'>08 / 30, 2013</span> &raquo; <a href='/2013/08/30/ATF'>ATF (Adobe Texture Format)</a></li>
-  
-  <li><span class='post_date'>08 / 29, 2013</span> &raquo; <a href='/2013/08/29/sfs2x%E7%A0%B4%E8%A7%A3'>SFS2X 破解</a></li>
-  
-  <li><span class='post_date'>08 / 28, 2013</span> &raquo; <a href='/2013/08/28/%E6%9C%80%E5%B0%8F%E5%8C%96%E6%97%B6%E5%85%B3%E9%97%AD%E7%A8%8B%E5%BA%8F'>最小化时关闭程序</a></li>
-  
-  <li><span class='post_date'>08 / 28, 2013</span> &raquo; <a href='/2013/08/28/actionscript3'>StageWebView 用法</a></li>
-  
-  <li><span class='post_date'>08 / 22, 2013</span> &raquo; <a href='/2013/08/22/actionscript3'>iphone5 Stage 尺寸问题</a></li>
-  
-  <li><span class='post_date'>08 / 14, 2013</span> &raquo; <a href='/2013/08/14/wdlinux-lanmp'>wdlinux lanmp一键包安装使用心得</a></li>
-  
-  <li><span class='post_date'>08 /  9, 2013</span> &raquo; <a href='/2013/08/09/mysql-my_cnf'>MySQL配置文件my.cnf详解</a></li>
-  
-</ul>
+
+
+
+    </ul>
+    
+
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/2013/08/31/NativeProcess" title="NativeProcess">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+    <hr>
+     <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'zmliu'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+  </div>
+</div>
+
+
       </div>
       <hr>
       <footer>

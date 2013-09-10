@@ -4,13 +4,23 @@
  <title>zmLiu</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-09-09T14:46:23+08:00</updated>
+ <updated>2013-09-10T15:15:18+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>zmLiu</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>nginx 413 Request Entity Too Large</title>
+   <link href="http://zmliu.github.io/2013/09/20/nginx413"/>
+   <updated>2013-09-20T00:00:00+08:00</updated>
+   <id>http://zmliu.github.io/2013/09/20/nginx413</id>
+   <content type="html">&lt;pre&gt;&lt;code&gt;该错误是由于 nginx.conf 中 client_max_body_size 的相关设置值太小的原因导致，调整到相应的值即可.
+如果运行的是php需要需要注意php.ini的中post_max_size和upload_max_filesize的值.
+client_max_body_size需要比post_max_size和upload_max_filesize中的最大值 一致或者稍大&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
  
  <entry>
    <title>NativeProcess</title>
