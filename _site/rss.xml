@@ -5,19 +5,22 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-09-10T15:15:18+08:00</lastBuildDate>
-        <pubDate>2013-09-10T15:15:18+08:00</pubDate>
+        <lastBuildDate>2013-09-17T11:31:16+08:00</lastBuildDate>
+        <pubDate>2013-09-17T11:31:16+08:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>nginx 413 Request Entity Too Large</title>
-                <description>&lt;pre&gt;&lt;code&gt;该错误是由于 nginx.conf 中 client_max_body_size 的相关设置值太小的原因导致，调整到相应的值即可.
-如果运行的是php需要需要注意php.ini的中post_max_size和upload_max_filesize的值.
-client_max_body_size需要比post_max_size和upload_max_filesize中的最大值 一致或者稍大&lt;/code&gt;&lt;/pre&gt;</description>
-                <link>http://zmliu.github.io/2013/09/20/nginx413</link>
-                <guid>http://zmliu.github.io/2013/09/20/nginx413</guid>
-                <pubDate>2013-09-20T00:00:00+08:00</pubDate>
+                <title>如何让设备不休眠</title>
+                <description>&lt;pre&gt;&lt;code&gt;NativeApplication.nativeApplication.systemIdleMode = SystemIdleMode.KEEP_AWAKE&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id='id57'&gt;&lt;code&gt;Android&lt;/code&gt;需要配置&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;uses-permission android:name=&amp;quot;android.permission.WAKE_LOCK&amp;quot; /&amp;gt;
+&amp;lt;uses-permission android:name=&amp;quot;android.permission.WRITE_SETTINGS&amp;quot; /&amp;gt;&lt;/code&gt;&lt;/pre&gt;</description>
+                <link>http://zmliu.github.io/2013/09/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E8%AE%BE%E5%A4%87%E4%B8%8D%E4%BC%91%E7%9C%A0</link>
+                <guid>http://zmliu.github.io/2013/09/17/如何使设备不休眠</guid>
+                <pubDate>2013-09-17T00:00:00+08:00</pubDate>
         </item>
 
         <item>
@@ -331,6 +334,16 @@ stagewebview.stage = stage;&lt;/code&gt;&lt;/pre&gt;
                 <link>http://zmliu.github.io/2013/08/22/actionscript3</link>
                 <guid>http://zmliu.github.io/2013/08/22/actionscript3</guid>
                 <pubDate>2013-08-22T00:00:00+08:00</pubDate>
+        </item>
+
+        <item>
+                <title>nginx 413 Request Entity Too Large</title>
+                <description>&lt;pre&gt;&lt;code&gt;该错误是由于 nginx.conf 中 client_max_body_size 的相关设置值太小的原因导致，调整到相应的值即可.
+如果运行的是php需要需要注意php.ini的中post_max_size和upload_max_filesize的值.
+client_max_body_size需要比post_max_size和upload_max_filesize中的最大值 一致或者稍大&lt;/code&gt;&lt;/pre&gt;</description>
+                <link>http://zmliu.github.io/2013/08/20/nginx413</link>
+                <guid>http://zmliu.github.io/2013/08/20/nginx413</guid>
+                <pubDate>2013-08-20T00:00:00+08:00</pubDate>
         </item>
 
         <item>
