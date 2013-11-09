@@ -4,13 +4,163 @@
  <title>zmLiu</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-09-17T11:31:16+08:00</updated>
+ <updated>2013-11-09T15:47:11+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>zmLiu</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Swf一键导出到Starling中的工具</title>
+   <link href="http://zmliu.github.io/2013/11/09/StarlingSwfTool"/>
+   <updated>2013-11-09T00:00:00+08:00</updated>
+   <id>http://zmliu.github.io/2013/11/09/StarlingSwfTool</id>
+   <content type="html">&lt;h2 id='id59'&gt;目录&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt; StarlingSwf是什么&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt; 功能与特色&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt; 下载与安装&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt; 教程一：资源命名规则&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt; 教程二：针对设计师&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt; 教程三：针对程序&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id='starlingswf'&gt;StarlingSwf是什么&lt;/h2&gt;
+
+&lt;p&gt;StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具.&lt;/p&gt;
+
+&lt;p&gt;他可以让开发导出Swf数据到Starling中渲染&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id='id60'&gt;下载与安装&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href='https://github.com/zmLiu/StarlingSWF'&gt;工具源码地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='https://github.com/zmLiu/StarlingFeathers'&gt;依赖库地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://url.cn/NFvIhb'&gt;Mac版下载&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://url.cn/MRuj6f'&gt;Windows版下载&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://url.cn/PYIIHb'&gt;Demo&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id='id61'&gt;教程一：资源命名规则&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt; img 开始会被识别为starling.display.Image.&lt;strong&gt;(导出之后该原件会直接被映射为一张图片)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt; s9 开头会被识别为feathers.display.Scale9Image.&lt;strong&gt;(制作规则跟传统flash开发一样)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt; btn 开头会被识别为lzm.starling.display.Button.(&lt;strong&gt;Button中使用的任意显示对象必须是&lt;code&gt;img&lt;/code&gt; &lt;code&gt;s9&lt;/code&gt; &lt;code&gt;btn&lt;/code&gt; &lt;code&gt;mc&lt;/code&gt; &lt;code&gt;spr&lt;/code&gt;中制作的对象&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt; mc 开头会被识别为lzm.starling.swf.display.SwfMovieClip.(&lt;strong&gt;MoviecClip中使用的任意显示对象必须是&lt;code&gt;img&lt;/code&gt; &lt;code&gt;s9&lt;/code&gt; &lt;code&gt;btn&lt;/code&gt; &lt;code&gt;mc&lt;/code&gt; &lt;code&gt;spr&lt;/code&gt;中制作的对象&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt; spr 开头会被识别为starling.display.Sprite.(&lt;strong&gt;Sprite中使用的任意显示对象必须是&lt;code&gt;img&lt;/code&gt; &lt;code&gt;s9&lt;/code&gt; &lt;code&gt;btn&lt;/code&gt; &lt;code&gt;mc&lt;/code&gt; &lt;code&gt;spr&lt;/code&gt;中制作的对象&lt;/strong&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt; 文本 文本比较特殊 只要在&lt;code&gt;img&lt;/code&gt; &lt;code&gt;s9&lt;/code&gt; &lt;code&gt;btn&lt;/code&gt; &lt;code&gt;mc&lt;/code&gt; &lt;code&gt;spr&lt;/code&gt; 中写就可以了&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id='id62'&gt;教程二：针对设计师&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;作为设计师，你只需要准备好需要展示的图片，在FlashPro中将他们有序的组装起来。并且为需要导出的原件设置链接就可以了搞定一切&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;打开库面板，你可以看到此示例的相关资源.&lt;/p&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image1.png' /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;相关资源编辑好之后导出Swf.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;打开StarlingSwf导出工具，选择刚刚导出的swf.可以预览在Swf内部的原件在Starling中是什么样子.&lt;/p&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image2.png' /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;选择导出倍数，然后导出.资源导出后会出现两个文件夹&lt;/p&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image3.png' /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;data下面放的Swf数据,images下放的所有导出的图片.将这两个东西给程序就可以了.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id='id63'&gt;教程三：针对程序&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;建立一个Actionscript工程。(demo中是手机工程)&lt;/p&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image4.png' /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;倒入资源&lt;/p&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image5.png' /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;倒入依赖库&lt;/p&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image6.png' /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;代码 package { import flash.display.StageAlign; import flash.display.StageScaleMode;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;	import lzm.starling.STLStarup;
+	
+	public class StarlingSwfTestMain extends STLStarup
+	{
+		public function StarlingSwfTestMain()
+		{
+			super();
+			
+			// 支持 autoOrient
+			stage.align = StageAlign.TOP_LEFT;
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			stage.color = 0x999999;
+			stage.frameRate = 60;
+			
+			initStarling(StarlingSwfTestMainClass);
+		}
+	}
+}
+
+package
+{
+	import flash.filesystem.File;
+	
+	import lzm.starling.STLConstant;
+	import lzm.starling.STLMainClass;
+	import lzm.starling.gestures.DragGestures;
+	import lzm.starling.swf.Swf;
+	
+	import starling.core.Starling;
+	import starling.display.Sprite;
+	import starling.text.TextField;
+	import starling.utils.AssetManager;
+	import starling.utils.formatString;
+	
+	public class StarlingSwfTestMainClass extends STLMainClass
+	{
+		
+		private var textfield:TextField;
+		
+		public function StarlingSwfTestMainClass()
+		{
+			super();
+			
+			Swf.init(Starling.current.nativeStage);
+			
+			textfield = new TextField(200,100,&amp;quot;loading....&amp;quot;);
+			textfield.x = (STLConstant.StageWidth - textfield.width)/2;
+			textfield.y = (STLConstant.StageHeight - textfield.height)/2;
+			addChild(textfield);
+			
+			var assets:AssetManager = new AssetManager(STLConstant.scale,STLConstant.useMipMaps);
+			var file:File = File.applicationDirectory;
+			
+			assets.enqueue(file.resolvePath(formatString(&amp;quot;assets/{0}x/&amp;quot;,STLConstant.scale)));
+			assets.loadQueue(function(ratio:Number):void{
+				textfield.text = &amp;quot;loading....&amp;quot; + int(ratio*100)+&amp;quot;%&amp;quot;;
+				if(ratio == 1){
+					textfield.removeFromParent(true);
+					
+					var swf:Swf = new Swf(assets.getByteArray(&amp;quot;layout&amp;quot;),assets);
+					
+					var sprite:Sprite = swf.createSprite(&amp;quot;spr_1&amp;quot;);
+					addChild(sprite);
+					
+					new DragGestures(sprite);
+				}
+			});
+		}
+	}
+}&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;运行效果&lt;/p&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image7.png' /&gt;&lt;hr /&gt;</content>
+ </entry>
  
  <entry>
    <title>如何让设备不休眠</title>
