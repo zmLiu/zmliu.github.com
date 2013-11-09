@@ -1,6 +1,6 @@
 ---
 layout : post
-title : Swf一键导出到Starling中的工具
+title : Swf一键导出到Starling中的工具，在Starling使用原生的MovieClip
 tags : [Tool]
 ---
 
