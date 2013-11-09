@@ -4,7 +4,7 @@
  <title>zmLiu</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-11-09T15:54:44+08:00</updated>
+ <updated>2013-11-09T16:13:56+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>zmLiu</name>
@@ -48,6 +48,8 @@
 &lt;p&gt;&lt;a href='http://url.cn/MRuj6f'&gt;Windows版下载&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href='http://url.cn/PYIIHb'&gt;Demo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://url.cn/KvBRyO'&gt;Demo中Fla的兼容版本&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id61'&gt;教程一：原件命名规则&lt;/h2&gt;
 
@@ -70,23 +72,23 @@
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;作为设计师，你只需要准备好需要展示的图片，在FlashPro中将他们有序的组装起来。并且为需要导出的原件设置链接就可以了搞定一切&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;打开库面板，你可以看到此示例的相关资源.&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image1.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image1.png' class='img-rounded' alt='截图' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;相关资源编辑好之后导出Swf.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;打开StarlingSwf导出工具，选择刚刚导出的swf.可以预览在Swf内部的原件在Starling中是什么样子.&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image2.png' /&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;打开StarlingSwf导出工具，选择刚刚导出的swf.选择上方的下拉框，预览在Swf内部的原件在Starling中是什么样子.&lt;/p&gt;
+&lt;img src='/assets/images/starling_swf_tool/image2.png' class='img-rounded' alt='截图' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;选择导出倍数，然后导出.资源导出后会出现两个文件夹&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image3.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image3.png' class='img-rounded' alt='截图' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;data下面放的Swf数据,images下放的所有导出的图片.将这两个东西给程序就可以了.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id63'&gt;教程三：针对程序&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;建立一个Actionscript工程。(demo中是手机工程)&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image4.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image4.png' class='img-rounded' alt='截图' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;倒入资源&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image5.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image5.png' class='img-rounded' alt='截图' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;倒入依赖库&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image6.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image6.png' class='img-rounded' alt='截图' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;代码 package { import flash.display.StageAlign; import flash.display.StageScaleMode;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;	import lzm.starling.STLStarup;
@@ -161,7 +163,7 @@ package
 }&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;运行效果&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image7.png' /&gt;&lt;hr /&gt;</content>
+&lt;img src='/assets/images/starling_swf_tool/image7.png' class='img-rounded' alt='截图' /&gt;&lt;hr /&gt;</content>
  </entry>
  
  <entry>
@@ -251,7 +253,7 @@ function onError(e:ProgressEvent):void{
 解决方法是把纹理改成正方形&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id='id51'&gt;来张截图&lt;/h4&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/atftool_view.jpg' /&gt;
+&lt;img src='/assets/images/atftool_view.jpg' class='img-rounded' alt='截图' /&gt;
 &lt;h4 id='id52'&gt;功能说明&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;输出平台选择

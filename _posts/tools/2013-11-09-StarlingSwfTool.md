@@ -40,12 +40,15 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
 [Demo][5]
 
+[Demo中Fla的兼容版本][6]
+
 
   [1]: https://github.com/zmLiu/StarlingSWF
   [2]: https://github.com/zmLiu/StarlingFeathers
   [3]: http://url.cn/NFvIhb
   [4]: http://url.cn/MRuj6f
   [5]: http://url.cn/PYIIHb
+  [6]: http://url.cn/KvBRyO
   
 
 
@@ -79,7 +82,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
  ***3.***相关资源编辑好之后导出Swf.
 
- ***4.***打开StarlingSwf导出工具，选择刚刚导出的swf.可以预览在Swf内部的原件在Starling中是什么样子.
+ ***4.***打开StarlingSwf导出工具，选择刚刚导出的swf.选择上方的下拉框，预览在Swf内部的原件在Starling中是什么样子.
  
 <img src="/assets/images/starling_swf_tool/image2.png" alt="截图" class="img-rounded">
 
