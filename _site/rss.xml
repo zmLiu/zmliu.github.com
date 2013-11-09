@@ -5,8 +5,8 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-11-09T15:47:11+08:00</lastBuildDate>
-        <pubDate>2013-11-09T15:47:11+08:00</pubDate>
+        <lastBuildDate>2013-11-09T15:54:44+08:00</lastBuildDate>
+        <pubDate>2013-11-09T15:54:44+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -44,7 +44,9 @@
 
 &lt;p&gt;&lt;a href='http://url.cn/PYIIHb'&gt;Demo&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id61'&gt;教程一：资源命名规则&lt;/h2&gt;
+&lt;h2 id='id61'&gt;教程一：原件命名规则&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt; img 开始会被识别为starling.display.Image.&lt;strong&gt;(导出之后该原件会直接被映射为一张图片)&lt;/strong&gt;&lt;/p&gt;
 
