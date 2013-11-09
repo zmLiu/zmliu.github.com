@@ -198,10 +198,13 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  <img src="/assets/images/starling_swf_tool/image8.png" alt="截图" class="img-rounded">
  
  然后使用`getChildByName`获取
- 
+  
 
 
 ----------
+ 
+***友情提示：工具的预览区域是可以拖动的噢***
+
 
 
 	
