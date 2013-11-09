@@ -4,7 +4,7 @@
  <title>zmLiu</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-11-09T16:20:52+08:00</updated>
+ <updated>2013-11-09T17:01:33+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>zmLiu</name>
@@ -55,7 +55,7 @@
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt; img 开始会被识别为starling.display.Image.&lt;strong&gt;(导出之后该原件会直接被映射为一张图片)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt; img 开始会被识别为starling.display.Image.&lt;strong&gt;(&lt;code&gt;这个必须是原件。不能直接用图片&lt;/code&gt;,导出之后该原件会直接被映射为一张图片)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt; s9 开头会被识别为feathers.display.Scale9Image.&lt;strong&gt;(制作规则跟传统flash开发一样)&lt;/strong&gt;&lt;/p&gt;
 
