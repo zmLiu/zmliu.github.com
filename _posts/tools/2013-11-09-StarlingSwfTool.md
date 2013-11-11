@@ -123,6 +123,24 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
 
  ***4.***代码
+ 
+***关键代码***
+ 	
+ 	//初始化Swf
+ 	Swf.init(Starling.current.nativeStage);
+ 	
+ 	//创建一个Swf
+ 	var swf:Swf = new Swf(assets.getByteArray("layout"),assets);
+ 	
+ 	//根据as连接名称创建 显示对象
+ 	swf.createSprite("spr_1");
+ 	swf.createMovieClip("mc_test1");
+ 	swf.createImage("img_test1");
+ 	swf.createButton("btn_test1");
+ 	swf.createS9Image("s9_test1");
+ 	
+***demo中的主要代码***
+    
     package
     {
     	import flash.display.StageAlign;
