@@ -5,10 +5,38 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-11-11T11:56:23+08:00</lastBuildDate>
-        <pubDate>2013-11-11T11:56:23+08:00</pubDate>
+        <lastBuildDate>2013-11-11T13:50:36+08:00</lastBuildDate>
+        <pubDate>2013-11-11T13:50:36+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>详解MySQL中EXPLAIN解释命令</title>
+                <description>&lt;p&gt;explain显示了mysql如何使用索引来处理select语句以及连接表。可以帮助选择更好的索引和写出更优化的查询语句。&lt;/p&gt;
+
+&lt;p&gt;使用方法，在select语句前加上explain就可以了： explain select test_field from tb_test where id=1&lt;/p&gt;
+
+&lt;p&gt;EXPLAIN列的解释：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;table&lt;/code&gt;：显示这一行的数据是关于哪张表的&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;type&lt;/code&gt;：这是重要的列，显示连接使用了何种类型。从最好到最差的连接类型为const、eq_reg、ref、range、indexhe和ALL&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;possible_keys&lt;/code&gt;：显示可能应用在这张表中的索引。如果为空，没有可能的索引。可以为相关的域从WHERE语句中选择一个合适的语句&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;key&lt;/code&gt;： 实际使用的索引。如果为NULL，则没有使用索引。很少的情况下，MYSQL会选择优化不足的索引。这种情况下，可以在SELECT语句中使用USE INDEX（indexname）来强制使用一个索引或者用IGNORE INDEX（indexname）来强制MYSQL忽略索引&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;key_len&lt;/code&gt;：使用的索引的长度。在不损失精确性的情况下，长度越短越好&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;ref&lt;/code&gt;：显示索引的哪一列被使用了，如果可能的话，是一个常数&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;rows&lt;/code&gt;：MYSQL认为必须检查的用来返回请求数据的行数&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Extra&lt;/code&gt;：关于MYSQL如何解析查询的额外信息&lt;/p&gt;</description>
+                <link>http://zmliu.github.io/2013/11/11/mysql-explain</link>
+                <guid>http://zmliu.github.io/2013/11/11/mysql-explain</guid>
+                <pubDate>2013-11-11T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>Swf一键导出到Starling中的工具，在Starling使用原生的MovieClip</title>
@@ -79,23 +107,23 @@
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;作为设计师，你只需要准备好需要展示的图片，在FlashPro中将他们有序的组装起来。并且为需要导出的原件设置链接就可以了搞定一切&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;打开库面板，你可以看到此示例的相关资源.&lt;/p&gt;
-&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image1.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image1.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;相关资源编辑好之后导出Swf.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;打开StarlingSwf导出工具，选择刚刚导出的swf.选择上方的下拉框，预览在Swf内部的原件在Starling中是什么样子.&lt;/p&gt;
-&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image2.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image2.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;选择导出倍数，然后导出.资源导出后会出现两个文件夹&lt;/p&gt;
-&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image3.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image3.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;data下面放的Swf数据,images下放的所有导出的图片.将这两个东西给程序就可以了.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id64'&gt;教程三：针对程序&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;建立一个Actionscript工程。(demo中是手机工程)&lt;/p&gt;
-&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image4.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image4.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;倒入资源&lt;/p&gt;
-&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image5.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image5.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;倒入依赖库&lt;/p&gt;
-&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image6.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image6.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;代码&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;关键代码&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -192,11 +220,11 @@ package
 }&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;运行效果&lt;/p&gt;
-&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image7.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image7.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt;获取界面上的元素&lt;/p&gt;
 
 &lt;p&gt;首先给元素命名&lt;/p&gt;
-&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image8.png' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image8.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;然后使用&lt;code&gt;getChildByName&lt;/code&gt;获取&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;友情提示：工具的预览区域是可以拖动的噢&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</description>
@@ -289,7 +317,7 @@ function onError(e:ProgressEvent):void{
 解决方法是把纹理改成正方形&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id='id51'&gt;来张截图&lt;/h4&gt;
-&lt;img alt='截图' class='img-rounded' src='/assets/images/atftool_view.jpg' /&gt;
+&lt;img src='/assets/images/atftool_view.jpg' alt='截图' class='img-rounded' /&gt;
 &lt;h4 id='id52'&gt;功能说明&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;输出平台选择
