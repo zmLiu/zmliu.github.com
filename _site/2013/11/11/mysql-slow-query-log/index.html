@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>ATF批量导出工具</title>
+    <title>MySql 慢查询日志</title>
     
     <meta name="author" content="zmLiu">
 
@@ -109,41 +109,29 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>ATF批量导出工具 </h1>
+  <h1>MySql 慢查询日志 </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>08 / 31, 2013</span>
+      <span>11 / 11, 2013</span>
     </div>
     <div class="content">
-      <p>批量导出Atf的工具，使用是adobe atf 编码核心</p>
+      <p>打开my.cnf</p>
 
-<h4 id='atfbug'>先说一下关于atf的bug</h4>
+<p>找到<code>[mysqld]</code>在其下面添加</p>
 
-<pre><code>当atf导出时候 启用了mips选项 会导致：
-如果纹理问长方形时 上传会报错的bug
-解决方法是把纹理改成正方形</code></pre>
+<pre><code>//查询时间大于两秒的都记录
+long_query_time = 2
+//日志文件地址(必须保证启动mysql的账户对目录有写权限)
+log-slow-queries = /tmp/slow-query.log
+//记录没有使用索引的sql语句
+log-queries-not-using-indexes
+//一些管理指令,也会被记录
+log-slow-admin-statements</code></pre>
 
-<h4 id='id51'>来张截图</h4>
-<img alt='截图' src='/assets/images/atftool_view.jpg' class='img-rounded' />
-<h4 id='id52'>功能说明</h4>
-
-<pre><code>输出平台选择
-压缩体积，减小文件大小
-mipmap设置
-支持jpg png 转换
-图像尺寸自动纠正为2幂
-图像自动转换为方形,解决atf上传时 为长方形会报错的bug 仅在使用mips会触发 所以需要启用mips可以考虑勾选这个选项
-目录转换（包含子目录）
-输出质量设置</code></pre>
-
-<h4 id='windows'><a href='http://url.cn/W5uNfs'>Windows程序下载</a></h4>
-
-<h4 id='macos'><a href='http://url.cn/WP2K25'>MacOS程序下载</a></h4>
-
-<h4 id='id53'><a href='https://github.com/zmLiu/ATFTool'>源码</a></h4>
+<p>可以使用<code>mysqldumpslow</code>(/mysql/bin目录下)来查看日志文件,也可以直接打开日志文件查看</p>
     </div>
 
     
@@ -157,7 +145,7 @@ mipmap设置
 
   
      
-    	<li><a href="/tags.html#Tool-ref">Tool <span>2</span></a></li>
+    	<li><a href="/tags.html#mysql-ref">mysql <span>3</span></a></li>
     
   
 
@@ -170,11 +158,11 @@ mipmap设置
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/2013/08/30/ATF" title="ATF (Adobe Texture Format)">&larr; Previous</a></li>
+        <li class="prev"><a href="/2013/11/11/mysql-explain" title="详解MySQL中EXPLAIN解释命令">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/2013/08/31/NativeProcess" title="NativeProcess">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>

@@ -109,8 +109,8 @@
       <div class="content">
         <div id='post'>
 <h1> 
-<a href='/2013/11/11/mysql-explain'>
-详解MySQL中EXPLAIN解释命令
+<a href='/2013/11/11/mysql-slow-query-log'>
+MySql 慢查询日志
 </a>
 </h1>
 
@@ -118,28 +118,23 @@
 11 / 11, 2013
 </div>
 <br />
-<p>explain显示了mysql如何使用索引来处理select语句以及连接表。可以帮助选择更好的索引和写出更优化的查询语句。</p>
+<p>打开my.cnf</p>
 
-<p>使用方法，在select语句前加上explain就可以了： explain select test_field from tb_test where id=1</p>
+<p>找到<code>[mysqld]</code>在其下面添加</p>
 
-<p>EXPLAIN列的解释：</p>
+<pre><code>//查询时间大于两秒的都记录
+long_query_time = 2
+//日志文件地址(必须保证启动mysql的账户对目录有写权限)
+log-slow-queries = /tmp/slow-query.log
+//记录没有使用索引的sql语句
+log-queries-not-using-indexes
+//一些管理指令,也会被记录
+log-slow-admin-statements</code></pre>
 
-<p><code>table</code>：显示这一行的数据是关于哪张表的</p>
-
-<p><code>type</code>：这是重要的列，显示连接使用了何种类型。从最好到最差的连接类型为const、eq_reg、ref、range、indexhe和ALL</p>
-
-<p><code>possible_keys</code>：显示可能应用在这张表中的索引。如果为空，没有可能的索引。可以为相关的域从WHERE语句中选择一个合适的语句</p>
-
-<p><code>key</code>： 实际使用的索引。如果为NULL，则没有使用索引。很少的情况下，MYSQL会选择优化不足的索引。这种情况下，可以在SELECT语句中使用USE INDEX（indexname）来强制使用一个索引或者用IGNORE INDEX（indexname）来强制MYSQL忽略索引</p>
-
-<p><code>key_len</code>：使用的索引的长度。在不损失精确性的情况下，长度越短越好</p>
-
-<p><code>ref</code>：显示索引的哪一列被使用了，如果可能的话，是一个常数</p>
-
-<p><code>rows</code>：MYSQL认为必须检查的用来返回请求数据的行数</p>
-
-<p><code>Extra</code>：关于MYSQL如何解析查询的额外信息</p>
+<p>可以使用<code>mysqldumpslow</code>(/mysql/bin目录下)来查看日志文件,也可以直接打开日志文件查看</p>
 </div><br /><h1> Newest 10 Posts </h1><ul class='posts'>
+  
+  <li><span class='post_date'>11 / 11, 2013</span> &raquo; <a href='/2013/11/11/mysql-slow-query-log'>MySql 慢查询日志</a></li>
   
   <li><span class='post_date'>11 / 11, 2013</span> &raquo; <a href='/2013/11/11/mysql-explain'>详解MySQL中EXPLAIN解释命令</a></li>
   
@@ -158,8 +153,6 @@
   <li><span class='post_date'>08 / 28, 2013</span> &raquo; <a href='/2013/08/28/%E6%9C%80%E5%B0%8F%E5%8C%96%E6%97%B6%E5%85%B3%E9%97%AD%E7%A8%8B%E5%BA%8F'>最小化时关闭程序</a></li>
   
   <li><span class='post_date'>08 / 28, 2013</span> &raquo; <a href='/2013/08/28/actionscript3'>StageWebView 用法</a></li>
-  
-  <li><span class='post_date'>08 / 22, 2013</span> &raquo; <a href='/2013/08/22/actionscript3'>iphone5 Stage 尺寸问题</a></li>
   
 </ul>
       </div>
