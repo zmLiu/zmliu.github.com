@@ -132,6 +132,28 @@ log-queries-not-using-indexes
 log-slow-admin-statements</code></pre>
 
 <p>可以使用<code>mysqldumpslow</code>(/mysql/bin目录下)来查看日志文件,也可以直接打开日志文件查看</p>
+
+<ul>
+<li>
+<p>-s, 是表示按照何种方式排序，c、t、l、r分别是按照记录次数、时间、查询时间、返回的记录数来排序，ac、at、al、ar，表示相应的倒叙</p>
+</li>
+
+<li>
+<p>-t, 是top n的意思，即为返回前面多少条的数据；</p>
+</li>
+
+<li>
+<p>-g, 后边可以写一个正则匹配模式，大小写不敏感的；</p>
+</li>
+</ul>
+
+<p><strong><em>比如</em></strong></p>
+
+<pre><code>/path/mysqldumpslow -s r -t 10 /database/mysql/slow-log
+得到返回记录集最多的10个查询。
+
+/path/mysqldumpslow -s t -t 10 -g “left join” /database/mysql/slow-log
+得到按照时间排序的前10条里面含有左连接的查询语句。</code></pre>
 </div><br /><h1> Newest 10 Posts </h1><ul class='posts'>
   
   <li><span class='post_date'>11 / 11, 2013</span> &raquo; <a href='/2013/11/11/mysql-slow-query-log'>MySql 慢查询日志</a></li>

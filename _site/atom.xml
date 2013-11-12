@@ -4,7 +4,7 @@
  <title>zmLiu</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-11-11T15:23:48+08:00</updated>
+ <updated>2013-11-12T10:20:55+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>zmLiu</name>
@@ -30,7 +30,29 @@ log-queries-not-using-indexes
 //一些管理指令,也会被记录
 log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;可以使用&lt;code&gt;mysqldumpslow&lt;/code&gt;(/mysql/bin目录下)来查看日志文件,也可以直接打开日志文件查看&lt;/p&gt;</content>
+&lt;p&gt;可以使用&lt;code&gt;mysqldumpslow&lt;/code&gt;(/mysql/bin目录下)来查看日志文件,也可以直接打开日志文件查看&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;-s, 是表示按照何种方式排序，c、t、l、r分别是按照记录次数、时间、查询时间、返回的记录数来排序，ac、at、al、ar，表示相应的倒叙&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;-t, 是top n的意思，即为返回前面多少条的数据；&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;-g, 后边可以写一个正则匹配模式，大小写不敏感的；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;比如&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;/path/mysqldumpslow -s r -t 10 /database/mysql/slow-log
+得到返回记录集最多的10个查询。
+
+/path/mysqldumpslow -s t -t 10 -g “left join” /database/mysql/slow-log
+得到按照时间排序的前10条里面含有左连接的查询语句。&lt;/code&gt;&lt;/pre&gt;</content>
  </entry>
  
  <entry>
@@ -133,23 +155,23 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;作为设计师，你只需要准备好需要展示的图片，在FlashPro中将他们有序的组装起来。并且为需要导出的原件设置链接就可以了搞定一切&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;打开库面板，你可以看到此示例的相关资源.&lt;/p&gt;
-&lt;img alt='截图' src='/assets/images/starling_swf_tool/image1.png' class='img-rounded' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image1.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;相关资源编辑好之后导出Swf.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;打开StarlingSwf导出工具，选择刚刚导出的swf.选择上方的下拉框，预览在Swf内部的原件在Starling中是什么样子.&lt;/p&gt;
-&lt;img alt='截图' src='/assets/images/starling_swf_tool/image2.png' class='img-rounded' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image2.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;选择导出倍数，然后导出.资源导出后会出现两个文件夹&lt;/p&gt;
-&lt;img alt='截图' src='/assets/images/starling_swf_tool/image3.png' class='img-rounded' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image3.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;data下面放的Swf数据,images下放的所有导出的图片.将这两个东西给程序就可以了.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id64'&gt;教程三：针对程序&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;建立一个Actionscript工程。(demo中是手机工程)&lt;/p&gt;
-&lt;img alt='截图' src='/assets/images/starling_swf_tool/image4.png' class='img-rounded' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image4.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;倒入资源&lt;/p&gt;
-&lt;img alt='截图' src='/assets/images/starling_swf_tool/image5.png' class='img-rounded' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image5.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;倒入依赖库&lt;/p&gt;
-&lt;img alt='截图' src='/assets/images/starling_swf_tool/image6.png' class='img-rounded' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image6.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;代码&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;关键代码&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -246,11 +268,11 @@ package
 }&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;运行效果&lt;/p&gt;
-&lt;img alt='截图' src='/assets/images/starling_swf_tool/image7.png' class='img-rounded' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image7.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt;获取界面上的元素&lt;/p&gt;
 
 &lt;p&gt;首先给元素命名&lt;/p&gt;
-&lt;img alt='截图' src='/assets/images/starling_swf_tool/image8.png' class='img-rounded' /&gt;
+&lt;img src='/assets/images/starling_swf_tool/image8.png' alt='截图' class='img-rounded' /&gt;
 &lt;p&gt;然后使用&lt;code&gt;getChildByName&lt;/code&gt;获取&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;友情提示：工具的预览区域是可以拖动的噢&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</content>
@@ -343,7 +365,7 @@ function onError(e:ProgressEvent):void{
 解决方法是把纹理改成正方形&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id='id51'&gt;来张截图&lt;/h4&gt;
-&lt;img alt='截图' src='/assets/images/atftool_view.jpg' class='img-rounded' /&gt;
+&lt;img src='/assets/images/atftool_view.jpg' alt='截图' class='img-rounded' /&gt;
 &lt;h4 id='id52'&gt;功能说明&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;输出平台选择
