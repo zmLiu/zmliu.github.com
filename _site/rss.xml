@@ -5,10 +5,22 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-11-13T11:15:53+08:00</lastBuildDate>
-        <pubDate>2013-11-13T11:15:53+08:00</pubDate>
+        <lastBuildDate>2013-11-13T21:12:42+08:00</lastBuildDate>
+        <pubDate>2013-11-13T21:12:42+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>The last packet successfully received from the server was XXX seconds ago</title>
+                <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;导致这个错误的原因是mysql &lt;code&gt;wait_timeout&lt;/code&gt;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;解决方法:&lt;/em&gt;&lt;/strong&gt; 设置&lt;code&gt;wait_timeout&lt;/code&gt;大于 &lt;code&gt;检测连接是否有效的 线程运行时间&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;比方说&lt;code&gt;wait_timeout=10秒&lt;/code&gt; 那么&lt;code&gt;检测连接是否有效的 线程运行时间&lt;/code&gt;就需要小于10秒&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+                <link>http://zmliu.github.io/2013/11/13/mysql-wait_timeout</link>
+                <guid>http://zmliu.github.io/2013/11/13/mysql-wait_timeout</guid>
+                <pubDate>2013-11-13T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>MySql 慢查询日志</title>

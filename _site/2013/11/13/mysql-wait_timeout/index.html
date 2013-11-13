@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>MySql 慢查询日志</title>
+    <title>The last packet successfully received from the server was XXX seconds ago</title>
     
     <meta name="author" content="zmLiu">
 
@@ -109,51 +109,20 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>MySql 慢查询日志 </h1>
+  <h1>The last packet successfully received from the server was XXX seconds ago </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>11 / 11, 2013</span>
+      <span>11 / 13, 2013</span>
     </div>
     <div class="content">
-      <p>打开my.cnf</p>
+      <p><strong><em>导致这个错误的原因是mysql <code>wait_timeout</code></em></strong></p>
 
-<p>找到<code>[mysqld]</code>在其下面添加</p>
+<p><strong><em>解决方法:</em></strong> 设置<code>wait_timeout</code>大于 <code>检测连接是否有效的 线程运行时间</code></p>
 
-<pre><code>//查询时间大于两秒的都记录
-long_query_time = 2
-//日志文件地址(必须保证启动mysql的账户对目录有写权限)
-log-slow-queries = /tmp/slow-query.log
-//记录没有使用索引的sql语句
-log-queries-not-using-indexes
-//一些管理指令,也会被记录
-log-slow-admin-statements</code></pre>
-
-<p>可以使用<code>mysqldumpslow</code>(/mysql/bin目录下)来查看日志文件,也可以直接打开日志文件查看</p>
-
-<ul>
-<li>
-<p>-s, 是表示按照何种方式排序，c、t、l、r分别是按照记录次数、时间、查询时间、返回的记录数来排序，ac、at、al、ar，表示相应的倒叙</p>
-</li>
-
-<li>
-<p>-t, 是top n的意思，即为返回前面多少条的数据；</p>
-</li>
-
-<li>
-<p>-g, 后边可以写一个正则匹配模式，大小写不敏感的；</p>
-</li>
-</ul>
-
-<p><strong><em>比如</em></strong></p>
-
-<pre><code>/path/mysqldumpslow -s r -t 10 /database/mysql/slow-log
-得到返回记录集最多的10个查询。
-
-/path/mysqldumpslow -s t -t 10 -g “left join” /database/mysql/slow-log
-得到按照时间排序的前10条里面含有左连接的查询语句。</code></pre>
+<p><strong><em>比方说<code>wait_timeout=10秒</code> 那么<code>检测连接是否有效的 线程运行时间</code>就需要小于10秒</em></strong></p>
     </div>
 
     
@@ -167,7 +136,7 @@ log-slow-admin-statements</code></pre>
 
   
      
-    	<li><a href="/tags.html#mysql-ref">mysql <span>3</span></a></li>
+    	<li><a href="/tags.html#Java,MySql-ref">Java,MySql <span>1</span></a></li>
     
   
 
@@ -180,11 +149,11 @@ log-slow-admin-statements</code></pre>
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/2013/11/11/mysql-explain" title="详解MySQL中EXPLAIN解释命令">&larr; Previous</a></li>
+        <li class="prev"><a href="/2013/11/11/mysql-slow-query-log" title="MySql 慢查询日志">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/2013/11/13/mysql-wait_timeout" title="The last packet successfully received from the server was XXX seconds ago">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>
