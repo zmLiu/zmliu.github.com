@@ -4,7 +4,7 @@
  <title>zmLiu</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2013-11-12T10:20:55+08:00</updated>
+ <updated>2013-11-13T11:15:53+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>zmLiu</name>
@@ -101,6 +101,8 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt; 教程二：针对设计师&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt; 教程三：针对程序&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;7.&lt;/em&gt;&lt;/strong&gt; 教程四：MovieClip自动停止播放&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='starlingswf'&gt;StarlingSwf是什么&lt;/h2&gt;
 
@@ -119,6 +121,8 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt; MovieClip基本还原了传统Flash的MovieClip&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt; 使用了类似骨骼动画的思想，内存占用低、运行效率高&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt; 自动合并纹理，并且可以自动单独导出大图&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id61'&gt;下载与安装&lt;/h2&gt;
 
@@ -126,13 +130,13 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href='https://github.com/zmLiu/StarlingFeathers'&gt;依赖库地址&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://url.cn/LBXMe8'&gt;Mac版下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://url.cn/QVqt5r'&gt;Mac版下载&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://url.cn/KVBQV3'&gt;Windows版下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://url.cn/Irzksy'&gt;Windows版下载&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://url.cn/PYIIHb'&gt;Demo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://url.cn/RfP3mV'&gt;Demo&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='http://url.cn/KvBRyO'&gt;Demo中Fla的兼容版本&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='http://url.cn/JCViDo'&gt;Demo中Fla的兼容版本&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id62'&gt;教程一：原件命名规则&lt;/h2&gt;
 
@@ -155,23 +159,23 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;作为设计师，你只需要准备好需要展示的图片，在FlashPro中将他们有序的组装起来。并且为需要导出的原件设置链接就可以了搞定一切&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;打开库面板，你可以看到此示例的相关资源.&lt;/p&gt;
-&lt;img src='/assets/images/starling_swf_tool/image1.png' alt='截图' class='img-rounded' /&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image1.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;相关资源编辑好之后导出Swf.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;打开StarlingSwf导出工具，选择刚刚导出的swf.选择上方的下拉框，预览在Swf内部的原件在Starling中是什么样子.&lt;/p&gt;
-&lt;img src='/assets/images/starling_swf_tool/image2.png' alt='截图' class='img-rounded' /&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image2.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;选择导出倍数，然后导出.资源导出后会出现两个文件夹&lt;/p&gt;
-&lt;img src='/assets/images/starling_swf_tool/image3.png' alt='截图' class='img-rounded' /&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image3.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;data下面放的Swf数据,images下放的所有导出的图片.将这两个东西给程序就可以了.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id64'&gt;教程三：针对程序&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;建立一个Actionscript工程。(demo中是手机工程)&lt;/p&gt;
-&lt;img src='/assets/images/starling_swf_tool/image4.png' alt='截图' class='img-rounded' /&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image4.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;倒入资源&lt;/p&gt;
-&lt;img src='/assets/images/starling_swf_tool/image5.png' alt='截图' class='img-rounded' /&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image5.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;倒入依赖库&lt;/p&gt;
-&lt;img src='/assets/images/starling_swf_tool/image6.png' alt='截图' class='img-rounded' /&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image6.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;代码&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;关键代码&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -268,13 +272,23 @@ package
 }&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;运行效果&lt;/p&gt;
-&lt;img src='/assets/images/starling_swf_tool/image7.png' alt='截图' class='img-rounded' /&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image7.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt;获取界面上的元素&lt;/p&gt;
 
 &lt;p&gt;首先给元素命名&lt;/p&gt;
-&lt;img src='/assets/images/starling_swf_tool/image8.png' alt='截图' class='img-rounded' /&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image8.png' /&gt;
 &lt;p&gt;然后使用&lt;code&gt;getChildByName&lt;/code&gt;获取&lt;/p&gt;
 &lt;hr /&gt;
+&lt;h2 id='movieclip'&gt;教程四：MovieClip自动停止播放&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;很多时候需要让动画播放完毕之后自动停止在最后一帧，在工具中也可以很简单的实现&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt; 倒入swf&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt; 从MovieClip列表中 选中需要自动停止的MC&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt; 取消&lt;code&gt;是否循环&lt;/code&gt;&lt;/p&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image9.png' /&gt;&lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;友情提示：工具的预览区域是可以拖动的噢&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</content>
  </entry>
  
@@ -365,7 +379,7 @@ function onError(e:ProgressEvent):void{
 解决方法是把纹理改成正方形&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id='id51'&gt;来张截图&lt;/h4&gt;
-&lt;img src='/assets/images/atftool_view.jpg' alt='截图' class='img-rounded' /&gt;
+&lt;img class='img-rounded' alt='截图' src='/assets/images/atftool_view.jpg' /&gt;
 &lt;h4 id='id52'&gt;功能说明&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;输出平台选择

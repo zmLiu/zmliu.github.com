@@ -17,6 +17,8 @@ tags : [Tool]
  
  ***6.*** 教程三：针对程序 
  
+ ***7.*** 教程四：MovieClip自动停止播放 
+ 
 
 
 ----------
@@ -38,6 +40,8 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  ***4.*** MovieClip基本还原了传统Flash的MovieClip
  
  ***5.*** 使用了类似骨骼动画的思想，内存占用低、运行效率高
+ 
+ ***6.*** 自动合并纹理，并且可以自动单独导出大图
 
 ----------
 ## 下载与安装 ##
@@ -57,10 +61,10 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
   [1]: https://github.com/zmLiu/StarlingSWF
   [2]: https://github.com/zmLiu/StarlingFeathers
-  [3]: http://url.cn/LBXMe8
-  [4]: http://url.cn/KVBQV3
-  [5]: http://url.cn/PYIIHb
-  [6]: http://url.cn/KvBRyO
+  [3]: http://url.cn/QVqt5r
+  [4]: http://url.cn/Irzksy
+  [5]: http://url.cn/RfP3mV
+  [6]: http://url.cn/JCViDo
   
 
 
@@ -229,6 +233,22 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  
  然后使用`getChildByName`获取
   
+
+
+----------
+
+## 教程四：MovieClip自动停止播放 ##
+
+ ***很多时候需要让动画播放完毕之后自动停止在最后一帧，在工具中也可以很简单的实现***
+ 
+ ***1.*** 倒入swf
+ 
+ ***2.*** 从MovieClip列表中 选中需要自动停止的MC
+ 
+ ***3.*** 取消`是否循环`
+ 
+ <img src="/assets/images/starling_swf_tool/image9.png" alt="截图" class="img-rounded">
+   
 
 
 ----------
