@@ -19,6 +19,8 @@ tags : [Tool]
  
  ***7.*** 教程四：MovieClip自动停止播放 
  
+ ***8.*** 教程五：获取界面上的元素
+ 
 
 
 ----------
@@ -225,13 +227,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  
  <img src="/assets/images/starling_swf_tool/image7.png" alt="截图" class="img-rounded">
  
- ***6.***获取界面上的元素
  
- 首先给元素命名
- 
- <img src="/assets/images/starling_swf_tool/image8.png" alt="截图" class="img-rounded">
- 
- 然后使用`getChildByName`获取
   
 
 
@@ -249,6 +245,18 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  
  <img src="/assets/images/starling_swf_tool/image9.png" alt="截图" class="img-rounded">
    
+
+
+----------
+
+## 教程五：获取界面上的元素 ##
+
+ 很简单，首先给元素命名
+ 
+ <img src="/assets/images/starling_swf_tool/image8.png" alt="截图" class="img-rounded">
+ 
+ 然后使用`getChildByName`获取
+    
 
 
 ----------
