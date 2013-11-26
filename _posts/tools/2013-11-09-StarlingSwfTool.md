@@ -65,8 +65,8 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
   [1]: https://github.com/zmLiu/StarlingSWF
   [2]: https://github.com/zmLiu/StarlingFeathers
-  [3]: http://url.cn/QVqt5r
-  [4]: http://url.cn/Irzksy
+  [3]: http://url.cn/U3rH7S
+  [4]: http://url.cn/N7tHHQ
   [5]: http://url.cn/RfP3mV
   [6]: http://url.cn/JCViDo
   
