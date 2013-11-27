@@ -99,7 +99,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  
  ***既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下(`是AS链接名称噢`)***
 
- ***1.*** img 开始会被识别为starling.display.Image.**(`这个必须是原件。不能直接用图片`,导出之后该原件会直接被映射为一张图片)**
+ ***1.*** img 开始会被识别为starling.display.Image.**(`这个必须是元件。不能直接用图片`,导出之后该原件会直接被映射为一张图片)**
  
  ***2.*** s9  开头会被识别为feathers.display.Scale9Image.**(制作规则跟传统flash开发一样)**
  
