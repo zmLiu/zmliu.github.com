@@ -5,14 +5,20 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2013-12-03T18:41:09+08:00</lastBuildDate>
-        <pubDate>2013-12-03T18:41:09+08:00</pubDate>
+        <lastBuildDate>2013-12-03T18:46:48+08:00</lastBuildDate>
+        <pubDate>2013-12-03T18:46:48+08:00</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>StarlingSwf UI管理扩展</title>
-                <description>&lt;p&gt;该扩展的优势&lt;/p&gt;
+                <description>&lt;h2 id='id66'&gt;下载&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href='http://url.cn/TsCF75'&gt;源码以及示例下载&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://zmliu.github.io/2013/11/09/StarlingSwfTool/'&gt;StarlingSwf&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;该扩展的优势&lt;/p&gt;
 
 &lt;p&gt;该扩展主要针对手机开发，当然做页游也可以。&lt;/p&gt;
 
@@ -263,9 +269,7 @@ package
 
 &lt;p&gt;JISProgressTestUIManager中的成员与mc中的成员命名一模一样，层级结构也很类似，只不过一个是代码的层级结构(对象包含属性)，一个是显示对象的层级结构(mc包含mc、TextField)&lt;/p&gt;
 
-&lt;p&gt;遇到问题或者更多意见欢迎加QQ群：168436154讨论&lt;/p&gt;
-
-&lt;h2 id='id65'&gt;&lt;a href='http://url.cn/TsCF75'&gt;源码以及示例下载&lt;/a&gt;&lt;/h2&gt;</description>
+&lt;p&gt;遇到问题或者更多意见欢迎加QQ群：168436154讨论&lt;/p&gt;</description>
                 <link>http://zmliu.github.io/2013/12/03/StarlingSwf-jiessie</link>
                 <guid>http://zmliu.github.io/2013/12/03/StarlingSwf-jiessie</guid>
                 <pubDate>2013-12-03T00:00:00+08:00</pubDate>

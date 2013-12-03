@@ -4,6 +4,20 @@ title : StarlingSwf UI管理扩展
 tags : [Tool]
 ---
 
+##下载##
+
+[源码以及示例下载][1]
+
+[StarlingSwf][2]
+
+  [1]: http://url.cn/TsCF75
+  
+  [2]: http://zmliu.github.io/2013/11/09/StarlingSwfTool/
+     
+
+
+----------
+
 该扩展的优势
 
 该扩展主要针对手机开发，当然做页游也可以。
@@ -278,9 +292,7 @@ JISProgressTestUIManager中的成员与mc中的成员命名一模一样，层级
 遇到问题或者更多意见欢迎加QQ群：168436154讨论
 
 
-##[源码以及示例下载][1]##
 
-  [1]: http://url.cn/TsCF75
 
 
 
