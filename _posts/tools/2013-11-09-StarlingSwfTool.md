@@ -9,6 +9,14 @@ tags : [Tool]
 
 
 ----------
+V0.0.4发布
+
+修复scale9imag的scaleGrid取值的bug
+
+更新时间2013-12-09
+
+
+----------
 V0.0.3发布
 
 修复文字对齐方式的bug.
@@ -87,10 +95,10 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
   [1]: https://github.com/zmLiu/StarlingSWF
   [2]: https://github.com/zmLiu/StarlingFeathers
-  [3]: http://url.cn/U3rH7S
-  [4]: http://url.cn/N7tHHQ
-  [5]: http://url.cn/RfP3mV
-  [6]: http://url.cn/JCViDo
+  [3]: http://url.cn/KISIv1
+  [4]: http://url.cn/LJMM2W
+  [5]: http://url.cn/OoGsED
+  [6]: http://url.cn/QDTX0e
   
 
 
