@@ -12,7 +12,7 @@ tags : [Tool]
 
 [StarlingSwf][3]
 
-  [1]: http://url.cn/TsCF75
+  [1]: https://github.com/jiessie-GIT/jis
   
   [2]: http://zmliu.github.io/assets/images/starling_swf_jiessie/asdoc-output/index.html
   
