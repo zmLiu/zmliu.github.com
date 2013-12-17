@@ -8,9 +8,25 @@ tags : [Tool]
 
 
 ----------
+## 源码 ##
 [工具源码地址][1]
 
 [依赖库地址][2]
+
+  [1]: https://github.com/zmLiu/StarlingSWF
+  [2]: https://github.com/zmLiu/StarlingFeathers
+
+
+----------
+## V0.0.5 ##
+
+自动检测新版本
+
+添加一个组建(ShapeImage)
+
+动画效率优化(提升不是很大)
+
+bug修改
 
 [Mac版下载][3]
 
@@ -19,18 +35,16 @@ tags : [Tool]
 [Demo][5]
 
 [Demo中Fla的兼容版本][6]
+  
+  [3]: http://url.cn/SgKcNp
+  [4]: http://url.cn/L1Z5k9
+  [5]: http://url.cn/LeNC4X
+  [6]: http://url.cn/Ml9n7u
 
-
-  [1]: https://github.com/zmLiu/StarlingSWF
-  [2]: https://github.com/zmLiu/StarlingFeathers
-  [3]: http://url.cn/IwFqQ6
-  [4]: http://url.cn/N6tzTx
-  [5]: http://url.cn/OoGsED
-  [6]: http://url.cn/QDTX0e
-
+更新时间2013-12-17
 
 ----------
-V0.0.4发布
+V0.0.4
 
 修复scale9imag的scaleGrid取值的bug
 
@@ -38,7 +52,7 @@ V0.0.4发布
 
 
 ----------
-V0.0.3发布
+V0.0.3
 
 修复文字对齐方式的bug.
 
@@ -49,7 +63,7 @@ V0.0.3发布
 
 
 ----------
-V0.0.2发布
+V0.0.2
 
 支持自动合并纹理，并且可以自动单独导出大图
 

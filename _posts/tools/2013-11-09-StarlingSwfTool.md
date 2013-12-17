@@ -50,28 +50,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  ***6.*** 自动合并纹理，并且可以自动单独导出大图
 
 ----------
-## 下载与安装 ##
-
-[工具源码地址][1]
-
-[依赖库地址][2]
-
-[Mac版下载][3]
-
-[Windows版下载][4]
-
-[Demo][5]
-
-[Demo中Fla的兼容版本][6]
-
-
-  [1]: https://github.com/zmLiu/StarlingSWF
-  [2]: https://github.com/zmLiu/StarlingFeathers
-  [3]: http://url.cn/IwFqQ6
-  [4]: http://url.cn/N6tzTx
-  [5]: http://url.cn/OoGsED
-  [6]: http://url.cn/QDTX0e
-  
+## <a href="http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/" target="_blank">下载与安装(点我)</a> ##  
 
 
 ----------
