@@ -120,26 +120,6 @@
     <div class="content">
       <p><strong><em>有些同学使用过程用遇到了问题。我开了一个QQ群。有问题的同学可以进来问一下群号是168436154</em></strong></p>
 <hr />
-<p>V0.0.4发布</p>
-
-<p>修复scale9imag的scaleGrid取值的bug</p>
-
-<p>更新时间2013-12-09</p>
-<hr />
-<p>V0.0.3发布</p>
-
-<p>修复文字对齐方式的bug.</p>
-
-<p>修复读取原件没有读取边框的bug.</p>
-
-<p>更新时间2013-11-13</p>
-<hr />
-<p>V0.0.2发布</p>
-
-<p>支持自动合并纹理，并且可以自动单独导出大图</p>
-
-<p>更新时间2013-11-13</p>
-<hr />
 <h2 id='id58'>目录</h2>
 
 <p><strong><em>1.</em></strong> StarlingSwf是什么</p>
@@ -207,29 +187,31 @@
 <p><strong><em>5.</em></strong> spr 开头会被识别为starling.display.Sprite.(<strong>Sprite中使用的任意显示对象必须是<code>img</code> <code>s9</code> <code>btn</code> <code>mc</code> <code>spr</code>中制作的对象</strong>)</p>
 
 <p><strong><em>6.</em></strong> 文本 文本比较特殊 只要在<code>img</code> <code>s9</code> <code>btn</code> <code>mc</code> <code>spr</code> 中写就可以了</p>
+
+<p><strong><em>7.</em></strong> shapeImg 开头会被识别为lzm.starling.swf.display.ShapeImage,使用纹理填充的图片(纹理长宽需要为2的幂数,改变组建宽高时，会自动使用初始化的Texture填充)</p>
 <hr />
 <h2 id='id62'>教程二：针对设计师</h2>
 
 <p><strong><em>1.</em></strong>作为设计师，你只需要准备好需要展示的图片，在FlashPro中将他们有序的组装起来。并且为需要导出的原件设置链接就可以了搞定一切</p>
 
 <p><strong><em>2.</em></strong>打开库面板，你可以看到此示例的相关资源.</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image1.png' alt='截图' />
+<img src='/assets/images/starling_swf_tool/image1.png' alt='截图' class='img-rounded' />
 <p><strong><em>3.</em></strong>相关资源编辑好之后导出Swf.</p>
 
 <p><strong><em>4.</em></strong>打开StarlingSwf导出工具，选择刚刚导出的swf.选择上方的下拉框，预览在Swf内部的原件在Starling中是什么样子.</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image2.png' alt='截图' />
+<img src='/assets/images/starling_swf_tool/image2.png' alt='截图' class='img-rounded' />
 <p><strong><em>5.</em></strong>选择导出倍数，然后导出.资源导出后会出现两个文件夹</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image3.png' alt='截图' />
+<img src='/assets/images/starling_swf_tool/image3.png' alt='截图' class='img-rounded' />
 <p><strong><em>data下面放的Swf数据,images下放的所有导出的图片.将这两个东西给程序就可以了.</em></strong></p>
 <hr />
 <h2 id='id63'>教程三：针对程序</h2>
 
 <p><strong><em>1.</em></strong>建立一个Actionscript工程。(demo中是手机工程)</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image4.png' alt='截图' />
+<img src='/assets/images/starling_swf_tool/image4.png' alt='截图' class='img-rounded' />
 <p><strong><em>2.</em></strong>倒入资源</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image5.png' alt='截图' />
+<img src='/assets/images/starling_swf_tool/image5.png' alt='截图' class='img-rounded' />
 <p><strong><em>3.</em></strong>倒入依赖库</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image6.png' alt='截图' />
+<img src='/assets/images/starling_swf_tool/image6.png' alt='截图' class='img-rounded' />
 <p><strong><em>4.</em></strong>代码</p>
 
 <p><strong><em>关键代码</em></strong></p>
@@ -326,7 +308,7 @@ package
 }</code></pre>
 
 <p><strong><em>5.</em></strong>运行效果</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image7.png' alt='截图' /><hr />
+<img src='/assets/images/starling_swf_tool/image7.png' alt='截图' class='img-rounded' /><hr />
 <h2 id='movieclip'>教程四：MovieClip自动停止播放</h2>
 
 <p><strong><em>很多时候需要让动画播放完毕之后自动停止在最后一帧，在工具中也可以很简单的实现</em></strong></p>
@@ -336,11 +318,11 @@ package
 <p><strong><em>2.</em></strong> 从MovieClip列表中 选中需要自动停止的MC</p>
 
 <p><strong><em>3.</em></strong> 取消<code>是否循环</code></p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image9.png' alt='截图' /><hr />
+<img src='/assets/images/starling_swf_tool/image9.png' alt='截图' class='img-rounded' /><hr />
 <h2 id='id64'>教程五：获取界面上的元素</h2>
 
 <p>很简单，首先给元素命名</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image8.png' alt='截图' />
+<img src='/assets/images/starling_swf_tool/image8.png' alt='截图' class='img-rounded' />
 <p>然后使用<code>getChildByName</code>获取</p>
 <hr />
 <p><strong><em>友情提示：工具的预览区域是可以拖动的噢</em></strong></p>
