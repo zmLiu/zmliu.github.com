@@ -18,7 +18,29 @@ tags : [Tool]
 
 
 ----------
-## V0.0.5(依赖库也需要更新) ##
+## V0.0.6(依赖库也需要更新) ##
+
+添加一个组建(SwfSprite取子对象的时候更加方便了)
+
+整合ATF批量导出工具
+
+[Mac版下载][7]
+
+[Windows版下载][8]
+
+[Demo][9]
+
+[Demo中Fla的兼容版本][10]
+  
+  [7]: http://url.cn/L1sdOH
+  [8]: http://url.cn/R6nIbu
+  [9]: http://url.cn/ImSywX
+  [10]: http://url.cn/NKURPS
+
+更新时间2013-12-18
+
+----------
+V0.0.5
 
 自动检测新版本
 

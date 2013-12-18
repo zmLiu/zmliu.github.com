@@ -25,6 +25,8 @@ tags : [Tool]
  
  ***8.*** 教程五：获取界面上的元素
  
+ ***9.*** 教程六：ATF批量导出工具如何使用
+ 
 
 
 ----------
@@ -241,6 +243,14 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  <img src="/assets/images/starling_swf_tool/image8.png" alt="截图" class="img-rounded">
  
  然后使用`getChildByName`获取
+    
+
+
+----------
+
+## 教程六：ATF批量导出工具如何使用 ##
+
+####[移步到这里](http://zmliu.github.io/2013/08/31/ATFTool/)
     
 
 
