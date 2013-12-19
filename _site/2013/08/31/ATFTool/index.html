@@ -119,15 +119,15 @@
     </div>
     <div class="content">
       <p>批量导出Atf的工具，使用是adobe atf 编码核心</p>
-
+<hr />
 <h4 id='atfbug'>先说一下关于atf的bug</h4>
 
 <pre><code>当atf导出时候 启用了mips选项 会导致：
 如果纹理问长方形时 上传会报错的bug
 解决方法是把纹理改成正方形</code></pre>
-
+<hr />
 <h4 id='id51'>来张截图</h4>
-<img src='/assets/images/atftool_view.png' class='img-rounded' alt='截图' />
+<img alt='截图' class='img-rounded' src='/assets/images/atftool_view.png' /><hr />
 <h4 id='id52'>功能说明</h4>
 
 <pre><code>输出平台选择
@@ -139,10 +139,18 @@ mipmap设置
 图像自动转换为方形,解决atf上传时 为长方形会报错的bug 仅在使用mips会触发 所以需要启用mips可以考虑勾选这个选项
 目录转换（包含子目录）
 输出质量设置</code></pre>
+<hr />
+<h4 id='atfstarling'>关于很多同学说导出的ATF报错的问题(只针对Starling)</h4>
 
+<p>其实问题很简单。了解<code>Texture.fromAtfData</code>的几个参数就行了</p>
+
+<p>我们这里只要注意第<code>3</code>个参数</p>
+
+<p>如果没有启用<code>mips</code>那么第<code>3</code>个参数必须传递<code>false</code>否则报错</p>
+<hr />
 <h4 id='xml'>合并xml之后如何创建纹理</h4>
 
-<p>如果选择合并xml，那么合并atf和xml产生的新文件会以.xatf结尾</p>
+<p>如果选择<code>合并xml</code>，那么合并atf和xml产生的新文件会以<code>.xatf</code>结尾</p>
 
 <pre><code>var urlLoader:URLLoader = new URLLoader();
 urlLoader.dataFormat = URLLoaderDataFormat.BINARY;
@@ -165,12 +173,11 @@ function loaderComplete(e:Event):void{
 	bytes.readBytes(atfBytes,0,bytes.length - xmlLength - 2);
 	
 	if(AtfData.isAtfData(atfBytes)){
-		//关于Texture.fromAtfData 如果没有启用mips那么第3个参数必须传递false否则报错
 		var texture:Texture = Texture.fromAtfData(atfBytes,2,false,null);
 		var textureAlats:TextureAtlas = new TextureAtlas(texture,XML(xmlBytes));
 	}
 }</code></pre>
-
+<hr />
 <h4 id='id53'><a href='http://zmliu.github.io/2013/11/09/StarlingSwfTool/'>程序及源码下载</a></h4>
     </div>
 
