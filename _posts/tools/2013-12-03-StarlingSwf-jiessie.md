@@ -14,7 +14,7 @@ tags : [Tool]
 
   [1]: https://github.com/jiessie-GIT/jis
   
-  [2]: http://zmliu.github.io/assets/images/starling_swf_jiessie/asdoc-output/index.html
+  [2]: http://jiessie-git.github.io/jis_blog/
   
   [3]: http://zmliu.github.io/2013/11/09/StarlingSwfTool/
      
