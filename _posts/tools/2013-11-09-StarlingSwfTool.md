@@ -122,7 +122,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  	//初始化Swf
  	Swf.init(Starling.current.nativeStage);
  	
- 	//创建一个Swf
+ 	//创建一个Swf(`layout`对应生成`.bytes`文件的名字)
  	var swf:Swf = new Swf(assets.getByteArray("layout"),assets);
  	
  	//根据as连接名称创建 显示对象
