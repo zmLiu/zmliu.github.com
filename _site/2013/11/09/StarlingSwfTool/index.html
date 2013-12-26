@@ -122,32 +122,30 @@
 <hr />
 <h2 id='id58'>目录</h2>
 
-<p><strong><em>1.</em></strong> StarlingSwf是什么</p>
+<p><strong><em>1.</em></strong> <a href='#whatThis'>StarlingSwf是什么</a></p>
 
-<p><strong><em>2.</em></strong> 功能与特色</p>
+<p><strong><em>2.</em></strong> <a href='#featuresFunctions'>功能与特色</a></p>
 
-<p><strong><em>3.</em></strong> 下载与安装</p>
+<p><strong><em>3.</em></strong> <a href='#downInstall'>下载与安装</a></p>
 
-<p><strong><em>4.</em></strong> 教程一：资源命名规则</p>
+<p><strong><em>4.</em></strong> <a href='#Tutorials1'>教程一：资源命名规则</a></p>
 
-<p><strong><em>5.</em></strong> 教程二：针对设计师</p>
+<p><strong><em>5.</em></strong> <a href='#Tutorials2'>教程二：针对设计师</a></p>
 
-<p><strong><em>6.</em></strong> 教程三：针对程序</p>
+<p><strong><em>6.</em></strong> <a href='#Tutorials3'>教程三：针对程序</a></p>
 
-<p><strong><em>7.</em></strong> 教程四：MovieClip自动停止播放</p>
+<p><strong><em>7.</em></strong> <a href='#Tutorials4'>教程四：MovieClip自动停止播放</a></p>
 
-<p><strong><em>8.</em></strong> 教程五：获取界面上的元素</p>
+<p><strong><em>8.</em></strong> <a href='#Tutorials5'>教程五：获取界面上的元素</a></p>
 
-<p><strong><em>9.</em></strong> 教程六：ATF批量导出工具如何使用</p>
-<hr />
-<h2 id='starlingswf'>StarlingSwf是什么</h2>
+<p><strong><em>9.</em></strong> <a href='#Tutorials6'>教程六：ATF批量导出工具如何使用</a></p>
 
+<p><strong><em>10.</em></strong> <a href='#SuccessStories'>成功案例</a></p>
+<hr /><h2 id='whatThis'>StarlingSwf是什么</h2>
 <p>StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具.</p>
 
 <p>他可以让开发导出Swf数据到Starling中渲染</p>
-<hr />
-<h2 id='id59'>功能与特色</h2>
-
+<hr /><h2 id='featuresFunctions'>功能与特色</h2>
 <p><strong><em>1.</em></strong> 导出Swf数据到Starling中</p>
 
 <p><strong><em>2.</em></strong> 在Starling中还原Swf中原件的层级关系、动画、原件属性</p>
@@ -160,10 +158,8 @@
 
 <p><strong><em>6.</em></strong> 自动合并纹理，并且可以自动单独导出大图</p>
 <hr />
-<h2 id='id60'><a target='_blank' href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/'>下载与安装(点我)</a></h2>
-<hr />
-<h2 id='id61'>教程一：原件命名规则</h2>
-
+<h2 id='id59'><a href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' id='downInstall' target='_blank'>下载与安装(点我)</a></h2>
+<hr /><h2 id='Tutorials1'>教程一：原件命名规则</h2>
 <p><strong><em>既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下(<code>是AS链接名称噢</code>)</em></strong></p>
 
 <p><strong><em>1.</em></strong> img 开始会被识别为starling.display.Image.<strong>(<code>这个必须是元件。不能直接用图片</code>,导出之后该原件会直接被映射为一张图片)</strong></p>
@@ -179,29 +175,25 @@
 <p><strong><em>6.</em></strong> 文本 文本比较特殊 只要在<code>img</code> <code>s9</code> <code>btn</code> <code>mc</code> <code>spr</code> 中写就可以了</p>
 
 <p><strong><em>7.</em></strong> shapeImg 开头会被识别为lzm.starling.swf.display.ShapeImage,使用纹理填充的图片(纹理长宽需要为2的幂数,改变组建宽高时，会自动使用初始化的Texture填充)</p>
-<hr />
-<h2 id='id62'>教程二：针对设计师</h2>
-
+<hr /><h2 id='Tutorials2'>教程二：针对设计师</h2>
 <p><strong><em>1.</em></strong>作为设计师，你只需要准备好需要展示的图片，在FlashPro中将他们有序的组装起来。并且为需要导出的原件设置链接就可以了搞定一切</p>
 
 <p><strong><em>2.</em></strong>打开库面板，你可以看到此示例的相关资源.</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image1.png' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool/image1.png' class='img-rounded' />
 <p><strong><em>3.</em></strong>相关资源编辑好之后导出Swf.</p>
 
 <p><strong><em>4.</em></strong>打开StarlingSwf导出工具，选择刚刚导出的swf.选择上方的下拉框，预览在Swf内部的原件在Starling中是什么样子.</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image2.png' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool/image2.png' class='img-rounded' />
 <p><strong><em>5.</em></strong>选择导出倍数，然后导出.资源导出后会出现两个文件夹</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image3.png' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool/image3.png' class='img-rounded' />
 <p><strong><em>data下面放的Swf数据,images下放的所有导出的图片.将这两个东西给程序就可以了.</em></strong></p>
-<hr />
-<h2 id='id63'>教程三：针对程序</h2>
-
+<hr /><h2 id='Tutorials3'>教程三：针对程序</h2>
 <p><strong><em>1.</em></strong>建立一个Actionscript工程。(demo中是手机工程)</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image4.png' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool/image4.png' class='img-rounded' />
 <p><strong><em>2.</em></strong>倒入资源</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image5.png' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool/image5.png' class='img-rounded' />
 <p><strong><em>3.</em></strong>倒入依赖库</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image6.png' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool/image6.png' class='img-rounded' />
 <p><strong><em>4.</em></strong>代码</p>
 
 <p><strong><em>关键代码</em></strong></p>
@@ -298,9 +290,7 @@ package
 }</code></pre>
 
 <p><strong><em>5.</em></strong>运行效果</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image7.png' alt='截图' /><hr />
-<h2 id='movieclip'>教程四：MovieClip自动停止播放</h2>
-
+<img alt='截图' src='/assets/images/starling_swf_tool/image7.png' class='img-rounded' /><hr /><h2 id='Tutorials4'>教程四：MovieClip自动停止播放</h2>
 <p><strong><em>很多时候需要让动画播放完毕之后自动停止在最后一帧，在工具中也可以很简单的实现</em></strong></p>
 
 <p><strong><em>1.</em></strong> 倒入swf</p>
@@ -308,16 +298,18 @@ package
 <p><strong><em>2.</em></strong> 从MovieClip列表中 选中需要自动停止的MC</p>
 
 <p><strong><em>3.</em></strong> 取消<code>是否循环</code></p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image9.png' alt='截图' /><hr />
-<h2 id='id64'>教程五：获取界面上的元素</h2>
-
+<img alt='截图' src='/assets/images/starling_swf_tool/image9.png' class='img-rounded' /><hr /><h2 id='Tutorials5'>教程五：获取界面上的元素</h2>
 <p>很简单，首先给元素命名</p>
-<img class='img-rounded' src='/assets/images/starling_swf_tool/image8.png' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool/image8.png' class='img-rounded' />
 <p>然后使用<code>getChildByName</code>获取</p>
-<hr />
-<h2 id='atf'>教程六：ATF批量导出工具如何使用</h2>
+<hr /><h2 id='Tutorials6'>教程六：ATF批量导出工具如何使用</h2>
+<h4 id='id60'><a href='http://zmliu.github.io/2013/08/31/ATFTool/'>移步到这里</a></h4>
+<hr /><h2 id='SuccessStories'>成功案例</h2>
+<h4 id='id61'><a href='http://ng.d.cn/zhanlvechuanqi/'>战略传奇</a></h4>
 
-<h4 id='id65'><a href='http://zmliu.github.io/2013/08/31/ATFTool/'>移步到这里</a></h4>
+<h4 id='id62'><a href='https://itunes.apple.com/cn/app/chuan-zhang-ye-feng-kuang/id597315819?mt=8'>船长也疯狂</a></h4>
+
+<h4 id='id63'><a href='http://img.tonlo.com/ttbb/download.html'>天天爆爆</a></h4>
 <hr />
 <p><strong><em>友情提示：工具的预览区域是可以拖动的噢</em></strong></p>
     </div>

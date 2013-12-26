@@ -5,32 +5,33 @@ tags : [Tool]
 ---
 
 ***有些同学使用过程用遇到了问题。我开了一个QQ群。有问题的同学可以进来问一下群号是168436154***
- 
 
 ----------
 ## 目录 ##
- ***1.*** StarlingSwf是什么 
+ ***1.*** [StarlingSwf是什么](#whatThis)
  
- ***2.*** 功能与特色 
+ ***2.*** [功能与特色](#featuresFunctions)
  
- ***3.*** 下载与安装 
+ ***3.*** [下载与安装](#downInstall) 
  
- ***4.*** 教程一：资源命名规则 
+ ***4.*** [教程一：资源命名规则](#Tutorials1)
  
- ***5.*** 教程二：针对设计师 
+ ***5.*** [教程二：针对设计师](#Tutorials2)
  
- ***6.*** 教程三：针对程序 
+ ***6.*** [教程三：针对程序](#Tutorials3)
  
- ***7.*** 教程四：MovieClip自动停止播放 
+ ***7.*** [教程四：MovieClip自动停止播放](#Tutorials4)
  
- ***8.*** 教程五：获取界面上的元素
+ ***8.*** [教程五：获取界面上的元素](#Tutorials5)
  
- ***9.*** 教程六：ATF批量导出工具如何使用
+ ***9.*** [教程六：ATF批量导出工具如何使用](#Tutorials6)
+ 
+ ***10.*** [成功案例](#SuccessStories)
  
 
 
 ----------
-## StarlingSwf是什么 ##
+<h2 id="whatThis">StarlingSwf是什么</h2>
 
 StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具.
 
@@ -38,7 +39,8 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
 
 ----------
-## 功能与特色 ##
+<h2 id="featuresFunctions">功能与特色</h2>
+
  ***1.*** 导出Swf数据到Starling中
  
  ***2.*** 在Starling中还原Swf中原件的层级关系、动画、原件属性
@@ -52,11 +54,11 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  ***6.*** 自动合并纹理，并且可以自动单独导出大图
 
 ----------
-## <a href="http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/" target="_blank">下载与安装(点我)</a> ##  
+## <a id="downInstall" href="http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/" target="_blank">下载与安装(点我)</a> ##  
 
 
 ----------
-## 教程一：原件命名规则 ##
+<h2 id="Tutorials1">教程一：原件命名规则</h2>
  
  ***既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下(`是AS链接名称噢`)***
 
@@ -77,7 +79,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
 
 ----------
-## 教程二：针对设计师 ##
+<h2 id="Tutorials2">教程二：针对设计师</h2>
 
  ***1.***作为设计师，你只需要准备好需要展示的图片，在FlashPro中将他们有序的组装起来。并且为需要导出的原件设置链接就可以了搞定一切
 
@@ -99,7 +101,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
 
 ----------
-## 教程三：针对程序 ##
+<h2 id="Tutorials3">教程三：针对程序</h2>
 
  ***1.***建立一个Actionscript工程。(demo中是手机工程)
  
@@ -220,7 +222,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
 ----------
 
-## 教程四：MovieClip自动停止播放 ##
+<h2 id="Tutorials4">教程四：MovieClip自动停止播放</h2>
 
  ***很多时候需要让动画播放完毕之后自动停止在最后一帧，在工具中也可以很简单的实现***
  
@@ -236,7 +238,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
 ----------
 
-## 教程五：获取界面上的元素 ##
+<h2 id="Tutorials5">教程五：获取界面上的元素</h2>
 
  很简单，首先给元素命名
  
@@ -248,13 +250,22 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 
 ----------
 
-## 教程六：ATF批量导出工具如何使用 ##
+<h2 id="Tutorials6">教程六：ATF批量导出工具如何使用</h2>
 
 ####[移步到这里](http://zmliu.github.io/2013/08/31/ATFTool/)
     
 
 
 ----------
+
+<h2 id="SuccessStories">成功案例</h2>
+
+####[战略传奇](http://ng.d.cn/zhanlvechuanqi/)
+####[船长也疯狂](https://itunes.apple.com/cn/app/chuan-zhang-ye-feng-kuang/id597315819?mt=8)
+####[天天爆爆](http://img.tonlo.com/ttbb/download.html)
+
+----------
+
  
 ***友情提示：工具的预览区域是可以拖动的噢***
 
