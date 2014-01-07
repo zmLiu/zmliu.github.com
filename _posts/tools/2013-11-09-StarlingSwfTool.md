@@ -26,7 +26,9 @@ tags : [Tool]
  
  ***9.*** [教程六：ATF批量导出工具如何使用](#Tutorials6)
  
- ***10.*** [成功案例](#SuccessStories)
+ ***10.*** <a href="http://zmliu.github.io/2014/01/07/StarlingSwf-Components/" target="_blank">自定义组件</a>
+ 
+ ***11.*** [成功案例](#SuccessStories)
  
 
 
@@ -75,6 +77,8 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  ***6.*** 文本 文本比较特殊 只要在`img` `s9` `btn` `mc` `spr` 中写就可以了
  
  ***7.*** shapeImg 开头会被识别为lzm.starling.swf.display.ShapeImage,使用纹理填充的图片(纹理长宽需要为2的幂数,改变组建宽高时，会自动使用初始化的Texture填充) 
+ 
+ ***8.*** comp 开头会被识别为带特殊功能的组件
  
 
 
