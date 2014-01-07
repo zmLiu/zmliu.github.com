@@ -132,3 +132,7 @@ tags : [Tool]
 ----------
 
 例子中的fla在[这里](https://github.com/zmLiu/StarlingSWF/tree/0.0.7/StarlingSWF-Test/testFla)
+
+最后来一张预览截图
+
+<img src="/assets/images/starling_swf_tool_components/image6.png" alt="截图" class="img-rounded">
