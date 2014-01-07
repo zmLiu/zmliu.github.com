@@ -3,6 +3,11 @@ layout : post
 title : StarlingSwf 自定义组件
 tags : [Tool]
 ---
+***有些同学使用过程用遇到了问题。我开了一个QQ群。有问题的同学可以进来问一下群号是168436154***
+
+[StarlingSwf](http://zmliu.github.io/2013/11/09/StarlingSwfTool/)
+
+----------
 
 ####自定义组件是为了能够轻松的添加一些有特定功能的组件
 
