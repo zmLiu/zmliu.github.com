@@ -13,7 +13,7 @@ tags : [Tool]
 
 [依赖库地址][2]
 
-  [1]: https://github.com/zmLiu/StarlingSWF
+  [1]: https://github.com/zmLiu/StarlingSWF/tree/0.0.7
   [2]: https://github.com/zmLiu/StarlingFeathers
 
 
