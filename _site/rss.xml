@@ -5,8 +5,8 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2014-01-09T13:20:12+08:00</lastBuildDate>
-        <pubDate>2014-01-09T13:20:12+08:00</pubDate>
+        <lastBuildDate>2014-01-09T13:29:35+08:00</lastBuildDate>
+        <pubDate>2014-01-09T13:29:35+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -165,9 +165,9 @@
 &lt;hr /&gt;
 &lt;h2 id='v007'&gt;V0.0.7(依赖库也需要更新)&lt;/h2&gt;
 
-&lt;p&gt;添加一个组建(SwfSprite取子对象的时候更加方便了)&lt;/p&gt;
+&lt;p&gt;增加自定义组件机制&lt;/p&gt;
 
-&lt;p&gt;整合ATF批量导出工具&lt;/p&gt;
+&lt;p&gt;封装部分Feathres的组件&lt;/p&gt;
 
 &lt;p&gt;&lt;a href='http://url.cn/TUabD8'&gt;Mac版下载&lt;/a&gt;&lt;/p&gt;
 
@@ -667,7 +667,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;9.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#Tutorials6'&gt;教程六：ATF批量导出工具如何使用&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;10.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/' target='_blank'&gt;自定义组件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;10.&lt;/em&gt;&lt;/strong&gt; &lt;a target='_blank' href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/'&gt;自定义组件&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;11.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#SuccessStories'&gt;成功案例&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;&lt;h2 id='whatThis'&gt;StarlingSwf是什么&lt;/h2&gt;
@@ -687,7 +687,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt; 自动合并纹理，并且可以自动单独导出大图&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id59'&gt;&lt;a id='downInstall' href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' target='_blank'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id='id59'&gt;&lt;a id='downInstall' target='_blank' href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
 &lt;hr /&gt;&lt;h2 id='Tutorials1'&gt;教程一：原件命名规则&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下(&lt;code&gt;是AS链接名称噢&lt;/code&gt;)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
