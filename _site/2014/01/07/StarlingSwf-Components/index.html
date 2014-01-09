@@ -142,6 +142,8 @@
 
 <p><code>StarlingSwf</code>的自定义组件都需要实现<code>ISwfComponent</code>这个接口。然后实现接口中的<code>initialization</code>方法即可</p>
 
+<p><code>initialization</code>方法的参数<code>componetContent</code>是一个临时存放 组件需要的显示对象的容器。不会被其他对象引用。封装组件时 可以按自己的需求对他进行释放操作</p>
+
 <p>但是很多时候，可能需要在fla中制作一个公用组件。然后各处引用 这样就满足不了一些需求了 所以：这里引入了组件可编辑属性了机制</p>
 
 <p>只要实现<code>editableProperties</code>方法 工具就能让你编辑组件属性</p>
@@ -163,13 +165,13 @@
 <p>准备资源</p>
 
 <pre><code>我直接使用了`feathers`官方的资源,并且在fla中编辑好，如图:</code></pre>
-<img src='/assets/images/starling_swf_tool_components/image1.png' class='img-rounded' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool_components/image1.png' class='img-rounded' />
 <p>编辑fla中的组件</p>
 
 <p>首先新建一个元件链接名字命名为如图：</p>
-<img src='/assets/images/starling_swf_tool_components/image2.png' class='img-rounded' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool_components/image2.png' class='img-rounded' />
 <p>然后编辑相应的显示对象：</p>
-<img src='/assets/images/starling_swf_tool_components/image3.png' class='img-rounded' alt='截图' /><img src='/assets/images/starling_swf_tool_components/image4.png' class='img-rounded' alt='截图' /><img src='/assets/images/starling_swf_tool_components/image5.png' class='img-rounded' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool_components/image3.png' class='img-rounded' /><img alt='截图' src='/assets/images/starling_swf_tool_components/image4.png' class='img-rounded' /><img alt='截图' src='/assets/images/starling_swf_tool_components/image5.png' class='img-rounded' />
 <p>组件类文件编写</p>
 
 <pre><code>package lzm.starling.swf.components.feathers
@@ -251,7 +253,7 @@
 <p>例子中的fla在<a href='https://github.com/zmLiu/StarlingSWF/tree/0.0.7/StarlingSWF-Test/testFla'>这里</a></p>
 
 <p>最后来一张预览截图</p>
-<img src='/assets/images/starling_swf_tool_components/image6.png' class='img-rounded' alt='截图' />
+<img alt='截图' src='/assets/images/starling_swf_tool_components/image6.png' class='img-rounded' />
     </div>
 
     

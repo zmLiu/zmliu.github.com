@@ -38,6 +38,8 @@ tags : [Tool]
 
 `StarlingSwf`的自定义组件都需要实现`ISwfComponent`这个接口。然后实现接口中的`initialization`方法即可
 
+`initialization`方法的参数`componetContent`是一个临时存放 组件需要的显示对象的容器。不会被其他对象引用。封装组件时 可以按自己的需求对他进行释放操作
+
 但是很多时候，可能需要在fla中制作一个公用组件。然后各处引用 这样就满足不了一些需求了 所以：这里引入了组件可编辑属性了机制
 
 只要实现`editableProperties`方法 工具就能让你编辑组件属性
