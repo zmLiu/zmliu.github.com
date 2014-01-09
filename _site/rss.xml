@@ -5,8 +5,8 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2014-01-07T21:01:02+08:00</lastBuildDate>
-        <pubDate>2014-01-07T21:01:02+08:00</pubDate>
+        <lastBuildDate>2014-01-09T11:34:52+08:00</lastBuildDate>
+        <pubDate>2014-01-09T11:34:52+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -35,6 +35,10 @@
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3、编写组件的类文件&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;StarlingSwf&lt;/code&gt;的自定义组件都需要实现&lt;code&gt;ISwfComponent&lt;/code&gt;这个接口。然后实现接口中的&lt;code&gt;initialization&lt;/code&gt;方法即可&lt;/p&gt;
+
+&lt;p&gt;但是很多时候，可能需要在fla中制作一个公用组件。然后各处引用 这样就满足不了一些需求了 所以：这里引入了组件可编辑属性了机制&lt;/p&gt;
+
+&lt;p&gt;只要实现&lt;code&gt;editableProperties&lt;/code&gt;方法 工具就能让你编辑组件属性&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4、在组件配置列表中加入配置组件&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -64,31 +68,62 @@
 
 &lt;pre&gt;&lt;code&gt;package lzm.starling.swf.components.feathers
 {
+	import flash.text.TextFormat;
+	
 	import feathers.controls.Button;
 	
+	import lzm.starling.swf.components.ISwfComponent;
 	import lzm.starling.swf.display.SwfSprite;
 	
 	import starling.display.DisplayObject;
-	import lzm.starling.swf.components.ISwfComponent;
+	import starling.text.TextField;
 
 	public class FeathersButton extends Button implements ISwfComponent
 	{
 		
 		public function initialization(componetContent:SwfSprite):void{
-			var defaultSkin:DisplayObject = componetContent.getChildByName(&amp;quot;_defaultSkin&amp;quot;);
-			var upSkin:DisplayObject = componetContent.getChildByName(&amp;quot;_upSkin&amp;quot;);
-			var downSkin:DisplayObject = componetContent.getChildByName(&amp;quot;_downSkin&amp;quot;);
+			var _upSkin:DisplayObject = componetContent.getChildByName(&amp;quot;_upSkin&amp;quot;);
+			var _selectUpSkin:DisplayObject = componetContent.getChildByName(&amp;quot;_selectUpSkin&amp;quot;);
+			var _downSkin:DisplayObject = componetContent.getChildByName(&amp;quot;_downSkin&amp;quot;);
+			var _disabledSkin:DisplayObject = componetContent.getChildByName(&amp;quot;_disabledSkin&amp;quot;);
+			var _selectDisabledSkin:DisplayObject = componetContent.getChildByName(&amp;quot;_selectDisabledSkin&amp;quot;);
 			
-			defaultSkin.removeFromParent();
-			upSkin.removeFromParent();
-			downSkin.removeFromParent();
+			var _labelTextField:TextField = componetContent.getTextField(&amp;quot;_labelTextField&amp;quot;);
 			
-			this.defaultSkin = defaultSkin;
-			this.upSkin = upSkin;
-			this.downSkin = downSkin;
+			this.defaultSkin = _upSkin;
+			if(_selectUpSkin) this.defaultSelectedSkin = _selectUpSkin;
+			if(_downSkin) this.downSkin = _downSkin;
+			if(_disabledSkin) this.disabledSkin = _disabledSkin;
+			if(_selectDisabledSkin) this.selectedDisabledSkin = _selectDisabledSkin;
+			
+			if(_labelTextField){
+				var textFormat:TextFormat = new TextFormat();
+				textFormat.font = _labelTextField.fontName;
+				textFormat.size = _labelTextField.fontSize;
+				textFormat.color = _labelTextField.color;
+				textFormat.bold = _labelTextField.bold;
+				textFormat.italic = _labelTextField.italic;
+				
+				this.defaultLabelProperties.textFormat = textFormat;
+				this.label = _labelTextField.text;
+			}
 			
 			componetContent.removeFromParent(true);
 		}
+		
+		public function get editableProperties():Object{
+			return {
+				label:label,
+				isEnabled:isEnabled
+			};
+		}
+		
+		public function set editableProperties(properties:Object):void{
+			for(var key:String in properties){
+				this[key] = properties[key];
+			}
+		}
+		
 	}
 }&lt;/code&gt;&lt;/pre&gt;
 
@@ -614,7 +649,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;9.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#Tutorials6'&gt;教程六：ATF批量导出工具如何使用&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;10.&lt;/em&gt;&lt;/strong&gt; &lt;a target='_blank' href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/'&gt;自定义组件(目前为测试版本 需要更新最新的工具代码 以工程方式运行工具)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;10.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/' target='_blank'&gt;自定义组件(目前为测试版本 需要更新最新的工具代码 以工程方式运行工具)&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;11.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#SuccessStories'&gt;成功案例&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;&lt;h2 id='whatThis'&gt;StarlingSwf是什么&lt;/h2&gt;
@@ -634,7 +669,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt; 自动合并纹理，并且可以自动单独导出大图&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id59'&gt;&lt;a id='downInstall' target='_blank' href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id='id59'&gt;&lt;a href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' target='_blank' id='downInstall'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
 &lt;hr /&gt;&lt;h2 id='Tutorials1'&gt;教程一：原件命名规则&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下(&lt;code&gt;是AS链接名称噢&lt;/code&gt;)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 

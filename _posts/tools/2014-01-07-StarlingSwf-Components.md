@@ -38,6 +38,10 @@ tags : [Tool]
 
 `StarlingSwf`的自定义组件都需要实现`ISwfComponent`这个接口。然后实现接口中的`initialization`方法即可
 
+但是很多时候，可能需要在fla中制作一个公用组件。然后各处引用 这样就满足不了一些需求了 所以：这里引入了组件可编辑属性了机制
+
+只要实现`editableProperties`方法 工具就能让你编辑组件属性
+
 
 ----------
 
@@ -82,31 +86,62 @@ tags : [Tool]
 
 	package lzm.starling.swf.components.feathers
 	{
+		import flash.text.TextFormat;
+		
 		import feathers.controls.Button;
 		
+		import lzm.starling.swf.components.ISwfComponent;
 		import lzm.starling.swf.display.SwfSprite;
 		
 		import starling.display.DisplayObject;
-		import lzm.starling.swf.components.ISwfComponent;
+		import starling.text.TextField;
 	
 		public class FeathersButton extends Button implements ISwfComponent
 		{
 			
 			public function initialization(componetContent:SwfSprite):void{
-				var defaultSkin:DisplayObject = componetContent.getChildByName("_defaultSkin");
-				var upSkin:DisplayObject = componetContent.getChildByName("_upSkin");
-				var downSkin:DisplayObject = componetContent.getChildByName("_downSkin");
+				var _upSkin:DisplayObject = componetContent.getChildByName("_upSkin");
+				var _selectUpSkin:DisplayObject = componetContent.getChildByName("_selectUpSkin");
+				var _downSkin:DisplayObject = componetContent.getChildByName("_downSkin");
+				var _disabledSkin:DisplayObject = componetContent.getChildByName("_disabledSkin");
+				var _selectDisabledSkin:DisplayObject = componetContent.getChildByName("_selectDisabledSkin");
 				
-				defaultSkin.removeFromParent();
-				upSkin.removeFromParent();
-				downSkin.removeFromParent();
+				var _labelTextField:TextField = componetContent.getTextField("_labelTextField");
 				
-				this.defaultSkin = defaultSkin;
-				this.upSkin = upSkin;
-				this.downSkin = downSkin;
+				this.defaultSkin = _upSkin;
+				if(_selectUpSkin) this.defaultSelectedSkin = _selectUpSkin;
+				if(_downSkin) this.downSkin = _downSkin;
+				if(_disabledSkin) this.disabledSkin = _disabledSkin;
+				if(_selectDisabledSkin) this.selectedDisabledSkin = _selectDisabledSkin;
+				
+				if(_labelTextField){
+					var textFormat:TextFormat = new TextFormat();
+					textFormat.font = _labelTextField.fontName;
+					textFormat.size = _labelTextField.fontSize;
+					textFormat.color = _labelTextField.color;
+					textFormat.bold = _labelTextField.bold;
+					textFormat.italic = _labelTextField.italic;
+					
+					this.defaultLabelProperties.textFormat = textFormat;
+					this.label = _labelTextField.text;
+				}
 				
 				componetContent.removeFromParent(true);
 			}
+			
+			public function get editableProperties():Object{
+				return {
+					label:label,
+					isEnabled:isEnabled
+				};
+			}
+			
+			public function set editableProperties(properties:Object):void{
+				for(var key:String in properties){
+					this[key] = properties[key];
+				}
+			}
+			
 		}
 	}
 
