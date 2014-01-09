@@ -26,7 +26,7 @@ tags : [Tool]
  
  ***9.*** [教程六：ATF批量导出工具如何使用](#Tutorials6)
  
- ***10.*** <a href="http://zmliu.github.io/2014/01/07/StarlingSwf-Components/" target="_blank">自定义组件(目前为测试版本 需要更新最新的工具代码 以工程方式运行工具)</a>
+ ***10.*** <a href="http://zmliu.github.io/2014/01/07/StarlingSwf-Components/" target="_blank">自定义组件</a>
  
  ***11.*** [成功案例](#SuccessStories)
  

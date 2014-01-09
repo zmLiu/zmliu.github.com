@@ -5,8 +5,8 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2014-01-09T13:18:04+08:00</lastBuildDate>
-        <pubDate>2014-01-09T13:18:04+08:00</pubDate>
+        <lastBuildDate>2014-01-09T13:20:12+08:00</lastBuildDate>
+        <pubDate>2014-01-09T13:20:12+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -142,7 +142,7 @@
 
 &lt;p&gt;以代码方式启动工具 就能在工具中预览了。&lt;/p&gt;
 
-&lt;p&gt;如果不是以代码方式启动工具。那么工具中 组件会以&lt;code&gt;sprite&lt;/code&gt;的方式呈现，不会有组件的特性。就需要到自己的工程里面 创建swf然后预览了&lt;/p&gt;
+&lt;p&gt;如果不是以代码方式启动工具。那么工具中 新添加的自定义组件会以&lt;code&gt;sprite&lt;/code&gt;的方式呈现，不会有组件的特性。就需要到自己的工程里面 创建swf然后预览了&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;例子中的fla在&lt;a href='https://github.com/zmLiu/StarlingSWF/tree/0.0.7/StarlingSWF-Test/testFla'&gt;这里&lt;/a&gt;&lt;/p&gt;
 
@@ -667,7 +667,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;9.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#Tutorials6'&gt;教程六：ATF批量导出工具如何使用&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;10.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/' target='_blank'&gt;自定义组件(目前为测试版本 需要更新最新的工具代码 以工程方式运行工具)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;10.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/' target='_blank'&gt;自定义组件&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;11.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#SuccessStories'&gt;成功案例&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;&lt;h2 id='whatThis'&gt;StarlingSwf是什么&lt;/h2&gt;
