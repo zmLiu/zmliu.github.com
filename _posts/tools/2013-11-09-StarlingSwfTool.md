@@ -126,7 +126,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 ***关键代码***
  	
  	//初始化Swf
- 	Swf.init(Starling.current.nativeStage);
+ 	Swf.init(Starling的根容器);
  	
  	//创建一个Swf(`layout`对应生成`.bytes`文件的名字)
  	var swf:Swf = new Swf(assets.getByteArray("layout"),assets);
@@ -188,7 +188,7 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
     		{
     			super();
     			
-    			Swf.init(Starling.current.nativeStage);
+    			Swf.init(this);
     			
     			textfield = new TextField(200,100,"loading....");
     			textfield.x = (STLConstant.StageWidth - textfield.width)/2;
