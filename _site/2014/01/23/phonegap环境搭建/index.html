@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>mac环境变量配置</title>
+    <title>phonegap 3.3 环境搭建</title>
     
     <meta name="author" content="zmLiu">
 
@@ -109,35 +109,92 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>mac环境变量配置 </h1>
+  <h1>phonegap 3.3 环境搭建 </h1>
 </div>
 
 <div class="row-fluid post-full">
   <div class="span12">
     <div class="date">
-      <span>01 / 22, 2014</span>
+      <span>01 / 23, 2014</span>
     </div>
     <div class="content">
-      <p><strong><em>1.启动终端Terminal</em></strong></p>
+      <h3 id='phonegap'><a href='http://phonegap.com/'>phonegap官网地址</a></h3>
 
-<p><strong><em>2.进入当前用户的home目录</em></strong></p>
+<h3 id='phonegap'><a href='http://phonegap.com/install/'>phonegap官方安装教程</a></h3>
 
-<pre><code>输入cd ~</code></pre>
+<h3 id='id74'>一.依赖环境</h3>
 
-<p><strong><em>3.创建.bash_profile</em></strong></p>
+<p>phonegap 3.3需要<code>nodejs</code>的环境</p>
 
-<pre><code>输入touch .bash_profile</code></pre>
+<p><a href='http://nodejs.org/download/'>nodejs下载地址</a></p>
 
-<p><strong><em>4.编辑.bash_profile文件</em></strong></p>
+<p><code>nodejs</code>傻瓜式安装就行</p>
+<hr />
+<h3 id='phonegap'>二.安装phonegap</h3>
 
-<pre><code>vi ~/.bash_profile
-export PATH=/usr/local/mysql/bin:$PATH
-:wq
-source ~/.bash_profile</code></pre>
+<p><code>nodejs</code>安装完成之后<code>phonegap</code>的安装就很简单了,运行下面的命令即可:</p>
 
-<p><strong><em>5.查看是否生效</em></strong></p>
+<pre><code>sudo npm install -g phonegap</code></pre>
 
-<pre><code>echo $PATH</code></pre>
+<p>这一步很简单。</p>
+<hr />
+<h3 id='app'>三.创建app</h3>
+
+<p>创建app十分简单,运行下面的命令即可:</p>
+
+<pre><code>phonegap create test-app &quot;com.test.app&quot; &quot;appname&quot;</code></pre>
+
+<p>命令参数的意思分别为:</p>
+
+<ol>
+<li>test-app <code>app创建所在的目录</code></li>
+
+<li>com.test.app <code>appid</code></li>
+
+<li>appname <code>app名称</code></li>
+</ol>
+<hr />
+<h3 id='ios'>四.输出到IOS</h3>
+
+<pre><code>cd test-app
+phonegap run ios</code></pre>
+
+<p>输出完成之后，会在<code>test-app/platforms/ios</code>目录下生成XCode工程文件</p>
+
+<p>ios输出就算完成了</p>
+<hr />
+<h3 id='android'>五.输出到android</h3>
+
+<p>ios的输出十分简单</p>
+
+<p>android的输出稍微复杂一点，主要是需要android的sdk以及几个环境变量的配置</p>
+
+<p><strong><em>1.配置ant</em></strong></p>
+
+<p><a href='http://ant.apache.org/'>ant下载地址</a></p>
+
+<p>下载完成并且解压之后 将<code>ant</code>的<code>bin</code>目录配置到环境变量</p>
+
+<p>环境变量怎么配置就不讲了</p>
+
+<p><strong><em>2.配置android环境</em></strong></p>
+
+<p><a href='http://developer.android.com/sdk/index.html'>android sdk下载地址</a></p>
+
+<p>下载完成并解压之后回获得两个目录，分别是<code>eclipse</code>和<code>sdk</code></p>
+
+<p>默认打开<code>eclipse</code> <code>android</code>环境就已经搭建完成</p>
+
+<p>但是光是这样phonegap还不能输出android</p>
+
+<p>将<code>sdk/tools</code>,<code>sdk/platform-tools</code>两个目录都加入环境变量 即可</p>
+
+<p><strong><em>3.输出</em></strong></p>
+
+<pre><code>cd test-app
+phonegap run android</code></pre>
+
+<p>输出完成之后，会在<code>test-app/platforms/android</code>目录下生成android的相关工程文件</p>
     </div>
 
     
@@ -151,7 +208,11 @@ source ~/.bash_profile</code></pre>
 
   
      
-    	<li><a href="/tags.html#mac-ref">mac <span>1</span></a></li>
+    	<li><a href="/tags.html#phonegap-ref">phonegap <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#ios-ref">ios <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#android-ref">android <span>1</span></a></li>
     
   
 
@@ -164,11 +225,11 @@ source ~/.bash_profile</code></pre>
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/2014/01/07/StarlingSwf-Components" title="StarlingSwf 自定义组件">&larr; Previous</a></li>
+        <li class="prev"><a href="/2014/01/22/mac%E4%B8%8B%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F" title="mac环境变量配置">&larr; Previous</a></li>
       
         <li><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/2014/01/23/phonegap%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA" title="phonegap 3.3 环境搭建">Next &rarr;</a></li>
+        <li class="next disabled"><a>Next &rarr;</a>
       
       </ul>
     </div>
