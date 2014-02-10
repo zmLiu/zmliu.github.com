@@ -5,8 +5,8 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2014-02-10T09:47:17+08:00</lastBuildDate>
-        <pubDate>2014-02-10T09:47:17+08:00</pubDate>
+        <lastBuildDate>2014-02-10T13:57:11+08:00</lastBuildDate>
+        <pubDate>2014-02-10T13:57:11+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -228,13 +228,13 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;准备资源&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;我直接使用了`feathers`官方的资源,并且在fla中编辑好，如图:&lt;/code&gt;&lt;/pre&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool_components/image1.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool_components/image1.png' /&gt;
 &lt;p&gt;编辑fla中的组件&lt;/p&gt;
 
 &lt;p&gt;首先新建一个元件链接名字命名为如图：&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool_components/image2.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool_components/image2.png' /&gt;
 &lt;p&gt;然后编辑相应的显示对象：&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool_components/image3.png' /&gt;&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool_components/image4.png' /&gt;&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool_components/image5.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool_components/image3.png' /&gt;&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool_components/image4.png' /&gt;&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool_components/image5.png' /&gt;
 &lt;p&gt;组件类文件编写&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;package lzm.starling.swf.components.feathers
@@ -316,7 +316,7 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;例子中的fla在&lt;a href='https://github.com/zmLiu/StarlingSWF/tree/0.0.7/StarlingSWF-Test/testFla'&gt;这里&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;最后来一张预览截图&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool_components/image6.png' /&gt;</description>
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool_components/image6.png' /&gt;</description>
                 <link>http://zmliu.github.io/2014/01/07/StarlingSwf-Components</link>
                 <guid>http://zmliu.github.io/2014/01/07/StarlingSwf-Components</guid>
                 <pubDate>2014-01-07T00:00:00+08:00</pubDate>
@@ -330,7 +330,7 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href='https://github.com/zmLiu/StarlingSWF/tree/0.0.7'&gt;工具源码地址&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href='https://github.com/zmLiu/StarlingFeathers'&gt;依赖库地址&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href='https://github.com/zmLiu/StarlingFeathers'&gt;依赖库源码(开发版 不建议下载)&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='v007'&gt;V0.0.7(依赖库也需要更新)&lt;/h2&gt;
 
@@ -345,6 +345,8 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href='http://url.cn/QkQkOb'&gt;Demo&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href='http://url.cn/PFeYz3'&gt;Demo中Fla的兼容版本&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://url.cn/RnR9zq'&gt;依赖库&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;更新时间2013-01-09&lt;/p&gt;
 &lt;hr /&gt;
@@ -433,9 +435,9 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;你需要使用StarlingSwf将你的swf来进行导出，导出的3个文件建议放到一个文件夹下，&lt;/p&gt;
 
 &lt;p&gt;例如:&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image0.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image0.png' /&gt;
 &lt;p&gt;该UI扩展需要你布置swf的时候稍微下点功夫，如下示例&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image1.png' /&gt;&lt;hr /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image1.png' /&gt;&lt;hr /&gt;
 &lt;h2 id='id68'&gt;在程序中使用：&lt;/h2&gt;
 
 &lt;p&gt;在使用该扩展之前你需要初始化两个地方：&lt;/p&gt;
@@ -456,9 +458,9 @@ show();
 这样window就开始加载并且在加载完毕之后显示了。&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;code&gt;其中super的两个参数第一个为swf的导出链接名字&lt;/code&gt;&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image2.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image2.png' /&gt;
 &lt;p&gt;第二个参数为文件的名字&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image3.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image3.png' /&gt;
 &lt;p&gt;&lt;code&gt;setAssetSource&lt;/code&gt;可以设置一个File，如果是文件夹的话，会扫描文件夹下所有文件，如果你的是web资源的话，你可以设置一个Url数组：&lt;code&gt;[“../assets/ui/test/test.bytes”, “../assets/ui/test/test.png”, “../assets/ui/test/test.xml”]&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;如此，我们的第一个Window就创建好并能够显示了。&lt;/p&gt;
@@ -466,11 +468,11 @@ show();
 &lt;h2 id='window'&gt;管理Window中的组件：&lt;/h2&gt;
 
 &lt;p&gt;我们的window中有个组件名字为_BtnList,如图：&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image4.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image4.png' /&gt;
 &lt;p&gt;这个组件内部为4个按钮，命名分别为：_Btn_1、_Btn_2、_Btn_3、_Btn_4&lt;/p&gt;
 
 &lt;p&gt;按钮是一个mc，导出的也是mc&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image5.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image5.png' /&gt;
 &lt;p&gt;我们可以使用JISCuttingButtonGroup进行管理我们的btn列表，如下代码：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;public var _BtnList:JISCuttingButtonGroup;
@@ -490,7 +492,7 @@ setAssetSource(File.applicationDirectory.resolvePath(&amp;quot;assets/ui/test/&a
 &lt;h2 id='window'&gt;管理window中的对象：&lt;/h2&gt;
 
 &lt;p&gt;我们的示例文件中有一个空的影片剪辑和一个按钮，如图：&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image6.png' /&gt;&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image7.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image6.png' /&gt;&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image7.png' /&gt;
 &lt;p&gt;由于我们的_ScrollTable是Sprite类型，为系统组件，所以不用提前new出来，我们的_AddTableCellBtn是自定义组件，所以需要事先new出来，代码如下：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;public var _ScrollTable:Sprite;
@@ -583,7 +585,7 @@ tableScroll.getTable().addCellData(btnIndex++,this.getSourceSwf());//添加新�
 &lt;p&gt;都会传入一个Swf对象，这就可以看出&lt;code&gt;setCellDatas&lt;/code&gt;和&lt;code&gt;addCellData&lt;/code&gt;会在创建&lt;code&gt;JISTableTestCell&lt;/code&gt;的时候将swf传入&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;JISTableTestCell&lt;/code&gt;继承&lt;code&gt;JISUISprite&lt;/code&gt;说明&lt;code&gt;JISTableTestCell&lt;/code&gt;可以使用该扩展进行管理UI，其中的&lt;code&gt;setCurrDisplay(swf.createSprite(&amp;quot;spr_TableCell&amp;quot;));&lt;/code&gt;为从资源库中创建一个sprite赋值给当前类，然后当前类会进行管理其中的内容，我们可以看下资源：&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image8.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image8.png' /&gt;
 &lt;p&gt;而我们的JISTableTestCell中也有个_Text属性。&lt;/p&gt;
 
 &lt;p&gt;JISTableTestCell中的setValue()可以输出通过setCellDatas和addCellData中设置的值。如此一个支持触控滑动的滚动界面就完毕了，跟手机上绚丽的滑动效果一样哦。&lt;/p&gt;
@@ -593,9 +595,9 @@ tableScroll.getTable().addCellData(btnIndex++,this.getSourceSwf());//添加新�
 &lt;p&gt;如我们的演示资源中有个进度条面板，其中有_ProgressText、_RowProgress、_AddBtn、_DecBtn&lt;/p&gt;
 
 &lt;p&gt;其中_RowProgress是一个mc，其中存在一个背景和一个前景，前景我们命名为_Center，因为扩展提供的JISUIProgressManager需要进度条的名字为_Center，如图：&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image9.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image9.png' /&gt;
 &lt;p&gt;该组件在window中的名字为_ProgressTest，如图：&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image10.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image10.png' /&gt;
 &lt;p&gt;首先我们先建立对应_ProgressTest的类，&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;package
@@ -856,7 +858,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt; 自动合并纹理，并且可以自动单独导出大图&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id59'&gt;&lt;a id='downInstall' href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' target='_blank'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id='id59'&gt;&lt;a href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' id='downInstall' target='_blank'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
 &lt;hr /&gt;&lt;h2 id='Tutorials1'&gt;教程一：原件命名规则&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下(&lt;code&gt;是AS链接名称噢&lt;/code&gt;)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -879,21 +881,21 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;作为设计师，你只需要准备好需要展示的图片，在FlashPro中将他们有序的组装起来。并且为需要导出的原件设置链接就可以了搞定一切&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;打开库面板，你可以看到此示例的相关资源.&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image1.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image1.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;相关资源编辑好之后导出Swf.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;打开StarlingSwf导出工具，选择刚刚导出的swf.选择上方的下拉框，预览在Swf内部的原件在Starling中是什么样子.&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image2.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image2.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;选择导出倍数，然后导出.资源导出后会出现两个文件夹&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image3.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image3.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;data下面放的Swf数据,images下放的所有导出的图片.将这两个东西给程序就可以了.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr /&gt;&lt;h2 id='Tutorials3'&gt;教程三：针对程序&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt;建立一个Actionscript工程。(demo中是手机工程)&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image4.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image4.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt;倒入资源&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image5.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image5.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt;倒入依赖库&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image6.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image6.png' /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt;代码&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;关键代码&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -990,7 +992,7 @@ package
 }&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;5.&lt;/em&gt;&lt;/strong&gt;运行效果&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image7.png' /&gt;&lt;hr /&gt;&lt;h2 id='Tutorials4'&gt;教程四：MovieClip自动停止播放&lt;/h2&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image7.png' /&gt;&lt;hr /&gt;&lt;h2 id='Tutorials4'&gt;教程四：MovieClip自动停止播放&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;很多时候需要让动画播放完毕之后自动停止在最后一帧，在工具中也可以很简单的实现&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.&lt;/em&gt;&lt;/strong&gt; 倒入swf&lt;/p&gt;
@@ -998,9 +1000,9 @@ package
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt; 从MovieClip列表中 选中需要自动停止的MC&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt; 取消&lt;code&gt;是否循环&lt;/code&gt;&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image9.png' /&gt;&lt;hr /&gt;&lt;h2 id='Tutorials5'&gt;教程五：获取界面上的元素&lt;/h2&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image9.png' /&gt;&lt;hr /&gt;&lt;h2 id='Tutorials5'&gt;教程五：获取界面上的元素&lt;/h2&gt;
 &lt;p&gt;很简单，首先给元素命名&lt;/p&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_tool/image8.png' /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/starling_swf_tool/image8.png' /&gt;
 &lt;p&gt;然后使用&lt;code&gt;getChildByName&lt;/code&gt;获取&lt;/p&gt;
 &lt;hr /&gt;&lt;h2 id='Tutorials6'&gt;教程六：ATF批量导出工具如何使用&lt;/h2&gt;
 &lt;h4 id='id60'&gt;&lt;a href='http://zmliu.github.io/2013/08/31/ATFTool/'&gt;移步到这里&lt;/a&gt;&lt;/h4&gt;
@@ -1101,7 +1103,7 @@ function onError(e:ProgressEvent):void{
 解决方法是把纹理改成正方形&lt;/code&gt;&lt;/pre&gt;
 &lt;hr /&gt;
 &lt;h4 id='id51'&gt;来张截图&lt;/h4&gt;
-&lt;img class='img-rounded' alt='截图' src='/assets/images/atftool_view.png' /&gt;&lt;hr /&gt;
+&lt;img alt='截图' class='img-rounded' src='/assets/images/atftool_view.png' /&gt;&lt;hr /&gt;
 &lt;h4 id='id52'&gt;功能说明&lt;/h4&gt;
 
 &lt;pre&gt;&lt;code&gt;输出平台选择

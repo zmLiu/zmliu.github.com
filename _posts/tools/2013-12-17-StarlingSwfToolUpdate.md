@@ -11,7 +11,7 @@ tags : [Tool]
 ## 源码 ##
 [工具源码地址][1]
 
-[依赖库地址][2]
+[依赖库源码(开发版 不建议下载)][2]
 
   [1]: https://github.com/zmLiu/StarlingSWF/tree/0.0.7
   [2]: https://github.com/zmLiu/StarlingFeathers
@@ -31,11 +31,14 @@ tags : [Tool]
 [Demo][13]
 
 [Demo中Fla的兼容版本][14]
+
+[依赖库][15]
   
   [11]: http://url.cn/TUabD8
   [12]: http://url.cn/R3QiWY
   [13]: http://url.cn/QkQkOb
   [14]: http://url.cn/PFeYz3
+  [15]: http://url.cn/RnR9zq
 
 更新时间2013-01-09
 
