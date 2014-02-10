@@ -109,93 +109,69 @@
       <div class="content">
         <div id='post'>
 <h1> 
-<a href='/2014/01/23/phonegap%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA'>
-phonegap 3.3 环境搭建
+<a href='/2014/02/10/MySql%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9'>
+MySql数据库索引优化注意事项
 </a>
 </h1>
 
 <div class='authoring'>
-01 / 23, 2014
+02 / 10, 2014
 </div>
 <br />
-<h3 id='phonegap'><a href='http://phonegap.com/'>phonegap官网地址</a></h3>
+<p>设计好MySql的索引可以让你的数据库飞起来，大大的提高数据库效率。设计MySql索引的时候有一下几点注意：</p>
 
-<h3 id='phonegap'><a href='http://phonegap.com/install/'>phonegap官方安装教程</a></h3>
+<blockquote>
+<p>创建索引</p>
+</blockquote>
 
-<h3 id='id74'>一.依赖环境</h3>
+<pre><code>对于查询占主要的应用来说，索引显得尤为重要。很多时候性能问题很简单的就是因为我们忘了添加索引而造成的，或者说没有添加更为有效的索引导致。如果不加索引的话，那么查找任何哪怕只是一条特定的数据都会进行一次全表扫描，如果一张表的数据量很大而符合条件的结果又很少，那么不加索引会引起致命的性能下降。但是也不是什么情况都非得建索引不可，比如性别可能就只有两个值，建索引不仅没什么优势，还会影响到更新速度，这被称为过度索引。</code></pre>
 
-<p>phonegap 3.3需要<code>nodejs</code>的环境</p>
+<blockquote>
+<p>复合索引</p>
+</blockquote>
 
-<p><a href='http://nodejs.org/download/'>nodejs下载地址</a></p>
+<pre><code>比如有一条语句是这样的：select * from users where area=’beijing’ and age=22;
 
-<p><code>nodejs</code>傻瓜式安装就行</p>
-<hr />
-<h3 id='phonegap'>二.安装phonegap</h3>
+如果我们是在area和age上分别创建单个索引的话，由于mysql查询每次只能使用一个索引，所以虽然这样已经相对不做索引时全表扫描提高了很多效率，但是如果在area、age两列上创建复合索引的话将带来更高的效率。如果我们创建了(area, age, salary)的复合索引，那么其实相当于创建了(area,age,salary)、(area,age)、(area)三个索引，这被称为最佳左前缀特性。因此我们在创建复合索引时应该将最常用作限制条件的列放在最左边，依次递减。</code></pre>
 
-<p><code>nodejs</code>安装完成之后<code>phonegap</code>的安装就很简单了,运行下面的命令即可:</p>
+<blockquote>
+<p>索引不会包含有NULL值的列</p>
+</blockquote>
 
-<pre><code>sudo npm install -g phonegap</code></pre>
+<pre><code>只要列中包含有NULL值都将不会被包含在索引中，复合索引中只要有一列含有NULL值，那么这一列对于此复合索引就是无效的。所以我们在数据库设计时不要让字段的默认值为NULL。</code></pre>
 
-<p>这一步很简单。</p>
-<hr />
-<h3 id='app'>三.创建app</h3>
+<blockquote>
+<p>使用短索引</p>
+</blockquote>
 
-<p>创建app十分简单,运行下面的命令即可:</p>
+<pre><code>对串列进行索引，如果可能应该指定一个前缀长度。例如，如果有一个CHAR(255)的 列，如果在前10 个或20 个字符内，多数值是惟一的，那么就不要对整个列进行索引。短索引不仅可以提高查询速度而且可以节省磁盘空间和I/O操作。</code></pre>
 
-<pre><code>phonegap create test-app &quot;com.test.app&quot; &quot;appname&quot;</code></pre>
+<blockquote>
+<p>排序的索引问题</p>
+</blockquote>
 
-<p>命令参数的意思分别为:</p>
+<pre><code>mysql查询只使用一个索引，因此如果where子句中已经使用了索引的话，那么order by中的列是不会使用索引的。因此数据库默认排序可以符合要求的情况下不要使用排序操作；尽量不要包含多个列的排序，如果需要最好给这些列创建复合索引。</code></pre>
 
-<ol>
-<li>test-app <code>app创建所在的目录</code></li>
+<blockquote>
+<p>like语句操作</p>
+</blockquote>
 
-<li>com.test.app <code>appid</code></li>
+<pre><code>一般情况下不鼓励使用like操作，如果非使用不可，如何使用也是一个问题。like “%aaa%” 不会使用索引而like “aaa%”可以使用索引。</code></pre>
 
-<li>appname <code>app名称</code></li>
-</ol>
-<hr />
-<h3 id='ios'>四.输出到IOS</h3>
+<blockquote>
+<p>不要在列上进行运算</p>
+</blockquote>
 
-<pre><code>cd test-app
-phonegap run ios</code></pre>
+<pre><code>select * from users where YEAR(adddate)&lt;2007;将在每个行上进行运算，这将导致索引失效而进行全表扫描，因此我们可以改成select * from users where adddate&lt;‘2007-01-01’;</code></pre>
 
-<p>输出完成之后，会在<code>test-app/platforms/ios</code>目录下生成XCode工程文件</p>
+<blockquote>
+<p>不使用NOT IN和&lt;&gt;操作</p>
+</blockquote>
 
-<p>ios输出就算完成了</p>
-<hr />
-<h3 id='android'>五.输出到android</h3>
-
-<p>ios的输出十分简单</p>
-
-<p>android的输出稍微复杂一点，主要是需要android的sdk以及几个环境变量的配置</p>
-
-<p><strong><em>1.配置ant</em></strong></p>
-
-<p><a href='http://ant.apache.org/'>ant下载地址</a></p>
-
-<p>下载完成并且解压之后 将<code>ant</code>的<code>bin</code>目录配置到环境变量</p>
-
-<p>环境变量怎么配置就不讲了</p>
-
-<p><strong><em>2.配置android环境</em></strong></p>
-
-<p><a href='http://developer.android.com/sdk/index.html'>android sdk下载地址</a></p>
-
-<p>下载完成并解压之后回获得两个目录，分别是<code>eclipse</code>和<code>sdk</code></p>
-
-<p>默认打开<code>eclipse</code> <code>android</code>环境就已经搭建完成</p>
-
-<p>但是光是这样phonegap还不能输出android</p>
-
-<p>将<code>sdk/tools</code>,<code>sdk/platform-tools</code>两个目录都加入环境变量 即可</p>
-
-<p><strong><em>3.输出</em></strong></p>
-
-<pre><code>cd test-app
-phonegap run android</code></pre>
-
-<p>输出完成之后，会在<code>test-app/platforms/android</code>目录下生成android的相关工程文件</p>
+<pre><code>NOT IN和&lt;&gt;操作都不会使用索引将进行全表扫描。NOT IN可以NOT EXISTS代替，id&lt;&gt;3则可使用id&gt;3 or id&lt;3来代替。</code></pre>
 </div><br /><h1> Newest 10 Posts </h1><ul class='posts'>
+  
+  <li><span class='post_date'>02 / 10, 2014</span> &raquo; <a href='/2014/02/10/MySql%E6%95%B0%E6%8D%AE%E5%BA%93%E7%B4%A2%E5%BC%95%E4%BC%98%E5%8C%96%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9'>MySql数据库索引优化注意事项</a></li>
   
   <li><span class='post_date'>01 / 23, 2014</span> &raquo; <a href='/2014/01/23/phonegap%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA'>phonegap 3.3 环境搭建</a></li>
   
@@ -214,8 +190,6 @@ phonegap run android</code></pre>
   <li><span class='post_date'>11 / 11, 2013</span> &raquo; <a href='/2013/11/11/mysql-explain'>详解MySQL中EXPLAIN解释命令</a></li>
   
   <li><span class='post_date'>11 /  9, 2013</span> &raquo; <a href='/2013/11/09/StarlingSwfTool'>Swf一键导出到Starling中的工具，在Starling使用原生的MovieClip</a></li>
-  
-  <li><span class='post_date'>09 / 17, 2013</span> &raquo; <a href='/2013/09/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E8%AE%BE%E5%A4%87%E4%B8%8D%E4%BC%91%E7%9C%A0'>如何让设备不休眠</a></li>
   
 </ul>
       </div>

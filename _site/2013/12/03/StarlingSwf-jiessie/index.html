@@ -141,9 +141,9 @@
 <p>你需要使用StarlingSwf将你的swf来进行导出，导出的3个文件建议放到一个文件夹下，</p>
 
 <p>例如:</p>
-<img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image0.png' />
+<img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image0.png' />
 <p>该UI扩展需要你布置swf的时候稍微下点功夫，如下示例</p>
-<img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image1.png' /><hr />
+<img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image1.png' /><hr />
 <h2 id='id68'>在程序中使用：</h2>
 
 <p>在使用该扩展之前你需要初始化两个地方：</p>
@@ -164,9 +164,9 @@ show();
 这样window就开始加载并且在加载完毕之后显示了。</code></pre>
 
 <p><code>其中super的两个参数第一个为swf的导出链接名字</code></p>
-<img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image2.png' />
+<img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image2.png' />
 <p>第二个参数为文件的名字</p>
-<img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image3.png' />
+<img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image3.png' />
 <p><code>setAssetSource</code>可以设置一个File，如果是文件夹的话，会扫描文件夹下所有文件，如果你的是web资源的话，你可以设置一个Url数组：<code>[“../assets/ui/test/test.bytes”, “../assets/ui/test/test.png”, “../assets/ui/test/test.xml”]</code></p>
 
 <p>如此，我们的第一个Window就创建好并能够显示了。</p>
@@ -174,11 +174,11 @@ show();
 <h2 id='window'>管理Window中的组件：</h2>
 
 <p>我们的window中有个组件名字为_BtnList,如图：</p>
-<img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image4.png' />
+<img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image4.png' />
 <p>这个组件内部为4个按钮，命名分别为：_Btn_1、_Btn_2、_Btn_3、_Btn_4</p>
 
 <p>按钮是一个mc，导出的也是mc</p>
-<img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image5.png' />
+<img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image5.png' />
 <p>我们可以使用JISCuttingButtonGroup进行管理我们的btn列表，如下代码：</p>
 
 <pre><code>public var _BtnList:JISCuttingButtonGroup;
@@ -198,7 +198,7 @@ setAssetSource(File.applicationDirectory.resolvePath(&quot;assets/ui/test/&quot;
 <h2 id='window'>管理window中的对象：</h2>
 
 <p>我们的示例文件中有一个空的影片剪辑和一个按钮，如图：</p>
-<img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image6.png' /><img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image7.png' />
+<img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image6.png' /><img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image7.png' />
 <p>由于我们的_ScrollTable是Sprite类型，为系统组件，所以不用提前new出来，我们的_AddTableCellBtn是自定义组件，所以需要事先new出来，代码如下：</p>
 
 <pre><code>public var _ScrollTable:Sprite;
@@ -291,7 +291,7 @@ tableScroll.getTable().addCellData(btnIndex++,this.getSourceSwf());//添加新�
 <p>都会传入一个Swf对象，这就可以看出<code>setCellDatas</code>和<code>addCellData</code>会在创建<code>JISTableTestCell</code>的时候将swf传入</p>
 
 <p><code>JISTableTestCell</code>继承<code>JISUISprite</code>说明<code>JISTableTestCell</code>可以使用该扩展进行管理UI，其中的<code>setCurrDisplay(swf.createSprite(&quot;spr_TableCell&quot;));</code>为从资源库中创建一个sprite赋值给当前类，然后当前类会进行管理其中的内容，我们可以看下资源：</p>
-<img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image8.png' />
+<img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image8.png' />
 <p>而我们的JISTableTestCell中也有个_Text属性。</p>
 
 <p>JISTableTestCell中的setValue()可以输出通过setCellDatas和addCellData中设置的值。如此一个支持触控滑动的滚动界面就完毕了，跟手机上绚丽的滑动效果一样哦。</p>
@@ -301,9 +301,9 @@ tableScroll.getTable().addCellData(btnIndex++,this.getSourceSwf());//添加新�
 <p>如我们的演示资源中有个进度条面板，其中有_ProgressText、_RowProgress、_AddBtn、_DecBtn</p>
 
 <p>其中_RowProgress是一个mc，其中存在一个背景和一个前景，前景我们命名为_Center，因为扩展提供的JISUIProgressManager需要进度条的名字为_Center，如图：</p>
-<img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image9.png' />
+<img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image9.png' />
 <p>该组件在window中的名字为_ProgressTest，如图：</p>
-<img alt='截图' class='img-rounded' src='/assets/images/starling_swf_jiessie/image10.png' />
+<img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image10.png' />
 <p>首先我们先建立对应_ProgressTest的类，</p>
 
 <pre><code>package
