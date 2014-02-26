@@ -11,14 +11,33 @@ tags : [Tool]
 ## 源码 ##
 [工具源码地址][1]
 
-[依赖库源码(开发版 不建议下载)][2]
+[依赖库源码(开发版)][2]
 
-  [1]: https://github.com/zmLiu/StarlingSWF/tree/0.0.7
+  [1]: https://github.com/zmLiu/StarlingSWF/tree/0.0.8
   [2]: https://github.com/zmLiu/StarlingFeathers
 
 
 ----------
-## V0.0.7(依赖库也需要更新) ##
+## V0.0.8(依赖库也需要更新) ##
+
+修改由于分配显示对象导致的动画嵌套播放顺序错乱的bug
+
+组件现在可以通过`lzm.starling.swf.components.ComponentConfig`来配置
+
+[Mac版下载][16]
+
+[Windows版下载][17]
+
+[依赖库][18]
+  
+  [16]: http://url.cn/NGhZPg
+  [17]: http://url.cn/M8qnJ2
+  [18]: http://url.cn/RxDO4M
+
+更新时间2014-02-26
+
+----------
+## V0.0.7 ##
 
 增加自定义组件机制
 
