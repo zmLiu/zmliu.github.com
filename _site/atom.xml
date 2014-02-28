@@ -4,7 +4,7 @@
  <title>zmLiu</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2014-02-28T16:21:12+08:00</updated>
+ <updated>2014-02-28T16:59:47+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>zmLiu</name>
@@ -318,7 +318,7 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;如果不是以代码方式启动工具。那么工具中 新添加的自定义组件会以&lt;code&gt;sprite&lt;/code&gt;的方式呈现，不会有组件的特性。就需要到自己的工程里面 创建swf然后预览了&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;例子中的fla在&lt;a href='https://github.com/zmLiu/StarlingSWF/tree/0.0.7/StarlingSWF-Test/testFla'&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;例子中的fla在&lt;a href='https://github.com/zmLiu/StarlingSWF/tree/0.0.8/StarlingSWF-Test/testFla'&gt;这里&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;最后来一张预览截图&lt;/p&gt;
 &lt;img alt='截图' src='/assets/images/starling_swf_tool_components/image6.png' class='img-rounded' /&gt;</content>

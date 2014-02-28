@@ -168,7 +168,7 @@ tags : [Tool]
 
 ----------
 
-例子中的fla在[这里](https://github.com/zmLiu/StarlingSWF/tree/0.0.7/StarlingSWF-Test/testFla)
+例子中的fla在[这里](https://github.com/zmLiu/StarlingSWF/tree/0.0.8/StarlingSWF-Test/testFla)
 
 最后来一张预览截图
 
