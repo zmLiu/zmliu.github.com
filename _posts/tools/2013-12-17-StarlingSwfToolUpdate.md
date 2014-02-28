@@ -24,6 +24,8 @@ tags : [Tool]
 
 组件现在可以通过`lzm.starling.swf.components.ComponentConfig`来配置
 
+`更新到该版本.bytes文件需要重新使用工具导出一次`
+
 [Mac版下载][16]
 
 [Windows版下载][17]
