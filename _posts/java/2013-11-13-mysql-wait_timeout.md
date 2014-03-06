@@ -1,7 +1,7 @@
 ---
 layout : post
 title : The last packet successfully received from the server was XXX seconds ago
-tags : [Java,MySql]
+tags : [Java,mysql]
 ---
 
 ***导致这个错误的原因是mysql `wait_timeout`***

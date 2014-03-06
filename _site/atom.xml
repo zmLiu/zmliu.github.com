@@ -4,7 +4,7 @@
  <title>zmLiu</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2014-02-28T16:59:47+08:00</updated>
+ <updated>2014-03-06T11:05:29+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>zmLiu</name>
@@ -330,6 +330,10 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
    <updated>2013-12-17T00:00:00+08:00</updated>
    <id>http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate</id>
    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;有些同学使用过程用遇到了问题。我开了一个QQ群。有问题的同学可以进来问一下群号是168436154&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id='atf'&gt;ATF工具说明&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;Atf&lt;/code&gt;工具之前是独立的。现在已经合并到StarlingSwf中。 如需要使用 直接下载StarlingSwf的mac或者windows版本即可。&lt;code&gt;Atf&lt;/code&gt;工具的&lt;code&gt;入口&lt;/code&gt;就在主界面上。很大一个按钮。&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id71'&gt;源码&lt;/h2&gt;
 
@@ -879,7 +883,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt; 自动合并纹理，并且可以自动单独导出大图&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id59'&gt;&lt;a href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' id='downInstall' target='_blank'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id='id59'&gt;&lt;a href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' target='_blank' id='downInstall'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
 &lt;hr /&gt;&lt;h2 id='Tutorials1'&gt;教程一：原件命名规则&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下(&lt;code&gt;是AS链接名称噢&lt;/code&gt;)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
