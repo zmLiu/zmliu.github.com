@@ -14,16 +14,6 @@ tags : [Tool]
 
 
 ----------
-## 源码 ##
-[工具源码地址][1]
-
-[依赖库源码(开发版)][2]
-
-  [1]: https://github.com/zmLiu/StarlingSWF/tree/0.0.8
-  [2]: https://github.com/zmLiu/StarlingFeathers
-
-
-----------
 ## V0.0.9 ##
 
 批量倒入
