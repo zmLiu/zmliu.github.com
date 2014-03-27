@@ -28,7 +28,9 @@ tags : [Tool]
  
  ***10.*** <a href="http://zmliu.github.io/2014/01/07/StarlingSwf-Components/" target="_blank">自定义组件</a>
  
- ***11.*** [成功案例](#SuccessStories)
+ ***11.*** <a href="http://zmliu.github.io/2014/03/27/StarlingSwf-Particle/" target="_blank">粒子集成教程</a>
+ 
+ ***12.*** [成功案例](#SuccessStories)
  
 
 
@@ -80,6 +82,8 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  
  ***8.*** comp 开头会被识别为带特殊功能的组件
  
+ ***9.*** particle 开头会被识别为粒子(需要制作规范。具体请看粒子集成教程)
+ 
 
 
 ----------
@@ -97,11 +101,9 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
  
 <img src="/assets/images/starling_swf_tool/image2.png" alt="截图" class="img-rounded">
 
- ***5.***选择导出倍数，然后导出.资源导出后会出现两个文件夹
+ ***5.***导出。点击导出按钮。导出之后会在导出目录下，以选择的Swf名字，创建一个文件，文件夹内部存放了Swf导出之后的数据
  
 <img src="/assets/images/starling_swf_tool/image3.png" alt="截图" class="img-rounded">
-
- ***data下面放的Swf数据,images下放的所有导出的图片.将这两个东西给程序就可以了.***
 
 
 ----------
@@ -141,80 +143,62 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 ***demo中的主要代码***
     
     package
-    {
-    	import flash.display.StageAlign;
-    	import flash.display.StageScaleMode;
-    	
-    	import lzm.starling.STLStarup;
-    	
-    	public class StarlingSwfTestMain extends STLStarup
-    	{
-    		public function StarlingSwfTestMain()
-    		{
-    			super();
-    			
-    			// 支持 autoOrient
-    			stage.align = StageAlign.TOP_LEFT;
-    			stage.scaleMode = StageScaleMode.NO_SCALE;
-    			stage.color = 0x999999;
-    			stage.frameRate = 60;
-    			
-    			initStarling(StarlingSwfTestMainClass);
-    		}
-    	}
-    }
-    
-    package
-    {
-    	import flash.filesystem.File;
-    	
-    	import lzm.starling.STLConstant;
-    	import lzm.starling.STLMainClass;
-    	import lzm.starling.gestures.DragGestures;
-    	import lzm.starling.swf.Swf;
-    	
-    	import starling.core.Starling;
-    	import starling.display.Sprite;
-    	import starling.text.TextField;
-    	import starling.utils.AssetManager;
-    	import starling.utils.formatString;
-    	
-    	public class StarlingSwfTestMainClass extends STLMainClass
-    	{
-    		
-    		private var textfield:TextField;
-    		
-    		public function StarlingSwfTestMainClass()
-    		{
-    			super();
-    			
-    			Swf.init(this);
-    			
-    			textfield = new TextField(200,100,"loading....");
-    			textfield.x = (STLConstant.StageWidth - textfield.width)/2;
-    			textfield.y = (STLConstant.StageHeight - textfield.height)/2;
-    			addChild(textfield);
-    			
-    			var assets:AssetManager = new AssetManager(STLConstant.scale,STLConstant.useMipMaps);
-    			var file:File = File.applicationDirectory;
-    			
-    			assets.enqueue(file.resolvePath(formatString("assets/{0}x/",STLConstant.scale)));
-    			assets.loadQueue(function(ratio:Number):void{
-    				textfield.text = "loading...." + int(ratio*100)+"%";
-    				if(ratio == 1){
-    					textfield.removeFromParent(true);
-    					
-    					var swf:Swf = new Swf(assets.getByteArray("layout"),assets);
-    					
-    					var sprite:Sprite = swf.createSprite("spr_1");
-    					addChild(sprite);
-    					
-    					new DragGestures(sprite);
-    				}
-    			});
-    		}
-    	}
-    }
+	{
+		import flash.filesystem.File;
+		
+		import lzm.starling.STLConstant;
+		import lzm.starling.STLMainClass;
+		import lzm.starling.swf.Swf;
+		import lzm.starling.swf.SwfAssetManager;
+		
+		import starling.display.Sprite;
+		import starling.text.TextField;
+		import starling.utils.formatString;
+		
+		public class TestMainClass extends STLMainClass
+		{
+			
+			private var textfield:TextField;
+			private var assets:SwfAssetManager;
+			
+			public function TestMainClass()
+			{
+				super();
+				
+				Swf.init(this);
+				
+				textfield = new TextField(200,100,"loading....");
+				textfield.x = (STLConstant.StageWidth - textfield.width)/2;
+				textfield.y = (STLConstant.StageHeight - textfield.height)/2;
+				addChild(textfield);
+				
+				assets = new SwfAssetManager(STLConstant.scale,STLConstant.useMipMaps);
+				assets.verbose = true;
+				var file:File = File.applicationDirectory;
+				
+				assets.enqueue("test",[file.resolvePath(formatString("assets/{0}x/test/",STLConstant.scale))],60);
+				assets.loadQueue(function(ratio:Number):void{
+					textfield.text = "loading...." + int(ratio*100)+"%";
+					if(ratio == 1){
+						textfield.removeFromParent(true);
+						
+						test1();
+	//					test2();
+					}
+				});
+			}
+			
+			private function test1():void{
+				var sprite:Sprite = assets.createSprite("spr_1");
+				addChild(sprite);
+			}
+			
+			private function test2():void{
+				var sprite:Sprite = assets.createSprite("spr_particle");
+				addChild(sprite);
+			}
+		}
+	}
 
  ***5.***运行效果
  

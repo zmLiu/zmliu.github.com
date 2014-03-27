@@ -142,7 +142,9 @@
 
 <p><strong><em>10.</em></strong> <a href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/' target='_blank'>自定义组件</a></p>
 
-<p><strong><em>11.</em></strong> <a href='#SuccessStories'>成功案例</a></p>
+<p><strong><em>11.</em></strong> <a href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/' target='_blank'>粒子集成教程</a></p>
+
+<p><strong><em>12.</em></strong> <a href='#SuccessStories'>成功案例</a></p>
 <hr /><h2 id='whatThis'>StarlingSwf是什么</h2>
 <p>StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具.</p>
 
@@ -179,25 +181,25 @@
 <p><strong><em>7.</em></strong> shapeImg 开头会被识别为lzm.starling.swf.display.ShapeImage,使用纹理填充的图片(纹理长宽需要为2的幂数,改变组建宽高时，会自动使用初始化的Texture填充)</p>
 
 <p><strong><em>8.</em></strong> comp 开头会被识别为带特殊功能的组件</p>
+
+<p><strong><em>9.</em></strong> particle 开头会被识别为粒子(需要制作规范。具体请看粒子集成教程)</p>
 <hr /><h2 id='Tutorials2'>教程二：针对设计师</h2>
 <p><strong><em>1.</em></strong>作为设计师，你只需要准备好需要展示的图片，在FlashPro中将他们有序的组装起来。并且为需要导出的原件设置链接就可以了搞定一切</p>
 
 <p><strong><em>2.</em></strong>打开库面板，你可以看到此示例的相关资源.</p>
-<img src='/assets/images/starling_swf_tool/image1.png' alt='截图' class='img-rounded' />
+<img class='img-rounded' src='/assets/images/starling_swf_tool/image1.png' alt='截图' />
 <p><strong><em>3.</em></strong>相关资源编辑好之后导出Swf.</p>
 
 <p><strong><em>4.</em></strong>打开StarlingSwf导出工具，选择刚刚导出的swf.选择上方的下拉框，预览在Swf内部的原件在Starling中是什么样子.</p>
-<img src='/assets/images/starling_swf_tool/image2.png' alt='截图' class='img-rounded' />
-<p><strong><em>5.</em></strong>选择导出倍数，然后导出.资源导出后会出现两个文件夹</p>
-<img src='/assets/images/starling_swf_tool/image3.png' alt='截图' class='img-rounded' />
-<p><strong><em>data下面放的Swf数据,images下放的所有导出的图片.将这两个东西给程序就可以了.</em></strong></p>
-<hr /><h2 id='Tutorials3'>教程三：针对程序</h2>
+<img class='img-rounded' src='/assets/images/starling_swf_tool/image2.png' alt='截图' />
+<p><strong><em>5.</em></strong>导出。点击导出按钮。导出之后会在导出目录下，以选择的Swf名字，创建一个文件，文件夹内部存放了Swf导出之后的数据</p>
+<img class='img-rounded' src='/assets/images/starling_swf_tool/image3.png' alt='截图' /><hr /><h2 id='Tutorials3'>教程三：针对程序</h2>
 <p><strong><em>1.</em></strong>建立一个Actionscript工程。(demo中是手机工程)</p>
-<img src='/assets/images/starling_swf_tool/image4.png' alt='截图' class='img-rounded' />
+<img class='img-rounded' src='/assets/images/starling_swf_tool/image4.png' alt='截图' />
 <p><strong><em>2.</em></strong>倒入资源</p>
-<img src='/assets/images/starling_swf_tool/image5.png' alt='截图' class='img-rounded' />
+<img class='img-rounded' src='/assets/images/starling_swf_tool/image5.png' alt='截图' />
 <p><strong><em>3.</em></strong>倒入依赖库</p>
-<img src='/assets/images/starling_swf_tool/image6.png' alt='截图' class='img-rounded' />
+<img class='img-rounded' src='/assets/images/starling_swf_tool/image6.png' alt='截图' />
 <p><strong><em>4.</em></strong>代码</p>
 
 <p><strong><em>关键代码</em></strong></p>
@@ -219,49 +221,24 @@ swf.createS9Image(&quot;s9_test1&quot;);</code></pre>
 
 <pre><code>package
 {
-	import flash.display.StageAlign;
-	import flash.display.StageScaleMode;
-	
-	import lzm.starling.STLStarup;
-	
-	public class StarlingSwfTestMain extends STLStarup
-	{
-		public function StarlingSwfTestMain()
-		{
-			super();
-			
-			// 支持 autoOrient
-			stage.align = StageAlign.TOP_LEFT;
-			stage.scaleMode = StageScaleMode.NO_SCALE;
-			stage.color = 0x999999;
-			stage.frameRate = 60;
-			
-			initStarling(StarlingSwfTestMainClass);
-		}
-	}
-}
-
-package
-{
 	import flash.filesystem.File;
 	
 	import lzm.starling.STLConstant;
 	import lzm.starling.STLMainClass;
-	import lzm.starling.gestures.DragGestures;
 	import lzm.starling.swf.Swf;
+	import lzm.starling.swf.SwfAssetManager;
 	
-	import starling.core.Starling;
 	import starling.display.Sprite;
 	import starling.text.TextField;
-	import starling.utils.AssetManager;
 	import starling.utils.formatString;
 	
-	public class StarlingSwfTestMainClass extends STLMainClass
+	public class TestMainClass extends STLMainClass
 	{
 		
 		private var textfield:TextField;
+		private var assets:SwfAssetManager;
 		
-		public function StarlingSwfTestMainClass()
+		public function TestMainClass()
 		{
 			super();
 			
@@ -272,29 +249,36 @@ package
 			textfield.y = (STLConstant.StageHeight - textfield.height)/2;
 			addChild(textfield);
 			
-			var assets:AssetManager = new AssetManager(STLConstant.scale,STLConstant.useMipMaps);
+			assets = new SwfAssetManager(STLConstant.scale,STLConstant.useMipMaps);
+			assets.verbose = true;
 			var file:File = File.applicationDirectory;
 			
-			assets.enqueue(file.resolvePath(formatString(&quot;assets/{0}x/&quot;,STLConstant.scale)));
+			assets.enqueue(&quot;test&quot;,[file.resolvePath(formatString(&quot;assets/{0}x/test/&quot;,STLConstant.scale))],60);
 			assets.loadQueue(function(ratio:Number):void{
 				textfield.text = &quot;loading....&quot; + int(ratio*100)+&quot;%&quot;;
 				if(ratio == 1){
 					textfield.removeFromParent(true);
 					
-					var swf:Swf = new Swf(assets.getByteArray(&quot;layout&quot;),assets);
-					
-					var sprite:Sprite = swf.createSprite(&quot;spr_1&quot;);
-					addChild(sprite);
-					
-					new DragGestures(sprite);
+					test1();
+//					test2();
 				}
 			});
+		}
+		
+		private function test1():void{
+			var sprite:Sprite = assets.createSprite(&quot;spr_1&quot;);
+			addChild(sprite);
+		}
+		
+		private function test2():void{
+			var sprite:Sprite = assets.createSprite(&quot;spr_particle&quot;);
+			addChild(sprite);
 		}
 	}
 }</code></pre>
 
 <p><strong><em>5.</em></strong>运行效果</p>
-<img src='/assets/images/starling_swf_tool/image7.png' alt='截图' class='img-rounded' /><hr /><h2 id='Tutorials4'>教程四：MovieClip自动停止播放</h2>
+<img class='img-rounded' src='/assets/images/starling_swf_tool/image7.png' alt='截图' /><hr /><h2 id='Tutorials4'>教程四：MovieClip自动停止播放</h2>
 <p><strong><em>很多时候需要让动画播放完毕之后自动停止在最后一帧，在工具中也可以很简单的实现</em></strong></p>
 
 <p><strong><em>1.</em></strong> 倒入swf</p>
@@ -302,9 +286,9 @@ package
 <p><strong><em>2.</em></strong> 从MovieClip列表中 选中需要自动停止的MC</p>
 
 <p><strong><em>3.</em></strong> 取消<code>是否循环</code></p>
-<img src='/assets/images/starling_swf_tool/image9.png' alt='截图' class='img-rounded' /><hr /><h2 id='Tutorials5'>教程五：获取界面上的元素</h2>
+<img class='img-rounded' src='/assets/images/starling_swf_tool/image9.png' alt='截图' /><hr /><h2 id='Tutorials5'>教程五：获取界面上的元素</h2>
 <p>很简单，首先给元素命名</p>
-<img src='/assets/images/starling_swf_tool/image8.png' alt='截图' class='img-rounded' />
+<img class='img-rounded' src='/assets/images/starling_swf_tool/image8.png' alt='截图' />
 <p>然后使用<code>getChildByName</code>获取</p>
 <hr /><h2 id='Tutorials6'>教程六：ATF批量导出工具如何使用</h2>
 <h4 id='id60'><a href='http://zmliu.github.io/2013/08/31/ATFTool/'>移步到这里</a></h4>
@@ -331,7 +315,7 @@ package
 
   
      
-    	<li><a href="/tags.html#Tool-ref">Tool <span>5</span></a></li>
+    	<li><a href="/tags.html#Tool-ref">Tool <span>6</span></a></li>
     
   
 
