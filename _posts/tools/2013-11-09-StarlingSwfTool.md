@@ -12,7 +12,7 @@ tags : [Tool]
  
  ***2.*** [功能与特色](#featuresFunctions)
  
- ***3.*** [下载与安装](#downInstall) 
+ ***3.*** <a id="downInstall" href="http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/" target="_blank">下载与安装</a>
  
  ***4.*** [教程一：资源命名规则](#Tutorials1)
  

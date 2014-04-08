@@ -12,6 +12,12 @@ tags : [Tool]
 `Atf`工具之前是独立的。现在已经合并到StarlingSwf中。
 如需要使用 直接下载StarlingSwf的mac或者windows版本即可。`Atf`工具的`入口`就在主界面上。很大一个按钮。
 
+----------
+
+[依赖库最新源码][1]
+
+[1]: https://github.com/zmLiu/StarlingFeathers
+
 
 ----------
 ## V1.0.0 ##
