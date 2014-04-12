@@ -5,8 +5,8 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2014-04-12T11:49:08+08:00</lastBuildDate>
-        <pubDate>2014-04-12T11:49:08+08:00</pubDate>
+        <lastBuildDate>2014-04-12T12:14:01+08:00</lastBuildDate>
+        <pubDate>2014-04-12T12:14:01+08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -397,6 +397,22 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;code&gt;Atf&lt;/code&gt;工具之前是独立的。现在已经合并到StarlingSwf中。 如需要使用 直接下载StarlingSwf的mac或者windows版本即可。&lt;code&gt;Atf&lt;/code&gt;工具的&lt;code&gt;入口&lt;/code&gt;就在主界面上。很大一个按钮。&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;a href='https://github.com/zmLiu/StarlingFeathers'&gt;依赖库最新源码&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2 id='v101'&gt;V1.0.1&lt;/h2&gt;
+
+&lt;p&gt;修复一处内存泄漏&lt;/p&gt;
+
+&lt;p&gt;开通贡献页面&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://url.cn/Lss9CE'&gt;Mac版下载&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://url.cn/O59nat'&gt;Windows版下载&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://url.cn/LnCMaU'&gt;依赖库&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://url.cn/M5EKz0'&gt;Demo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;更新时间2014-03-19&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='v100'&gt;V1.0.0&lt;/h2&gt;
 
