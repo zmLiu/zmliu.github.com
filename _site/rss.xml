@@ -5,10 +5,40 @@
         <description>zmLiu - zmLiu</description>
         <link>http://zmliu.github.io</link>
         <link>http://zmliu.github.io</link>
-        <lastBuildDate>2014-04-08T17:29:53+08:00</lastBuildDate>
-        <pubDate>2014-04-08T17:29:53+08:00</pubDate>
+        <lastBuildDate>2014-04-12T11:37:32+08:00</lastBuildDate>
+        <pubDate>2014-04-12T11:37:32+08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>StarlingSwf贡献</title>
+                <description>&lt;h2 id='id76'&gt;贡献榜&lt;/h2&gt;
+
+&lt;p&gt;StarlingSwf发布以来，得到很多热朋友的建议和支持，驱动着StarlingSwf的不断完善和强大，在此特别感谢。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;主要依据：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+ 	&lt;li&gt;优秀建议者&lt;/li&gt;
+ 	&lt;li&gt;StarlingSwf代码贡献者&lt;/li&gt;
+ 	&lt;li&gt;StarlingSwf文档贡献者&lt;/li&gt;
+ 	&lt;li&gt;StarlingSwf教程贡献者&lt;/li&gt;
+ 	&lt;li&gt;资金支持者&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;捐助StarlingSwf&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id='id77'&gt;&lt;a href='https://me.alipay.com/starlingswf/' target='_blank'&gt;点击这里捐助StarlingSwf&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;贡献榜&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;root.z&lt;/strong&gt; &amp;#160;&amp;#160;&amp;#160; &lt;strong&gt;吃心勒菠萝اللغة&lt;/strong&gt; &amp;#160;&amp;#160;&amp;#160; &lt;strong&gt;jiessie&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;flash_html5&lt;/strong&gt; &amp;#160;&amp;#160;&amp;#160; &lt;strong&gt;小四&lt;/strong&gt; &amp;#160;&amp;#160;&amp;#160; &lt;strong&gt;胡业坚&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;王仁文&lt;/strong&gt; &amp;#160;&amp;#160;&amp;#160;&lt;/p&gt;</description>
+                <link>http://zmliu.github.io/2014/04/12/StarlingSwf-Donate</link>
+                <guid>http://zmliu.github.io/2014/04/12/StarlingSwf-Donate</guid>
+                <pubDate>2014-04-12T00:00:00+08:00</pubDate>
+        </item>
 
         <item>
                 <title>StarlingSwf 粒子集成</title>
@@ -899,8 +929,10 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
         </item>
 
         <item>
-                <title>Swf一键导出到Starling中的工具，在Starling使用原生的MovieClip</title>
-                <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;有些同学使用过程用遇到了问题。我开了一个QQ群。有问题的同学可以进来问一下群号是168436154&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+                <title>StarlingSwf</title>
+                <description>&lt;h4 id='swfstarlingstarlingmovieclip'&gt;Swf一键导出到Starling中的工具，在Starling使用原生的MovieClip&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;有些同学使用过程用遇到了问题。我开了一个QQ群。有问题的同学可以进来问一下群号是168436154&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;hr /&gt;
 &lt;h2 id='id58'&gt;目录&lt;/h2&gt;
 
@@ -908,7 +940,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#featuresFunctions'&gt;功能与特色&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt; &lt;a target='_blank' href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' id='downInstall'&gt;下载与安装&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' id='downInstall' target='_blank'&gt;下载与安装&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#Tutorials1'&gt;教程一：资源命名规则&lt;/a&gt;&lt;/p&gt;
 
@@ -922,11 +954,13 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;9.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#Tutorials6'&gt;教程六：ATF批量导出工具如何使用&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;10.&lt;/em&gt;&lt;/strong&gt; &lt;a target='_blank' href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/'&gt;自定义组件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;10.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/' target='_blank'&gt;自定义组件&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;11.&lt;/em&gt;&lt;/strong&gt; &lt;a target='_blank' href='http://zmliu.github.io/2014/03/27/StarlingSwf-Particle/'&gt;粒子集成教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;11.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2014/03/27/StarlingSwf-Particle/' target='_blank'&gt;粒子集成教程&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;12.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#SuccessStories'&gt;成功案例&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;13.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2014/04/12/StarlingSwf-Donate/' target='_blank'&gt;捐助StarlingSwf&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;&lt;h2 id='whatThis'&gt;StarlingSwf是什么&lt;/h2&gt;
 &lt;p&gt;StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具.&lt;/p&gt;
 
@@ -944,7 +978,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt; 自动合并纹理，并且可以自动单独导出大图&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id59'&gt;&lt;a target='_blank' href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' id='downInstall'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id='id59'&gt;&lt;a href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' id='downInstall' target='_blank'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
 &lt;hr /&gt;&lt;h2 id='Tutorials1'&gt;教程一：原件命名规则&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下(&lt;code&gt;是AS链接名称噢&lt;/code&gt;)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 

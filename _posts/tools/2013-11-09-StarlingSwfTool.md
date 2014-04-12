@@ -1,9 +1,9 @@
 ---
 layout : post
-title : Swf一键导出到Starling中的工具，在Starling使用原生的MovieClip
+title : StarlingSwf
 tags : [Tool]
 ---
-
+#### Swf一键导出到Starling中的工具，在Starling使用原生的MovieClip ####
 ***有些同学使用过程用遇到了问题。我开了一个QQ群。有问题的同学可以进来问一下群号是168436154***
 
 ----------
@@ -32,7 +32,7 @@ tags : [Tool]
  
  ***12.*** [成功案例](#SuccessStories)
  
-
+ ***13.*** <a href="http://zmliu.github.io/2014/04/12/StarlingSwf-Donate/" target="_blank">捐助StarlingSwf</a>
 
 ----------
 <h2 id="whatThis">StarlingSwf是什么</h2>
