@@ -17,6 +17,28 @@ tags : [Tool]
 
 [1]: https://github.com/zmLiu/StarlingFeathers
 
+-----------
+
+## V1.0.1 ##
+
+修复一处内存泄漏
+
+开通贡献页面
+
+[Mac版下载][26]
+
+[Windows版下载][27]
+
+[依赖库][28]
+
+[Demo][29]
+  
+  [26]: http://url.cn/PapVzg
+  [27]: http://url.cn/KyyiqG
+  [28]: http://url.cn/RYmSH0
+  [29]: http://url.cn/Ri7WRV
+
+更新时间2014-03-19
 
 ----------
 ## V1.0.0 ##
