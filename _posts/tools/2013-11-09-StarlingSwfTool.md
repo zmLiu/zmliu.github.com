@@ -251,7 +251,8 @@ StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具
 ####[战略传奇](http://ng.d.cn/zhanlvechuanqi/)
 ####[船长也疯狂](https://itunes.apple.com/cn/app/chuan-zhang-ye-feng-kuang/id597315819?mt=8)
 ####[天天爆爆](http://img.tonlo.com/ttbb/download.html)
-####[Description](https://itunes.apple.com/us/app/gu-ying-jian-ke/id726049617?ls=1&mt=8)
+####[孤影剑客](https://itunes.apple.com/us/app/gu-ying-jian-ke/id726049617?ls=1&mt=8)
+####[抓咪咪](https://itunes.apple.com/cn/app/zhua-mi-mi/id832353888?mt=8)
 
 ----------
 

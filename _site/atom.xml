@@ -4,7 +4,7 @@
  <title>zmLiu</title>
  <link href="http://zmliu.github.io/" rel="self"/>
  <link href="http://zmliu.github.io"/>
- <updated>2014-04-12T12:22:00+08:00</updated>
+ <updated>2014-04-20T16:33:28+08:00</updated>
  <id>http://zmliu.github.io</id>
  <author>
    <name>zmLiu</name>
@@ -17,7 +17,7 @@
    <link href="http://zmliu.github.io/2014/04/12/StarlingSwf-Donate"/>
    <updated>2014-04-12T00:00:00+08:00</updated>
    <id>http://zmliu.github.io/2014/04/12/StarlingSwf-Donate</id>
-   <content type="html">&lt;h2 id='id76'&gt;贡献榜&lt;/h2&gt;
+   <content type="html">&lt;h2 id='id78'&gt;贡献榜&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;StarlingSwf发布以来，得到很多热朋友的建议和支持，驱动着StarlingSwf的不断完善和强大，在此特别感谢。&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -33,7 +33,7 @@
  &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;捐助StarlingSwf&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h2 id='id77'&gt;&lt;a href='https://me.alipay.com/starlingswf/' target='_blank'&gt;点击这里捐助StarlingSwf&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id='id79'&gt;&lt;a target='_blank' href='https://me.alipay.com/starlingswf/'&gt;点击这里捐助StarlingSwf&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;贡献榜&lt;/strong&gt;&lt;/p&gt;
 
@@ -55,7 +55,7 @@
 
 &lt;h4 id='starling_'&gt;关于Starling的粒子 我这里就不多讲了&lt;/h4&gt;
 
-&lt;h1 id='id74'&gt;教程&lt;/h1&gt;
+&lt;h1 id='id76'&gt;教程&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1.准备粒子的文件&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -145,7 +145,7 @@
 
 &lt;h3 id='phonegap'&gt;&lt;a href='http://phonegap.com/install/'&gt;phonegap官方安装教程&lt;/a&gt;&lt;/h3&gt;
 
-&lt;h3 id='id73'&gt;一.依赖环境&lt;/h3&gt;
+&lt;h3 id='id75'&gt;一.依赖环境&lt;/h3&gt;
 
 &lt;p&gt;phonegap 3.3需要&lt;code&gt;nodejs&lt;/code&gt;的环境&lt;/p&gt;
 
@@ -256,13 +256,13 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href='http://zmliu.github.io/2013/11/09/StarlingSwfTool/'&gt;StarlingSwf&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h4 id='id71'&gt;自定义组件是为了能够轻松的添加一些有特定功能的组件&lt;/h4&gt;
+&lt;h4 id='id73'&gt;自定义组件是为了能够轻松的添加一些有特定功能的组件&lt;/h4&gt;
 
 &lt;h4 id='ui'&gt;也可以轻松的把现有的ui框架集成到程序中&lt;/h4&gt;
 
 &lt;h4 id='__flash_pro'&gt;比方说&lt;code&gt;Feathers&lt;/code&gt;的组件 通过&lt;code&gt;StarlingSwf&lt;/code&gt;的自定义组件 就可以在Flash pro中编辑并布局啦&lt;/h4&gt;
 
-&lt;h1 id='id72'&gt;教程&lt;/h1&gt;
+&lt;h1 id='id74'&gt;教程&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;1、组件的链接命名规则&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -549,7 +549,7 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
    <link href="http://zmliu.github.io/2013/12/03/StarlingSwf-jiessie"/>
    <updated>2013-12-03T00:00:00+08:00</updated>
    <id>http://zmliu.github.io/2013/12/03/StarlingSwf-jiessie</id>
-   <content type="html">&lt;h2 id='id65'&gt;下载&lt;/h2&gt;
+   <content type="html">&lt;h2 id='id67'&gt;下载&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href='https://github.com/jiessie-GIT/jis'&gt;源码以及示例下载&lt;/a&gt;&lt;/p&gt;
 
@@ -557,7 +557,7 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;a href='http://zmliu.github.io/2013/11/09/StarlingSwfTool/'&gt;StarlingSwf&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id66'&gt;该扩展的优势&lt;/h2&gt;
+&lt;h2 id='id68'&gt;该扩展的优势&lt;/h2&gt;
 
 &lt;p&gt;该扩展主要针对手机开发，当然做页游也可以。&lt;/p&gt;
 
@@ -565,7 +565,7 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;code&gt;内存方面：&lt;/code&gt;大家都知道手机的内存有限，很多时候UI不会进行缓存，然而UI使用完毕之后的销毁将会是一个头疼的问题，使用传统的swf做UI的话，swf文件有时候哪怕你存在了一个引用都不会进行销毁，而其他的场景有可能就差这么点内存就蹦了。该扩展销毁资源的时候采用强制销毁模式，销毁的是你加载的资源，哪怕你正在使用也会销毁。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id67'&gt;使用之前的准备步骤：&lt;/h2&gt;
+&lt;h2 id='id69'&gt;使用之前的准备步骤：&lt;/h2&gt;
 
 &lt;p&gt;首先呢，你需要了解StarlingSwf工具的基本使用。&lt;/p&gt;
 
@@ -575,7 +575,7 @@ source ~/.bash_profile&lt;/code&gt;&lt;/pre&gt;
 &lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image0.png' /&gt;
 &lt;p&gt;该UI扩展需要你布置swf的时候稍微下点功夫，如下示例&lt;/p&gt;
 &lt;img class='img-rounded' alt='截图' src='/assets/images/starling_swf_jiessie/image1.png' /&gt;&lt;hr /&gt;
-&lt;h2 id='id68'&gt;在程序中使用：&lt;/h2&gt;
+&lt;h2 id='id70'&gt;在程序中使用：&lt;/h2&gt;
 
 &lt;p&gt;在使用该扩展之前你需要初始化两个地方：&lt;/p&gt;
 
@@ -727,7 +727,7 @@ tableScroll.getTable().addCellData(btnIndex++,this.getSourceSwf());//添加新�
 
 &lt;p&gt;JISTableTestCell中的setValue()可以输出通过setCellDatas和addCellData中设置的值。如此一个支持触控滑动的滚动界面就完毕了，跟手机上绚丽的滑动效果一样哦。&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id69'&gt;自定义组件管理：&lt;/h2&gt;
+&lt;h2 id='id71'&gt;自定义组件管理：&lt;/h2&gt;
 
 &lt;p&gt;如我们的演示资源中有个进度条面板，其中有_ProgressText、_RowProgress、_AddBtn、_DecBtn&lt;/p&gt;
 
@@ -805,7 +805,7 @@ tableScroll.getTable().addCellData(btnIndex++,this.getSourceSwf());//添加新�
 
 &lt;p&gt;JISProgressTestUIManager中的成员与mc中的成员命名一模一样，层级结构也很类似，只不过一个是代码的层级结构(对象包含属性)，一个是显示对象的层级结构(mc包含mc、TextField)&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id70'&gt;组件一览：&lt;/h2&gt;
+&lt;h2 id='id72'&gt;组件一览：&lt;/h2&gt;
 
 &lt;pre&gt;&lt;code&gt;JISButton  按钮，实际上就是包装了一个SwfMovieClip，每帧代表的含义参考静态DEFULT、GLIDE、CLICK、SELECTED、ENABLE所代表的帧数
 
@@ -963,7 +963,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;2.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#featuresFunctions'&gt;功能与特色&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' target='_blank' id='downInstall'&gt;下载与安装&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;3.&lt;/em&gt;&lt;/strong&gt; &lt;a id='downInstall' target='_blank' href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/'&gt;下载与安装&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;4.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#Tutorials1'&gt;教程一：资源命名规则&lt;/a&gt;&lt;/p&gt;
 
@@ -977,13 +977,13 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;9.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#Tutorials6'&gt;教程六：ATF批量导出工具如何使用&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;10.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/' target='_blank'&gt;自定义组件&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;10.&lt;/em&gt;&lt;/strong&gt; &lt;a target='_blank' href='http://zmliu.github.io/2014/01/07/StarlingSwf-Components/'&gt;自定义组件&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;11.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2014/03/27/StarlingSwf-Particle/' target='_blank'&gt;粒子集成教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;11.&lt;/em&gt;&lt;/strong&gt; &lt;a target='_blank' href='http://zmliu.github.io/2014/03/27/StarlingSwf-Particle/'&gt;粒子集成教程&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;12.&lt;/em&gt;&lt;/strong&gt; &lt;a href='#SuccessStories'&gt;成功案例&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;13.&lt;/em&gt;&lt;/strong&gt; &lt;a href='http://zmliu.github.io/2014/04/12/StarlingSwf-Donate/' target='_blank'&gt;捐助StarlingSwf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;13.&lt;/em&gt;&lt;/strong&gt; &lt;a target='_blank' href='http://zmliu.github.io/2014/04/12/StarlingSwf-Donate/'&gt;捐助StarlingSwf&lt;/a&gt;&lt;/p&gt;
 &lt;hr /&gt;&lt;h2 id='whatThis'&gt;StarlingSwf是什么&lt;/h2&gt;
 &lt;p&gt;StarlingSwf是一套开源的 Swf数据导出到Starling框架中使用的工具.&lt;/p&gt;
 
@@ -1001,7 +1001,7 @@ log-slow-admin-statements&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;6.&lt;/em&gt;&lt;/strong&gt; 自动合并纹理，并且可以自动单独导出大图&lt;/p&gt;
 &lt;hr /&gt;
-&lt;h2 id='id59'&gt;&lt;a href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/' target='_blank' id='downInstall'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id='id59'&gt;&lt;a id='downInstall' target='_blank' href='http://zmliu.github.io/2013/12/17/StarlingSwfToolUpdate/'&gt;下载与安装(点我)&lt;/a&gt;&lt;/h2&gt;
 &lt;hr /&gt;&lt;h2 id='Tutorials1'&gt;教程一：原件命名规则&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;既然是Swf那么资源的编辑肯定还是用Flash Pro了，但是资源的命名规则大家需要注意下(&lt;code&gt;是AS链接名称噢&lt;/code&gt;)&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
 
@@ -1138,7 +1138,9 @@ swf.createS9Image(&amp;quot;s9_test1&amp;quot;);&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h4 id='id63'&gt;&lt;a href='http://img.tonlo.com/ttbb/download.html'&gt;天天爆爆&lt;/a&gt;&lt;/h4&gt;
 
-&lt;h4 id='description'&gt;&lt;a href='https://itunes.apple.com/us/app/gu-ying-jian-ke/id726049617?ls=1&amp;amp;mt=8'&gt;Description&lt;/a&gt;&lt;/h4&gt;
+&lt;h4 id='id64'&gt;&lt;a href='https://itunes.apple.com/us/app/gu-ying-jian-ke/id726049617?ls=1&amp;amp;mt=8'&gt;孤影剑客&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id='id65'&gt;&lt;a href='https://itunes.apple.com/cn/app/zhua-mi-mi/id832353888?mt=8'&gt;抓咪咪&lt;/a&gt;&lt;/h4&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;友情提示：工具的预览区域是可以拖动的噢&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;</content>
  </entry>
