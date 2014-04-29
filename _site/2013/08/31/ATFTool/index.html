@@ -127,7 +127,7 @@
 解决方法是把纹理改成正方形</code></pre>
 <hr />
 <h4 id='id51'>来张截图</h4>
-<img class='img-rounded' alt='截图' src='/assets/images/atftool_view.png' /><hr />
+<img src='/assets/images/atftool_view.png' class='img-rounded' alt='截图' /><hr />
 <h4 id='id52'>功能说明</h4>
 
 <pre><code>输出平台选择
@@ -165,14 +165,14 @@ function loaderComplete(e:Event):void{
 	var xmlBytes:ByteArray = new ByteArray();
 	var atfBytes:ByteArray = new ByteArray();
 	
-	bytes.position = bytes.length - 2;
-	xmlLength = bytes.readShort();
+	bytes.position = bytes.length - 4;
+	xmlLength = bytes.readUnsignedInt();
 	
-	bytes.position = bytes.length - xmlLength - 2;
+	bytes.position = bytes.length - xmlLength - 4;
 	bytes.readBytes(xmlBytes,0,xmlLength);
 	
 	bytes.position = 0;
-	bytes.readBytes(atfBytes,0,bytes.length - xmlLength - 2);
+	bytes.readBytes(atfBytes,0,bytes.length - xmlLength - 4);
 	
 	if(AtfData.isAtfData(atfBytes)){
 		var texture:Texture = Texture.fromAtfData(atfBytes,2,false,null);
