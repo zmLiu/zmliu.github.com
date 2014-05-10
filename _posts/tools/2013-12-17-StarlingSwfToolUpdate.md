@@ -3,6 +3,9 @@ layout : post
 title : StarlingSwf 下载 与 更新
 tags : [Tool]
 ---
+<script language="javascript" type="text/javascript">
+	window.location.href="http://xyliu.sinaapp.com/?p=84";
+</script>
 
 ***有些同学使用过程用遇到了问题。我开了一个QQ群。有问题的同学可以进来问一下群号是168436154***
 
