@@ -3,9 +3,8 @@ layout : post
 title : StarlingSwf
 tags : [Tool]
 ---
-<script language="javascript" type="text/javascript">
-	window.location.href="http://xyliu.sinaapp.com/?p=17";
-</script>
+
+###已经迁移到<a href="http://xyliu.sinaapp.com/?p=17" target="_blank" >http://xyliu.sinaapp.com/?p=17</a>
 
 #### Swf一键导出到Starling中的工具，在Starling使用原生的MovieClip ####
 ***有些同学使用过程用遇到了问题。我开了一个QQ群。有问题的同学可以进来问一下群号是168436154***
